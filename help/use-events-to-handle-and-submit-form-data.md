@@ -3,7 +3,7 @@ title: Utiliser des événements pour gérer et envoyer des données de formulai
 description: Utiliser des événements pour gérer et envoyer des données de formulaires adaptatifs découplés
 hide: false
 source-git-commit: ddd353329dfe5b47734d904b9a5e684051becc5b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 100%
 

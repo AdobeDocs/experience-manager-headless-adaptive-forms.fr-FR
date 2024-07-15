@@ -10,15 +10,15 @@ role: Admin, Developer
 level: Beginner, Intermediate
 topic-tags: develop
 hide: true
-exl-id: 46df943c-0622-4b3b-a802-85c39ac6a734
-source-git-commit: 47ac7d03c8c4fa18ac3bdcef04352fdd1cad1b16
-workflow-type: ht
-source-wordcount: '2189'
+exl-id: 07a71aac-de38-4839-b8d6-b47c3f575eb3
+source-git-commit: 999c3d092d03d7a82363bc94ce79ceb33bf0df7e
+workflow-type: tm+mt
+source-wordcount: '2130'
 ht-degree: 100%
 
 ---
 
-# Créer des formulaire attrayants à l’aide des composants principaux et découplés Formulaires adaptatifs découplés sur AEM Forms 6.5 {#build-engaging-forms-using-core-components-and-headless}
+# Créez des formulaires attrayants à l’aide de composants de base et de formulaires adaptatifs découplés dans AEM Forms 6.5. {#build-engaging-forms-using-core-components-and-headless}
 
 ## Présentation de l’atelier {#lab-overview}
 
@@ -157,7 +157,7 @@ Configurez le référentiel local du thème :
 
    Si le dossier n’existe pas, utilisez la commande `md git` pour la créer.
 
-1. Utilisez la commande suivante pour cloner le code frontal du thème :
+1. Utilisez la commande suivante pour cloner le code front-end du thème :
 
    ```Shell
    git clone -b WKND https://github.com/adobe/aem-forms-theme-canvas
@@ -448,7 +448,7 @@ Pour effectuer le rendu du formulaire hébergé dans votre environnement de publ
 
    ![](/help/assets/lab65-mui-starter-kit-start.png)
 
-   La commande démarre un serveur de développement local et effectue le rendu de la définition de formulaire récupérée à partir d’AEM de façon découplée à l’aide de la bibliothèque frontend de l’interface utilisateur Material de Google.
+   La commande démarre un serveur de développement local et effectue le rendu de la définition de formulaire récupérée à partir d’AEM de façon découplée à l’aide de la bibliothèque front-end de l’interface utilisateur Material de Google.
 
    >[!NOTE]
    >

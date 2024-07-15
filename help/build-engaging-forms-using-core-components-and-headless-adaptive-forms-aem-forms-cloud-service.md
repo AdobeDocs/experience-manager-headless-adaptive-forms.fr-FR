@@ -103,7 +103,7 @@ Dans cette leçon, en tant qu’utilisatrice ou utilisateur professionnel, vous 
    1. Cliquez sur l’onglet **Style** et sélectionnez le thème **wknd-theme** comme illustré ci-dessous :
       ![](/help/assets/screenshot202023-03-0120at206.09.2320pm.png)
 
-   1. Cliquez sur le bouton **Envoi** et sélectionnez l’option **Envoyer vers le point de fin REST** et spécifiez la corbeille publique dans la **URL de la demande du POST** comme illustré ci-dessous :
+   1. Cliquez sur l’onglet **Submission** (Envoi) et sélectionnez la carte **Submit to REST end-point** (Envoyer vers le point de terminaison REST) et spécifiez la classe publique dans le champ **URL pour la demande de POST** comme illustré ci-dessous :
       ![](/help/assets/screenshot202023-03-0120at206.09.5320pm.png)
 
    1. Cliquez sur **Créer**. Indiquez un nom et un titre pour votre formulaire. Par exemple : **enregistrement**. Cliquez sur **Créer**.
@@ -237,7 +237,7 @@ Configurez le référentiel local du thème :
 
    >[!NOTE]
    >
-   > * Si vous recevez un message vous demandant de mettre à jour npm via le `npm notice Run npm nstall -g npm@9.6.0` , ignorez le message.
+   > * Si vous recevez un message vous demandant de mettre à jour npm via la commande `npm notice Run npm nstall -g npm@9.6.0`, ignorez le message.
    > * N’exécutez pas d’autres commandes npm, sauf si cela est indiqué dans le classeur.
 
 1. Exécutez maintenant la commande suivante pour prévisualiser le formulaire.
@@ -248,9 +248,9 @@ Configurez le référentiel local du thème :
 
    ![](/help/assets/screenshot2028117229.png)
 
-   Une fois la commande ci-dessus exécutée, attendez la `webpack compiled` et vous êtes redirigé vers une page de connexion AEM.
+   Une fois la commande ci-dessus exécutée, attendez le message `webpack compiled` et vous êtes redirigé vers une page de connexion AEM.
 
-1. Cliquez sur **Connexion locale (tâches d’administration uniquement)** sur la page de connexion AEM.
+1. Cliquez sur **Se connecter localement (tâches d’administration uniquement)** sur la page de connexion AEM.
 1. Saisissez les informations d’identification de l’utilisateur local créé et le formulaire s’affiche dans un onglet de navigateur.
 
    >[!NOTE]

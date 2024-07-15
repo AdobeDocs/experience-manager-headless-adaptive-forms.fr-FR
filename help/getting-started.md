@@ -4,7 +4,7 @@ description: Prise en main des formulaires adaptatifs découplés
 keywords: découplé, formulaire adaptatif, tutoriel
 hide: true
 source-git-commit: 0127f8ddede38083f0932b0e8d7efdd0dd77c3a6
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 100%
 

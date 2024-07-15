@@ -12,10 +12,10 @@ contentOwner: Khushwant Singh
 docset: CloudService
 hide: true
 hidefromtoc: true
-exl-id: 7c545ca6-cb2d-4d28-b9e8-b6efe3faee00
-source-git-commit: 47ac7d03c8c4fa18ac3bdcef04352fdd1cad1b16
-workflow-type: ht
-source-wordcount: '923'
+exl-id: 7afff771-1296-4162-84c5-c8266b94af2f
+source-git-commit: 999c3d092d03d7a82363bc94ce79ceb33bf0df7e
+workflow-type: tm+mt
+source-wordcount: '914'
 ht-degree: 100%
 
 ---
@@ -50,7 +50,7 @@ Effectuez les étapes suivantes, dans l’ordre indiqué, pour activer les formu
 
 1. Connectez-vous à [Cloud Manager](https://my.cloudmanager.adobe.com/) et sélectionnez votre organisation et votre programme.
 
-1. Accédez à la vignette **Pipelines** à partir de votre page **Vue d’ensemble du programme** et cliquez sur le bouton **Accéder aux informations sur le référentiel** pour accéder à votre référentiel Git et le gérer. La page contient les informations suivantes :
+1. Accédez à la vignette **Pipelines** à partir de votre page **Aperçu du programme** et cliquez sur le bouton **Accéder aux informations sur le référentiel** pour accéder à votre référentiel Git et le gérer. La page contient les informations suivantes :
 
    * URL vers le référentiel Git de Cloud Manager.
    * Informations d’identification du nom d’utilisateur du référentiel Git (nom d’utilisateur et mot de passe).
@@ -68,7 +68,7 @@ Effectuez les étapes suivantes, dans l’ordre indiqué, pour activer les formu
 
 ## 2. Ajouter les dépendances des composants principaux des formulaires adaptatifs à votre référentiel Git {#add-adaptive-forms-core-components-dependencies}
 
-1. Ouvrez votre dossier du référentiel Git dans un éditeur de code de texte brut. Par exemple, VS Code.
+1. Ouvrez votre dossier du référentiel Git dans un éditeur de code de texte brut. Par exemple, VS Code.
 1. Ouvrez le fichier `[AEM Repository Folder]\pom.xml` en mode d’édition.
 1. Remplacez les versions des composants `core.forms.components.version`, `core.forms.components.af.version` et `core.wcm.components.version` par les versions spécifiées dans la [documentation des composants principaux](https://github.com/adobe/aem-core-forms-components). Si le composant n’existe pas, ajoutez ces composants.
 
@@ -82,7 +82,7 @@ Effectuez les étapes suivantes, dans l’ordre indiqué, pour activer les formu
    </properties>
    ```
 
-   ![Mention de la dernière version des composants principaux de Forms.](/help/assets/latest-forms-component-version.png)
+   ![Mention de la dernière version des composants principaux de Forms](/help/assets/latest-forms-component-version.png)
 
 1. Dans la section des dépendances du fichier `[AEM Repository Folder]\pom.xml`, ajoutez les dépendances suivantes, puis enregistrez le fichier.
 
@@ -145,7 +145,7 @@ Effectuez les étapes suivantes, dans l’ordre indiqué, pour activer les formu
    <!-- End of AEM Forms Core Component Dependencies -->
    ```
 
-1. Ouvrez le fichier `[AEM Repository Folder]/all/pom.xml` pour le modifier. Ajoutez les dépendances suivantes dans la section `<embeddeds>` et enregistrez le fichier.
+1. Ouvrez le fichier `[AEM Repository Folder]/all/pom.xml` en mode d’édition. Ajoutez les dépendances suivantes dans la section `<embeddeds>` et enregistrez le fichier.
 
    ```XML
    <!-- WCM Core Component Examples Dependencies -->
@@ -294,7 +294,7 @@ Effectuez les étapes suivantes, dans l’ordre indiqué, pour activer les formu
 
 1. Pour valider le code dans votre référentiel Git :
    1. Ouvrez le terminal ou l’invite de commande.
-   1. Accédez à `[AEM Repository Folder]` et exécutez les commandes suivantes dans l’ordre indiqué.
+   1. Accédez à `[AEM Repository Folder]` et exécutez les commandes suivantes dans l’ordre indiqué
 
       ```Shell
       git add pom.xml
@@ -313,7 +313,7 @@ Effectuez les étapes suivantes, dans l’ordre indiqué, pour activer les formu
 
 ### Que sont les composants principaux ? {#core-components}
 
-Les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) sont un ensemble de composants WCM (Web Content Management, ou gestion de contenu web) normalisés pour AEM, dont l’objectif est d’accélérer le développement et de réduire les coûts de maintenance de vos sites Web.
+Les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) sont un ensemble de composants WCM (Web Content Management, ou gestion de contenu web) normalisés pour AEM, dont l’objectif est d’accélérer le développement et de réduire les coûts de maintenance de vos sites web.
 
 ### Quelles sont toutes les fonctionnalités ajoutées lors de l’activation des composants principaux ? {#core-components-capabilities}
 
