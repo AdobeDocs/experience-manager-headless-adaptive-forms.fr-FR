@@ -9,7 +9,7 @@ level: Beginner, Intermediate
 keywords: découplé, formulaire adaptatif, questions fréquentes
 hide: false
 exl-id: 5bfc307d-96a3-4007-b65f-32176ecdb710
-source-git-commit: 47ac7d03c8c4fa18ac3bdcef04352fdd1cad1b16
+source-git-commit: c46ac28e490a09d6f563c4b5673d30a53c277a69
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 100%
@@ -46,7 +46,7 @@ Vous pouvez utiliser l’application de démarrage pour afficher et prévisualis
 
 ## Est-il possible d’utiliser des formulaires adaptatifs découplés avec des frameworks personnalisés ?
 
-Les formulaires adaptatifs découplés sont basés sur une [spécification standard](/help/assets/Headless-Adaptive-Form-Specification.pdf). Vous pouvez étendre la spécification et l’utiliser pour créer des composants personnalisés. Par exemple, des composants pour Chakra UI, Vue.js, etc.
+Les formulaires adaptatifs découplés sont basés sur une [spécification standard](/help/assets/headless-adaptive-forms-specification.pdf). Vous pouvez étendre la spécification et l’utiliser pour créer des composants personnalisés. Par exemple, des composants pour Chakra UI, Vue.js, etc.
 
 ## Les formulaires adaptatifs découplés prennent-ils en charge les champs en cascade ?
 

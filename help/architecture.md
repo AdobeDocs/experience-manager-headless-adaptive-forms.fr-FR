@@ -9,10 +9,10 @@ level: Beginner, Intermediate
 keywords: découplé, formulaire adaptatif, architecture
 hide: false
 exl-id: ee7096d8-89e2-41e0-85e7-b26457df96fb
-source-git-commit: 56ad9d8fefc4933847061ba6007ad367984bd2e0
+source-git-commit: c46ac28e490a09d6f563c4b5673d30a53c277a69
 workflow-type: tm+mt
-source-wordcount: '893'
-ht-degree: 100%
+source-wordcount: '918'
+ht-degree: 97%
 
 ---
 
@@ -76,6 +76,8 @@ En plus de fournir les API pour valider les contraintes appliquées aux différe
 
 Tous ces composants sont inclus dans l’archétype AEM. Lorsque vous créez un projet d’archétype AEM 37 ou version ultérieure pour les formulaires adaptatifs découplés, la dernière version des bibliothèques répertoriées ci-dessus est incluse dans le projet.
 
+* **Laboratoire de code** : [Laboratoire de code](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en) est un environnement interactif conçu pour que les développeurs puissent tester les fonctionnalités du Forms adaptatif découplé, en apprendre davantage à son sujet et les tester.
+
 **Application commencée** : Adobe a également publié une application commencée pour vous aider à démarrer rapidement avec les formulaires adaptatifs découplés.
 
 <!-- **View Library (UI Layer)**: A custom form application built in a front-end language. You can use react, Angular, Flutter, NPM, Vue.js, Ionic, BootStrap, or any other language to built front end. You can also use the Headless adaptive forms Super Component, provided out-of-the-box, inside a react application to render a Headless adaptive form. Headless adaptive forms super component makes use of OOTB react spectrum -based form components to render the Headless adaptive form. 
@@ -86,8 +88,9 @@ Core-Components: It enables use to render an Adaptive Form using JSON structure.
 
 **Extension Visual Studio Code** : l’[extension Visual Studio Code](visual-studio-code-extension-for-headless-adaptive-forms.md) permet de créer une structure JSON valide. Elle assure la prise en charge et la validation IntelliSense pour la structure JSON des formulaires et fournit des fonctions courantes telles que l’ajout, la suppression ou l’attribution d’un nouveau nom aux composants d’une structure JSON.
 
-**Spécifications des formulaires adaptatifs version 2.0** : fournit des informations détaillées sur les composants, contraintes et méthodes disponibles pour définir les formulaires adaptatifs découplés. La spécification est disponible au format [PDF](/help/assets/Headless-Adaptive-Form-Specification.pdf).
-
 **API HTTP et JavaScript** : les [API HTTP](https://opensource.adobe.com/aem-forms-af-runtime/api/) vous permettent de répertorier, de récupérer, de valider, d’envoyer et de suivre le statut d’envoi des formulaires découplés. Les [JS APIs](https://opensource.adobe.com/aem-forms-af-runtime/jsdocs/) vous aident à utiliser des formulaires adaptatifs découplés avec n’importe quel framework d’interface utilisateur basé sur JavaScript.
 
 **Formule JSON** : il s’agit d’une mise en œuvre de la grammaire des expressions de formulaires qui vous aide à interroger la structure JSON et à créer des règles pour les formulaires adaptatifs découplés La grammaire est un mashup de fonctions et d’opérateurs de type feuille de calcul et [JMESPath](https://jmespath.org/), un langage de requête JSON. Vous pouvez utiliser le [playground](https://opensource.adobe.com/json-formula/dist/index.html) pour découvrir la syntaxe et les fonctionnalités des formules JSON.
+
+**Spécifications des formulaires adaptatifs version 2.0** : fournit des informations détaillées sur les composants, contraintes et méthodes disponibles pour définir les formulaires adaptatifs découplés. La spécification est disponible au format [PDF](/help/assets/headless-adaptive-forms-specification.pdf).
+

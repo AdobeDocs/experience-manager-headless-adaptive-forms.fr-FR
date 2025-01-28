@@ -5,10 +5,10 @@ user-guide-description: Documentation sur les formulaires adaptatifs découplés
 feature: Adaptive Forms
 role: Developer
 hide: false
-source-git-commit: 6fbc8605163c5f5415cadf5c19c96e1f68a23841
+source-git-commit: c46ac28e490a09d6f563c4b5673d30a53c277a69
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 98%
+source-wordcount: '144'
+ht-degree: 94%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 98%
 # Formulaires adaptatifs découplés Adobe Experience Manager {#using}
 
 + [Vue d’ensemble](overview.md)
-+ [Test d’aperçu](overview-testing.md)
++ [Test de l’aperçu](overview-testing.md)
 + [Architecture](architecture.md)
 + Configuration rapide {#quick-setup}
    + [Activer les formulaires adaptatifs découplés sur AEM Forms 6.5](enable-headless-adaptive-forms-and-core-components.md)
@@ -30,6 +30,8 @@ ht-degree: 98%
 + Créez des formulaires adaptatifs découplés {#authoring-headless-adaptive-forms}
    + [Créer un formulaire adaptatif découplé à l’aide de l’éditeur de formulaires adaptatifs](create-a-headless-adaptive-form.md)
 + Guides de référence pour lle développement {#developer-reference}
+   + [Portail de développement](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=en)
+   + [Coder le terrain de jeu](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en)
    + [API de formulaires adaptatifs découplés](https://opensource.adobe.com/aem-forms-af-runtime/api/)
 + [Questions fréquentes ](faq.md)
 + [Résolution des problèmes](troubleshooting.md)
