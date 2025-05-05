@@ -30,8 +30,8 @@ ht-degree: 94%
 + Créez des formulaires adaptatifs découplés {#authoring-headless-adaptive-forms}
    + [Créer un formulaire adaptatif découplé à l’aide de l’éditeur de formulaires adaptatifs](create-a-headless-adaptive-form.md)
 + Guides de référence pour lle développement {#developer-reference}
-   + [Portail de développement](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=en)
-   + [Coder le terrain de jeu](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en)
+   + [Portail de développement](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=fr)
+   + [Coder le terrain de jeu](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=fr)
    + [API de formulaires adaptatifs découplés](https://opensource.adobe.com/aem-forms-af-runtime/api/)
 + [Questions fréquentes ](faq.md)
 + [Résolution des problèmes](troubleshooting.md)

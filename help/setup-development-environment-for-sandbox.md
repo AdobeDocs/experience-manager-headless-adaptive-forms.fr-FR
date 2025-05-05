@@ -25,7 +25,7 @@ Vous êtes prêt à créer et à tester les formulaires adaptatifs découplés s
 
 * Créez un programme AEM as a Cloud Service : suivez les étapes 1 à 7 de l’article [Créer un programme](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program.html?lang=fr#create-program) pour créer un programme pour votre organisation.
 
-* Activez le [Canal de version préliminaire pour votre programme Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?cloud-environments?lang=fr).
+* Activez le [Canal de version préliminaire pour votre programme Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr&cloud-environments?lang=fr).
 
 ## Workflow de configuration
 
