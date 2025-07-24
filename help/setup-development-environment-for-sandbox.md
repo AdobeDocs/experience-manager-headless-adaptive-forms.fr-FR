@@ -40,6 +40,7 @@ Pour activer les formulaires adaptatifs découplés sur votre sandbox Forms as a
 <tr>
   <td>
   1. Connectez-vous à <a href="https://experience.adobe.com/" > https://experience.adobe.com/ </a> et sélectionnez l’option <b> Experience Manager. </b>
+
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -50,7 +51,7 @@ Pour activer les formulaires adaptatifs découplés sur votre sandbox Forms as a
 </tr>
 <tr>
   <td>
-  2. Pour l’option <b> Cloud Manager, </b> cliquez sur <b> Lancer. </b> Une liste des programmes de votre organisation s’affiche.
+  &#x200B;2. Pour l’option <b> Cloud Manager, </b> cliquez sur <b> Lancer. </b> Une liste des programmes de votre organisation s’affiche.
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -61,7 +62,7 @@ Pour activer les formulaires adaptatifs découplés sur votre sandbox Forms as a
 </tr>
 <tr>
   <td>
-    3. Pour votre programme, appuyez sur l’icône ... et sélectionnez l’option <b> Modifier le programme </b>. Une boîte de dialogue s’affiche. 
+    &#x200B;3. Pour votre programme, appuyez sur l’icône ... et sélectionnez l’option <b> Modifier le programme </b>. Une boîte de dialogue s’affiche. 
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -72,7 +73,7 @@ Pour activer les formulaires adaptatifs découplés sur votre sandbox Forms as a
 </tr>
 <tr>
   <td>
-    4. Dans la boîte de dialogue Modifier le programme, accédez à l’onglet <b> Solutions et modules complémentaires, </b> sélectionnez l’option <b> Forms - Inscription numérique </b> et appuyez sur <b> mettre à jour </b>. 
+    &#x200B;4. Dans la boîte de dialogue Modifier le programme, accédez à l’onglet <b> Solutions et modules complémentaires, </b> sélectionnez l’option <b> Forms - Inscription numérique </b> et appuyez sur <b> mettre à jour </b>. 
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -98,6 +99,7 @@ Pour cloner le référentiel :
 <tr>
   <td>
   1. Dans la boîte de dialogue Pipeline de votre programme, appuyez sur <b> Accéder aux informations sur le référentiel. </b> Une boîte de dialogue contenant des informations sur le référentiel s’affiche 
+
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -108,7 +110,7 @@ Pour cloner le référentiel :
 </tr>
 <tr>
   <td>
-  2. Appuyez sur <b> Générer un mot de passe </b> et copiez <b> l’URL du référentiel. </b> 
+  &#x200B;2. Appuyez sur <b> Générer un mot de passe </b> et copiez <b> l’URL du référentiel. </b> 
   </td>
   <td>
       <img alt="Programmes AEM as a Cloud Service" src="assets/repository-info.png">
@@ -117,7 +119,7 @@ Pour cloner le référentiel :
 </tr>
 <tr>
   <td>
-    3. Sur votre machine locale, ouvrez l’invite de commandes, créez un dossier, exécutez la commande suivante, puis saisissez les informations d’identification du référentiel demandées :
+    &#x200B;3. Sur votre machine locale, ouvrez l’invite de commandes, créez un dossier, exécutez la commande suivante, puis saisissez les informations d’identification du référentiel demandées :
  </br>
  <code> git clone [Repository URL] </code> </br></br>
  Par exemple : </br> 
@@ -220,6 +222,7 @@ Une fois la commande exécutée, un dossier de projet portant le nom spécifié 
 <tr>
   <td>
   1. Connectez-vous à <a href="https://experience.adobe.com/" > https://experience.adobe.com/ </a> et sélectionnez l’option <b> Experience Manager. </b>
+
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -230,7 +233,7 @@ Une fois la commande exécutée, un dossier de projet portant le nom spécifié 
 </tr>
 <tr>
   <td>
-  2. Pour l’option <b> Cloud Manager </b>, cliquez sur <b> Lancer. </b> Une liste des programmes de votre organisation s’affiche. Ouvrez votre programme. 
+  &#x200B;2. Pour l’option <b> Cloud Manager </b>, cliquez sur <b> Lancer. </b> Une liste des programmes de votre organisation s’affiche. Ouvrez votre programme. 
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -241,7 +244,7 @@ Une fois la commande exécutée, un dossier de projet portant le nom spécifié 
 </tr>
 <tr>
   <td>
-    3. Pour votre pipeline, appuyez sur l’icône ... et sélectionnez l’option <b> Exécuter. </b> Si vous êtes invité à exécuter le pipeline, appuyez sur <b> Exécuter </b> et attendez que le <b> du statut de l’</b> du pipeline passe à <b> Terminé </b>.  
+    &#x200B;3. Pour votre pipeline, appuyez sur l’icône ... et sélectionnez l’option <b> Exécuter. </b> Si vous êtes invité à exécuter le pipeline, appuyez sur <b> Exécuter </b> et attendez que le <b> du statut de l’</b> du pipeline passe à <b> Terminé </b>.  
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">

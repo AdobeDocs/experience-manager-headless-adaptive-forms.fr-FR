@@ -86,6 +86,7 @@ Dans cette leçon, en tant qu’utilisatrice ou utilisateur professionnel, vous 
 
    1. Ouvrez <https://pipedream.com/requestbin> dans un nouvel onglet du navigateur.
    1. Cliquez sur **Créer un répertoire bin public** et copiez l’URL du point d’entrée.
+
       ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
 
       ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%" align="left"}
@@ -93,23 +94,29 @@ Dans cette leçon, en tant qu’utilisatrice ou utilisateur professionnel, vous 
 1. Créez un formulaire adaptatif à l’aide de l’interface de l’assistant :
 
    1. Dans l’onglet du navigateur utilisé dans la leçon 1, accédez à l’interface web d’AEM Forms as Cloud Service, puis à Formulaires et Documents.
+
       ![](/help/assets/screenshot2028114029.png)
 
    1. Cliquez sur **Créer** > **Formulaire adaptatif**.
+
       ![](/help/assets/screenshot2028114629.png)
 
    1. Sélectionnez le modèle **vierge avec composants principaux** à partir de l’écran de sélection des modèles, comme illustré ci-dessous :
+
       ![](/help/assets/screenshot202023-03-0120at206.09.1520pm.png)
 
    1. Cliquez sur l’onglet **Style** et sélectionnez le thème **wknd-theme** comme illustré ci-dessous :
+
       ![](/help/assets/screenshot202023-03-0120at206.09.2320pm.png)
 
    1. Cliquez sur l’onglet **Envoi** et sélectionnez la vignette **Envoyer vers le point d’entrée REST** et indiquez le répertoire bin public dans le champ **URL de la requête POST** comme illustré ci-dessous :
+
       ![](/help/assets/screenshot202023-03-0120at206.09.5320pm.png)
 
    1. Cliquez sur **Créer**. Indiquez un nom et un titre sur votre formulaire. Par exemple : **enregistrement**. Cliquez sur **Créer**.
 
    1. L’éditeur de formulaire adaptatif s’ouvre. Ignorez les fenêtres contextuelles ou les boîtes de dialogue concernant les préférences ou les informations. Cliquez sur l’explorateur de composants sur le rail de gauche et ajoutez les composants **En-tête** et **Pied de page** respectivement en haut et en bas du formulaire vierge.
+
       ![](/help/assets/screenshot2028121929.png)
 
    1. Faites glisser puis déposez des composants à partir du navigateur de composants pour créer un formulaire, comme suit :
@@ -121,6 +128,7 @@ Dans cette leçon, en tant qu’utilisatrice ou utilisateur professionnel, vous 
    1. Cliquez sur le composant **Numéro de téléphone** pour afficher le menu contextuel. Cliquez sur l’**icône Clé à molette** dans le menu pour configurer le champ.
 
    1. Ouvrez l’**onglet Validations**, marquez le champ comme **Obligatoire**, puis cliquez sur **Terminé**. Le message de réussite s’affiche.
+
       ![](/help/assets/screenshot2028123529.png){width="50%" align="left"}
 
       ![](/help/assets/screenshot2028123629.png){width="50%" align="left"}
@@ -132,9 +140,11 @@ Dans cette leçon, en tant qu’utilisatrice ou utilisateur professionnel, vous 
    1. Remplissez le formulaire avec des données factices.
 
    1. Soumettez le formulaire.
+
       ![](/help/assets/screenshot2028125729.png)
 
    1. Dans l’onglet Zone de requêtes, vérifiez les données envoyées.
+
       ![](/help/assets/screenshot2028125829.png)
 
 1. Ajoutez de l’interactivité au formulaire avec des règles :

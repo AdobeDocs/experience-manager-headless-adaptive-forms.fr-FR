@@ -86,9 +86,11 @@ En tant qu’utilisateur professionnel ou utilisatrice professionnelle, vous all
 1. Créez un point d’entrée d’envoi pour le formulaire :
 
    1. Ouvrez <https://pipedream.com/requestbin> dans un nouvel onglet du navigateur.
+
       ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
 
    1. Cliquez sur **Créer un répertoire bin public** et copiez l’URL du point d’entrée.
+
       ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%" align="left"}
 
    Ce point d’entrée particulier sert d’exemple pour l’envoi et l’affichage de données. En production réelle, vous utilisez votre propre point d’entrée ou vos propres sources de données pour stocker les données capturées.
@@ -98,12 +100,15 @@ En tant qu’utilisateur professionnel ou utilisatrice professionnelle, vous all
    1. Dans l’onglet du navigateur utilisé dans la leçon 1, accédez à l’interface web d’AEM Forms et à **Forms** > **Forms et Documents**.
 
    1. Appuyez sur **Créer** et sélectionnez Formulaire adaptatif.
+
       ![](/help/assets/creating-adaptive-form-6-5.png){width="50%" align="left"}
 
    1. Sélectionnez le modèle **vierge avec composants principaux** à partir de l’écran de sélection des modèles, comme illustré ci-dessous, puis cliquez sur **Suivant**.
+
       ![](/help/assets/creating-adaptive-form-6-5-select-blank-template.png){width="50%" align="left"}
 
    1. Spécifiez `Contact us` comme propriété **Titre** du formulaire. Assurez-vous que le champ **Nom** du formulaire est `contact-us`.
+
       ![](/help/assets/creating-adaptive-form-65-specify-title.png){width="50%" align="left"}
 
    1. Cliquez sur **Créer**. Une boîte de dialogue s’affiche.
