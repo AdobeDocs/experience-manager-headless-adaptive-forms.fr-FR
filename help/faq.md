@@ -1,6 +1,6 @@
 ---
-title: Questions fréquemment posées
-description: Questions fréquemment posées
+title: Questions Fréquentes Sur Le Forms Adaptatif Découplé
+description: Questions fréquentes
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Headless
@@ -9,10 +9,10 @@ level: Beginner, Intermediate
 keywords: découplé, formulaire adaptatif, questions fréquentes
 hide: false
 exl-id: 5bfc307d-96a3-4007-b65f-32176ecdb710
-source-git-commit: c46ac28e490a09d6f563c4b5673d30a53c277a69
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 100%
+source-wordcount: '431'
+ht-degree: 69%
 
 ---
 
@@ -20,7 +20,8 @@ ht-degree: 100%
 
 ## Dois-je connaître React.js pour utiliser les formulaires adaptatifs découplés ?
 
-Vous pouvez utiliser n’importe quel framework, bibliothèque ou langage pour générer des formulaires adaptatifs découplés et utiliser nos API REST pour valider et envoyer les formulaires. La bibliothèque AF-core, fournie prête à l’emploi, est indépendante du framework. Les bibliothèques React-Render et React-componet, fournies prêtes à l’emploi, sont là pour vous faciliter la tâche. Vous pouvez développer vos propres composants et n’êtes pas limité à utiliser ceux-ci.
+Vous pouvez utiliser n’importe quel framework, bibliothèque ou langue pour générer des formulaires adaptatifs découplés et utiliser les API REST Adobe pour valider et envoyer les formulaires. La bibliothèque AF-core, prête à l’emploi, est indépendante du framework. Les bibliothèques React-Render et React-component, également prêtes à l’emploi, sont fournies pour votre commodité. Vous pouvez créer vos propres composants ; vous n’êtes pas limité à ceux fournis.
+
 
 <!-- 
 ## Did Adobe release a new AEM Archetype for Headless adaptive forms?
@@ -38,7 +39,7 @@ Vous pouvez utiliser l’application de démarrage pour commencer à développer
 You can use the starter app to start developing and styling your Headless adaptive forms. Later on, you can use the 
 archetype project to deploy the finished Headless adaptive forms and corresponding custom code, created using starter app, to Forms as a Cloud Service environment. The Forms as a Cloud Service environment helps you test and productionize the forms. -->
 
-## Où puis-je avoir un aperçu de formulaire adaptatif découplé ? {#storybook-example}
+## Où puis-je obtenir un aperçu d’un formulaire adaptatif découplé ? {#storybook-example}
 
 Vous pouvez utiliser l’application de démarrage pour afficher et prévisualiser un formulaire adaptatif découplé personnalisé. Vous pouvez également modifier un exemple de [storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--introduction) pour prévisualiser un formulaire adaptatif découplé.
 
@@ -50,7 +51,7 @@ Les formulaires adaptatifs découplés sont basés sur une [spécification stand
 
 ## Les formulaires adaptatifs découplés prennent-ils en charge les champs en cascade ?
 
-Dans les champs en cascade, le contenu du deuxième champ dépend du contenu choisi dans le premier. Le [storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/adaptive-form-dynamic-behaviour--options&amp;args=formJson.items[0].fieldType:drop-down;formJson.items[0].minimum:!undefined;formJson.items[0].maximum:!undefined;formJson.items[0].label.value:Choose+number+of+options;formJson.items[0].enum[0]:1;formJson.items[0].enum[1]:2;formJson.items[0].enum[2]:3;formJson.items[1].fieldType:drop-down) fournit un exemple de champs en cascade.
+Dans les champs en cascade, le contenu du second champ dépend du contenu choisi dans le premier champ. Le [storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/adaptive-form-dynamic-behaviour--options&args=formJson.items[0].fieldType:drop-down;formJson.items[0].minimum:!undefined;formJson.items[0].maximum:!undefined;formJson.items[0].label.value:Choose+number+of+options;formJson.items[0].enum[0]:1;formJson.items[0].enum[1]:2;formJson.items[0].enum[2]:3;formJson.items[1].fieldType:drop-down) fournit un exemple de champs en cascade.
 
 ## Les formulaires adaptatifs découplés permettent-ils de préremplir des formulaires avec des données personnalisées ?
 
@@ -82,7 +83,7 @@ You do not require a license.properties file to run AEM Cloud Service SDK.
 
 ## Existe-t-il un plug-in pour faciliter le développement des formulaires adaptatifs découplés ?
 
-Oui, une extension est disponible pour Microsoft Visual Studio Code. Elle fournit un moyen pratique de créer manuellement les formulaires adaptatifs découplés JSON. 
+Oui — une extension Visual Studio Code vous permet de créer manuellement des formulaires adaptatifs découplés dans JSON.
 
 ## Un formulaire adaptatif découplé peut-il se connecter à n’importe quel CRM pour lire ou écrire des données ?
 

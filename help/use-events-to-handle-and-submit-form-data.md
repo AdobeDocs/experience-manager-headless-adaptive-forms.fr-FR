@@ -1,11 +1,11 @@
 ---
 title: Utiliser des événements pour gérer et envoyer des données de formulaires adaptatifs découplés
-description: Utiliser des événements pour gérer et envoyer des données de formulaires adaptatifs découplés
+description: Utilisez des événements pour gérer et envoyer des données de formulaires adaptatifs découplés.
 hide: false
-source-git-commit: ddd353329dfe5b47734d904b9a5e684051becc5b
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
 source-wordcount: '113'
-ht-degree: 100%
+ht-degree: 71%
 
 ---
 
@@ -20,6 +20,6 @@ Dans cet article, découvrez comment envoyer des données à un point d’entré
 
 
 
-## Communiquer avec le modèle de données à l’aide d’événements
+## Utilisation d’événements pour communiquer avec le modèle de données
 
-## Envoyer des données à une source de données à l’aide d’événements
+## Utilisation d’événements pour envoyer des données à une source de données

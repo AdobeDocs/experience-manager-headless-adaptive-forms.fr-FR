@@ -9,10 +9,10 @@ role: Admin, Developer
 level: Beginner, Intermediate
 hide: false
 exl-id: bfb7e688-d2be-4aaa-ac9b-147cbd74b516
-source-git-commit: 47ac7d03c8c4fa18ac3bdcef04352fdd1cad1b16
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 100%
+source-wordcount: '127'
+ht-degree: 58%
 
 ---
 
@@ -22,17 +22,17 @@ ht-degree: 100%
 
 ### Problème
 
-Lorsque vous saisissez la commande `mvn -PautoInstallPackage clean install` ou une commande similaire pour déployer un projet d’archétype AEM, le déploiement échoue.
+Lorsque vous utilisez la `mvn -PautoInstallPackage clean install` ou des commandes similaires pour déployer un projet de l’archétype AEM, le déploiement du projet échoue.
 
 ### Raison
 
-Ce problème peut se produire en raison d’une version non prise en charge ou d’une installation endommagée de node.js ou NPM.
+Cela peut se produire en raison d&#39;une version non prise en charge ou d&#39;une installation corrompue de `node.js` ou `NPM`.
 
 ### Solution
 
 1. [Supprimez complètement les installations existantes de Node.JS](https://khushwantsehgal.wordpress.com/2022/06/28/how-to-remove-node-js-completely-from-windows-10/) de votre environnement.
 
-1. Installez Node.JS 16.13.0 ou une version ultérieure avec NPM.
+1. Installez `node.JS 16.13.0` ou une version ultérieure avec `NPM`.
 
 1. Redémarrez votre machine.
 
@@ -41,7 +41,7 @@ Ce problème peut se produire en raison d’une version non prise en charge ou d
 
 ### Problème
 
-Lorsque vous saisissez la commande `mvn clean install` ou une commande similaire pour déployer un projet d’archétype AEM, l’exécution de la commande échoue.
+Lorsque vous utilisez la commande `mvn clean install` ou des commandes similaires pour déployer un projet AEM Archetype, l’exécution de la commande échoue.
 
 ### Raison
 

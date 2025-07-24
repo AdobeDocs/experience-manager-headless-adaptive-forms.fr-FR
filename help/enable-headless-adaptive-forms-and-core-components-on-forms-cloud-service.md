@@ -1,8 +1,6 @@
 ---
 title: Activer les formulaires adaptatifs découplés sur AEM Forms as a Cloud Service
-seo-title: Step-by-Step Guide for enabling Headless Adaptive Forms on AEM Forms as a Cloud Service
-description: Découvrez comment activer les formulaires adaptatifs découplés sur AEM Forms as a Cloud Service avec notre guide détaillé. Notre tutoriel vous guide tout au long du processus, facilitant ainsi l’activation de cette puissante fonctionnalité pour votre environnement AEM Forms.
-seo-description: Learn how to enable headless adaptive forms on AEM Forms as a Cloud Service with our step-by-step guide. Our tutorial walks you through the process, making it easy to enable this powerful feature for your AEM Forms environment.
+description: Guide détaillé pour l’activation des formulaires adaptatifs découplés dans AEM Forms as a Cloud Service, qui simplifie la configuration et l’activation dans votre environnement.
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Headless
@@ -13,10 +11,10 @@ docset: CloudService
 hide: true
 hidefromtoc: true
 exl-id: 7afff771-1296-4162-84c5-c8266b94af2f
-source-git-commit: 999c3d092d03d7a82363bc94ce79ceb33bf0df7e
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 100%
+source-wordcount: '886'
+ht-degree: 74%
 
 ---
 
@@ -28,29 +26,30 @@ L’activation des formulaires adaptatifs découplés sur AEM Forms as a Cloud 
 
 * Lorsque vous créez un programme AEM Forms as a Cloud Service, [les formulaires adaptatifs découplés sont déjà activés pour votre environnement](#are-adaptive-forms-core-components-enabled-for-my-environment).
 
-* Si vous disposez d’un programme Forms as a Cloud Service plus ancien où les composants principaux [ne sont pas activés](#enable-components), vous pouvez [ajouter des dépendances de composants principaux de formulaires adaptatifs](#enable-headless-adaptive-forms-for-an-aem-forms-as-a-cloud-service-environment) dans votre référentiel AEM as a Cloud Service, puis déployer le référentiel dans vos environnements de service cloud pour activer les formulaires adaptatifs découplés.
+* Si vous exécutez un ancien programme Forms as a Cloud Service dans lequel les composants principaux ne sont [pas activés](#enable-components), commencez par [ajouter les dépendances des composants principaux de Forms adaptatif](#enable-headless-adaptive-forms-for-an-aem-forms-as-a-cloud-service-environment) à votre référentiel Cloud Service. Déployez le référentiel mis à jour dans chaque environnement pour activer les formulaires adaptatifs découplés.
 
-* Si votre environnement de service cloud existant propose une option permettant de [créer des formulaires adaptatifs basés sur les composants principaux](create-a-headless-adaptive-form.md), les formulaires adaptatifs découplés sont déjà activés pour votre environnement. Vous pouvez utiliser les formulaires adaptatifs basés sur les composants principaux en tant que formulaires découplés pour les canaux mobiles et Web, les applications natives et les services qui nécessitent une représentation découplée de formulaires adaptatifs.
-
+* Si votre environnement Cloud Service vous permet déjà de [créer des formulaires adaptatifs basés sur les composants principaux](create-a-headless-adaptive-form.md), les formulaires adaptatifs découplés sont automatiquement activés. Vous pouvez ensuite diffuser ces formulaires en tant qu’expériences découplées sur des applications mobiles, web, natives ou tout service qui les requiert.
 
 >[!NOTE]
 >
 >
-> Adobe fournit un [kit de démarrage (application React)](create-and-publish-a-headless-form.md) pour les formulaires adaptatifs afin d’aider les développeurs et les développeuses à prendre en main rapidement le développement des formulaires adaptatifs découplés, sans les activer dans l’environnement d’AEM Forms as a Cloud Service. Vous pouvez activer les formulaires adaptatifs découplés dans un environnement Forms as a Cloud Service ultérieurement après avoir suivi un [atelier pratique rapide sur le développement de formulaires découplés](create-and-publish-a-headless-form.md).
+> Adobe fournit un Forms adaptatif [kit de démarrage (application React)](create-and-publish-a-headless-form.md) pour aider les développeurs à commencer rapidement le développement de Forms adaptatif découplé, sans activer le Forms adaptatif découplé dans l’environnement AEM Forms as a Cloud Service. Vous pouvez activer les formulaires adaptatifs découplés dans un environnement Forms as a Cloud Service ultérieurement après avoir suivi un [atelier pratique rapide sur le développement de formulaires découplés](create-and-publish-a-headless-form.md).
 
 ## Activer les formulaires adaptatifs découplés dans un environnement AEM Forms as a Cloud Service
 
 Effectuez les étapes suivantes, dans l’ordre indiqué, pour activer les formulaires adaptatifs découplés pour un environnement AEM Forms as a Cloud Service.
 
-
+<!-- Missing image ALT tag -->
 ![](/help/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service.png)
 
 
-## 1. Cloner votre référentiel Git AEM Forms as a Cloud Service {#clone-git-repository}
+## &#x200B;1. Cloner votre référentiel Git AEM Forms as a Cloud Service {#clone-git-repository}
 
 1. Connectez-vous à [Cloud Manager](https://my.cloudmanager.adobe.com/) et sélectionnez votre organisation et votre programme.
 
-1. Accédez à la vignette **Pipelines** à partir de votre page **Aperçu du programme** et cliquez sur le bouton **Accéder aux informations sur le référentiel** pour accéder à votre référentiel Git et le gérer. La page contient les informations suivantes :
+1. Accédez à la carte **Pipelines** à partir de la page **Vue d’ensemble du programme**.
+
+1. Cliquez sur le bouton **Accéder aux informations sur le référentiel** pour accéder à votre référentiel Git et le gérer. La page contient les informations suivantes :
 
    * URL vers le référentiel Git de Cloud Manager.
    * Informations d’identification du nom d’utilisateur du référentiel Git (nom d’utilisateur et mot de passe).
@@ -66,7 +65,7 @@ Effectuez les étapes suivantes, dans l’ordre indiqué, pour activer les formu
    Lorsque l’on vous y invite, saisissez les informations d’identification. Le référentiel est cloné sur votre ordinateur local.
 
 
-## 2. Ajouter les dépendances des composants principaux des formulaires adaptatifs à votre référentiel Git {#add-adaptive-forms-core-components-dependencies}
+## &#x200B;2. Ajouter les dépendances des composants principaux des formulaires adaptatifs à votre référentiel Git {#add-adaptive-forms-core-components-dependencies}
 
 1. Ouvrez votre dossier du référentiel Git dans un éditeur de code de texte brut. Par exemple, VS Code.
 1. Ouvrez le fichier `[AEM Repository Folder]\pom.xml` en mode d’édition.
@@ -283,14 +282,14 @@ Effectuez les étapes suivantes, dans l’ordre indiqué, pour activer les formu
 
 1. Enregistrez et fermez le fichier.
 
-## 3. Mettre à jour le projet pour inclure la dernière version des composants principaux Forms :
+## &#x200B;3. Mettez à jour le projet pour inclure la dernière version des composants principaux de Forms :
 
 1. Ouvrez le [dossier de projet d’archétype AEM]/pom.xml pour modification.
 
 
 1. Enregistrez et fermez le fichier.
 
-## 4. Valider les mises à jour de votre référentiel Git et exécuter le pipeline pour déployer le référentiel. {#Commit-the-updates-to-your-git-repository}
+## &#x200B;4. Validez les mises à jour dans votre référentiel Git et exécutez un pipeline pour déployer le référentiel {#Commit-the-updates-to-your-git-repository}
 
 1. Pour valider le code dans votre référentiel Git :
    1. Ouvrez le terminal ou l’invite de commande.
@@ -304,16 +303,16 @@ Effectuez les étapes suivantes, dans l’ordre indiqué, pour activer les formu
       git push origin
       ```
 
-1. Une fois les fichiers validés dans le référentiel Git, [exécutez le pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=fr).
+1. Une fois les fichiers validés dans le référentiel Git, [exécutez le pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/using/code-deployment).
 
-   Une fois l’exécution du pipeline terminée, les composants principaux des formulaires adaptatifs sont activés pour l’environnement correspondant. En outre, un modèle de formulaire adaptatif (composants principaux) et un thème Canvas 3.0 sont ajoutés à votre environnement Forms as a Cloud Service, ce qui vous permet de personnaliser et de créer des composants principaux basés sur les formulaires adaptatifs.
+   Une fois l’exécution du pipeline réussie, les composants principaux de Forms adaptatifs sont activés pour l’environnement correspondant. En outre, un modèle de formulaire adaptatif (composants principaux) et un thème Canvas 3.0 sont ajoutés à votre environnement Forms as a Cloud Service, ce qui vous permet de personnaliser et de créer des composants principaux basés sur les formulaires adaptatifs.
 
 
 ## Questions fréquentes {#faq}
 
-### Que sont les composants principaux ? {#core-components}
+### Quels sont les composants principaux ? {#core-components}
 
-Les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) sont un ensemble de composants WCM (Web Content Management, ou gestion de contenu web) normalisés pour AEM, dont l’objectif est d’accélérer le développement et de réduire les coûts de maintenance de vos sites web.
+Les [composants principaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/introduction) sont un ensemble de composants WCM (Web Content Management, gestion de contenu web) normalisés pour AEM dont l’objectif est d’accélérer le développement et de réduire les coûts de maintenance de vos sites Web.
 
 ### Quelles sont toutes les fonctionnalités ajoutées lors de l’activation des composants principaux ? {#core-components-capabilities}
 

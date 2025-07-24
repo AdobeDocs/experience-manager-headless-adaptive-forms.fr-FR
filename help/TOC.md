@@ -5,10 +5,10 @@ user-guide-description: Documentation sur les formulaires adaptatifs découplés
 feature: Adaptive Forms
 role: Developer
 hide: false
-source-git-commit: c46ac28e490a09d6f563c4b5673d30a53c277a69
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '144'
-ht-degree: 94%
+source-wordcount: '146'
+ht-degree: 74%
 
 ---
 
@@ -24,14 +24,14 @@ ht-degree: 94%
 + Tutoriel {#tutorial}
    + [Créez des formulaires attrayants à l’aide de composants de base et de formulaires adaptatifs découplés sur AEM Forms as a Cloud Service](build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service.md)
    + [Créez des formulaires attrayants à l’aide de composants de base et de formulaires adaptatifs découplés dans AEM Forms 6.5.](build-engaging-forms-using-core-components-and-headless-adaptive-forms-on-aem-65-forms.md)
-+ Commencez à utiliser le kit de démarrage{#get-started}
-   + [Créez et publiez un formulaire découplé à l’aide du kit de démarrage](create-and-publish-a-headless-form.md)
-   + [Utilisez une bibliothèque React personnalisée pour afficher un formulaire découplé](use-google-material-ui-react-components-to-render-a-headless-form.md)
-+ Créez des formulaires adaptatifs découplés {#authoring-headless-adaptive-forms}
-   + [Créer un formulaire adaptatif découplé à l’aide de l’éditeur de formulaires adaptatifs](create-a-headless-adaptive-form.md)
-+ Guides de référence pour lle développement {#developer-reference}
-   + [Portail de développement](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=fr)
-   + [Coder le terrain de jeu](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=fr)
++ Prise en main du kit de démarrage{#get-started}
+   + [Création et publication d’un formulaire découplé à l’aide d’un kit de démarrage](create-and-publish-a-headless-form.md)
+   + [Utiliser une bibliothèque React personnalisée pour afficher un formulaire découplé](use-google-material-ui-react-components-to-render-a-headless-form.md)
++ Créer des formulaires adaptatifs découplés {#authoring-headless-adaptive-forms}
+   + [Créer un formulaire adaptatif découplé à l’aide de l’éditeur de Forms adaptatif](create-a-headless-adaptive-form.md)
++ Références pour les développeurs et développeuses {#developer-reference}
+   + [Portail de développement](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=en)
+   + [Coder le terrain de jeu](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en)
    + [API de formulaires adaptatifs découplés](https://opensource.adobe.com/aem-forms-af-runtime/api/)
 + [Questions fréquentes ](faq.md)
 + [Résolution des problèmes](troubleshooting.md)

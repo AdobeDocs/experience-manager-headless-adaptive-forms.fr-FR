@@ -1,12 +1,12 @@
 ---
-title: Problèmes connus liés aux formulaires adaptatifs découplés
-description: Problèmes connus liés aux formulaires adaptatifs découplés
+title: Problèmes connus du Forms adaptatif découplé
+description: Problèmes connus des formulaires adaptatifs découplés.
 keywords: découplé, formulaire adaptatif, problèmes connus
 hide: true
-source-git-commit: 0127f8ddede38083f0932b0e8d7efdd0dd77c3a6
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 100%
+source-wordcount: '118'
+ht-degree: 53%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 * Les validations au niveau du panneau en cas de violation ne génèrent aucune erreur. (CQ-4342373)
 * Les validations de fichiers en cas de violation ne génèrent aucune erreur. (CQ-4342372)
 * Les propriétés personnalisées ne sont pas dynamiques. (CQ-4342376)
-* La modification dynamique des données du fichier lors d’un événement de modification à l’aide d’expressions conduit à une boucle infinie. (CQ-4342377)
-* Le fichier joint ne prend pas en charge le texte d’aide. (CQ-4342370)
-* Si la case à cocher obligatoire n’est pas activée lors de l’envoi, cela ne génère pas d&#39;erreur. (CQ-4342371)
-* aria-label n’est pas ajouté dans la pièce jointe. (CQ-4341494)
+* La modification dynamique des données de fichier sur un événement de modification à l’aide d’expressions entraîne une boucle infinie. (CQ-4342377)
+* La pièce jointe ne prend pas en charge le texte d’aide. (CQ-4342370)
+* Si elle n’est pas cochée, la case obligatoire n’affiche pas d’erreur lors de l’envoi. (CQ-4342371)
+* aria-label n&#39;est pas ajouté dans la pièce jointe. (CQ-4341494)

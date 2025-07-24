@@ -5,20 +5,22 @@ description: Créer des formulaire attrayants à l’aide des composants princip
 seo-description: Build Engaging Forms Using Core Components and Headless
 topic-tags: develop
 exl-id: ef99ffe9-4a37-4f0a-a4d3-78976c92220f
-source-git-commit: bcc51bcae3b26cf20e7c0b5b75935bf69a991731
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
 source-wordcount: '2452'
-ht-degree: 95%
+ht-degree: 64%
 
 ---
 
 # Créez des formulaires attrayants à l’aide de composants de base et de formulaires adaptatifs découplés sur AEM Forms as a Cloud Service {#build-engaging-forms-using-core-components-and-headless}
 
+<!-- This article is completely missing the image ALT tags (descriptions) for each added image asset. That is impacting the CQI score for Experience Manager in a negative way. Be sure you add the required missing image ALT tags.  -->
+
 ## Présentation de l’atelier {#lab-overview}
 
-Dans cet atelier pratique, vous allez apprendre :
+Dans cet atelier pratique, vous apprendrez ce qui suit :
 
-Comment utiliser AEM Forms pour créer facilement des formulaires adaptatifs à l’aide des derniers composants principaux conformes à AEM Sites, activer les expériences de capture de données omnicanal en fournissant les formulaires adaptatifs sous forme de formulaires découplés sur le web, les appareils mobiles et les chats. Vous allez également découvrir les bonnes pratiques en matière de style, de personnalisation et de développement front-end.
+Comment utiliser AEM Forms pour créer facilement des formulaires adaptatifs à l’aide des derniers composants principaux. Ces composants sont cohérents avec AEM Sites et permettent des expériences de capture de données omnicanal en fournissant les formulaires adaptatifs sous forme de formulaires découplés sur le web, les appareils mobiles et les chats. Vous allez également découvrir les bonnes pratiques en matière de style, de personnalisation et de développement front-end.
 
 ## Principaux points à retenir {#key-takeaways}
 
@@ -30,7 +32,7 @@ Comment utiliser AEM Forms pour créer facilement des formulaires adaptatifs à 
 
 ## Prérequis {#prerequisites}
 
-Pour accéder à cet atelier pratique :
+Pour utiliser cet atelier pratique, procédez comme suit :
 
 * Installez la [dernière version de Git](https://git-scm.com/downloads). Si vous découvrez Git, consultez l’article [Installer Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
@@ -38,7 +40,7 @@ Pour accéder à cet atelier pratique :
 
 * [Activer les composants principaux des formulaires adaptatifs](enable-headless-adaptive-forms-and-core-components-on-forms-cloud-service.md) pour votre environnement AEM Forms AEM Cloud Service.
 
-* Installez [Microsoft Code Visual Studio](https://code.visualstudio.com/download) ou un autre éditeur de texte brut. Les exemples du document utilisent Microsoft Visual Studio Code.
+* Installez [Microsoft Code Visual Studio](https://code.visualstudio.com/download) ou un autre éditeur de texte brut. Les exemples de ce document utilisent Microsoft Visual Studio Code.
 
 
 
@@ -54,8 +56,7 @@ Dans cette leçon, vous vous familiarisez avec l’environnement d’AEM Forms 
 
 ### Exercice {#lesson-1-excercise}
 
-1. Ouvrez votre navigateur et saisissez l’URL de l’environnement de création de Cloud Service. Par exemple :
-   [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/start.html](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/start.html)
+1. Ouvrez votre navigateur et saisissez l’URL de l’environnement de création Cloud Service. <!-- URL is 404! EXPLAIN THE URL IS FOR ILLUSTRATION PURPOSES ONLY? For example: [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/start.html](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/start.html) -->
 
 1. Connectez-vous à l’environnement de création de Cloud Service.
    ![](/help/assets/screenshot2028113829.png){width="50%" align="left"}
@@ -83,9 +84,8 @@ Dans cette leçon, en tant qu’utilisatrice ou utilisateur professionnel, vous 
 
 1. Créez un point d’entrée d’envoi pour le formulaire :
 
-   1. Ouvrez <https://requestbin.com/> dans un nouvel onglet du navigateur.
+   1. Ouvrez <https://pipedream.com/requestbin> dans un nouvel onglet du navigateur.
    1. Cliquez sur **Créer un répertoire bin public** et copiez l’URL du point d’entrée.
-
       ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
 
       ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%" align="left"}
@@ -93,41 +93,34 @@ Dans cette leçon, en tant qu’utilisatrice ou utilisateur professionnel, vous 
 1. Créez un formulaire adaptatif à l’aide de l’interface de l’assistant :
 
    1. Dans l’onglet du navigateur utilisé dans la leçon 1, accédez à l’interface web d’AEM Forms as Cloud Service, puis à Formulaires et Documents.
-
       ![](/help/assets/screenshot2028114029.png)
 
-   1. Appuyez sur **Créer** et sélectionnez Formulaire adaptatif.
-
+   1. Cliquez sur **Créer** > **Formulaire adaptatif**.
       ![](/help/assets/screenshot2028114629.png)
 
    1. Sélectionnez le modèle **vierge avec composants principaux** à partir de l’écran de sélection des modèles, comme illustré ci-dessous :
-
       ![](/help/assets/screenshot202023-03-0120at206.09.1520pm.png)
 
    1. Cliquez sur l’onglet **Style** et sélectionnez le thème **wknd-theme** comme illustré ci-dessous :
-
       ![](/help/assets/screenshot202023-03-0120at206.09.2320pm.png)
 
-   1. Cliquez sur l’onglet **Submission** (Envoi) et sélectionnez la carte **Submit to REST end-point** (Envoyer vers le point de terminaison REST) et spécifiez la classe publique dans le champ **URL pour la demande de POST** comme illustré ci-dessous :
-
+   1. Cliquez sur l’onglet **Envoi** et sélectionnez la vignette **Envoyer vers le point d’entrée REST** et indiquez le répertoire bin public dans le champ **URL de la requête POST** comme illustré ci-dessous :
       ![](/help/assets/screenshot202023-03-0120at206.09.5320pm.png)
 
-   1. Cliquez sur **Créer**. Indiquez un nom et un titre pour votre formulaire. Par exemple : **enregistrement**. Cliquez sur **Créer**.
+   1. Cliquez sur **Créer**. Indiquez un nom et un titre sur votre formulaire. Par exemple : **enregistrement**. Cliquez sur **Créer**.
 
-   1. L’éditeur de formulaire adaptatif s’ouvre. Ignorez les fenêtres contextuelles ou les boîtes de dialogue concernant les préférences ou les informations. Cliquez sur l’explorateur de composants sur le rail de gauche et ajoutez less composants **En-tête** et **Pied de page** en haut et en bas du formulaire vierge, respectivement.
-
+   1. L’éditeur de formulaire adaptatif s’ouvre. Ignorez les fenêtres contextuelles ou les boîtes de dialogue concernant les préférences ou les informations. Cliquez sur l’explorateur de composants sur le rail de gauche et ajoutez les composants **En-tête** et **Pied de page** respectivement en haut et en bas du formulaire vierge.
       ![](/help/assets/screenshot2028121929.png)
 
    1. Faites glisser puis déposez des composants à partir du navigateur de composants pour créer un formulaire, comme suit :
 
       ![](/help/assets/screenshot2028115129.png){width="50%" align="left"}
 
-1. Ajoutez des validations au formulaire :
+1. Ajoutez des validations au formulaire :
 
    1. Cliquez sur le composant **Numéro de téléphone** pour afficher le menu contextuel. Cliquez sur l’**icône Clé à molette** dans le menu pour configurer le champ.
 
    1. Ouvrez l’**onglet Validations**, marquez le champ comme **Obligatoire**, puis cliquez sur **Terminé**. Le message de réussite s’affiche.
-
       ![](/help/assets/screenshot2028123529.png){width="50%" align="left"}
 
       ![](/help/assets/screenshot2028123629.png){width="50%" align="left"}
@@ -139,14 +132,12 @@ Dans cette leçon, en tant qu’utilisatrice ou utilisateur professionnel, vous 
    1. Remplissez le formulaire avec des données factices.
 
    1. Soumettez le formulaire.
-
       ![](/help/assets/screenshot2028125729.png)
 
    1. Dans l’onglet Zone de requêtes, vérifiez les données envoyées.
-
       ![](/help/assets/screenshot2028125829.png)
 
-1. Ajoutez de l’interactivité au formulaire avec des règles :
+1. Ajoutez de l’interactivité au formulaire avec des règles :
 
    1. Sélectionnez le composant **Cocher la case pour recevoir 5 % de réduction**. Dans la barre d’outils des options, cliquez sur l’icône Règles. L’option Éditeur de règles s’ouvre.
 
@@ -164,9 +155,9 @@ Dans cette leçon, en tant qu’utilisatrice ou utilisateur professionnel, vous 
 
       ![](/help/assets/screenshot2028115729.png)
 
-      L’URL de publication du formulaire est semblable à `https://publish-p105303-e986623.adobeaemcloud.com/content/forms/af/registration.html`.
+      L’URL publiée du formulaire est similaire à `https://publish-p105303-e986623.adobeaemcloud.com/content/forms/af/registration.html`.
 
-   1. Pour afficher le formulaire publié, remplacez l’ID de programme (pXXXXXX) et l’ID d’environnement (eXXXXXX) dans l’URL ci-dessus par les ID de votre 
+   1. Pour afficher le formulaire publié, remplacez l’ID de programme (pXXXXXX) et l’ID d’environnement (eXXXXXX) dans l’URL ci-dessus par les ID de votre
 environnement.
 
 ## Leçon 3
@@ -181,7 +172,7 @@ Dans cette leçon, en tant que développeur ou développeuse front-end, vous app
 
 ### Exercice
 
-Configurez le référentiel local du thème :
+Configurez un référentiel local du thème :
 
 1. Ouvrez l’invite de commande ou un shell avec les droits d’administrateur :
 
@@ -221,7 +212,7 @@ Configurez le référentiel local du thème :
 
    ![](/help/assets/screenshot2028116529.png){width="50%" align="left"}
 
-1. Définissez les valeurs suivantes pour les variables dans le fichier .env et enregistrez le fichier :
+1. Définissez les valeurs suivantes pour les variables dans le fichier .env et enregistrez le fichier :
 
    * **AEM_URL** : spécifiez votre environnement de publication Cloud Service. Par exemple, `https://publish-p105303-e986623.adobeaemcloud.com/`
 
@@ -229,12 +220,11 @@ Configurez le référentiel local du thème :
 
      ![](/help/assets/screenshot2028116429.png){width="50%" align="left"}
 
-1. Créez un utilisateur local dans AEM environnement.
+1. Création d’un utilisateur local dans l’environnement AEM.
 
    >[!NOTE]
-   > Pour créer un utilisateur local :
-   > Accédez à `AEM Home` > `Tools` > `Security` > `Users`
-   > Assurez-vous que l’utilisateur est membre du groupe forms-users .
+   > Pour créer un utilisateur local, accédez à `AEM Home` > `Tools` > `Security` > `Users`.
+   > Assurez-vous que l’utilisateur ou l’utilisatrice est membre du groupe forms-users.
 
 
 1. Dans la fenêtre de l’invite de commande, exécutez la commande suivante :
@@ -247,8 +237,8 @@ Configurez le référentiel local du thème :
 
    >[!NOTE]
    >
-   > * Si vous recevez un message vous demandant de mettre à jour npm via la commande `npm notice Run npm nstall -g npm@9.6.0`, ignorez le message.
-   > * N’exécutez pas d’autres commandes npm, sauf si cela est indiqué dans le classeur.
+   > * Si vous recevez un message vous demandant de mettre à jour `npm` via la commande `npm notice Run npm nstall -g npm@9.6.0`, ignorez-le.
+   > * N’exécutez pas d’autres commandes `npm`, sauf si le classeur vous indique de le faire.
 
 1. Exécutez maintenant la commande suivante pour prévisualiser le formulaire.
 
@@ -260,12 +250,12 @@ Configurez le référentiel local du thème :
 
    Une fois la commande ci-dessus exécutée, attendez le message `webpack compiled` et vous êtes redirigé vers une page de connexion AEM.
 
-1. Cliquez sur **Se connecter localement (tâches d’administration uniquement)** sur la page de connexion AEM.
-1. Saisissez les informations d’identification de l’utilisateur local créé et le formulaire s’affiche dans un onglet de navigateur.
+1. Cliquez sur **Connexion locale (tâches d’administration uniquement)** sur la page de connexion d’AEM.
+1. Saisissez les informations d’identification de l’utilisateur local créé et le formulaire s’affiche dans un onglet du navigateur.
 
    >[!NOTE]
    >
-   >Si un écran vierge s’affiche dans le navigateur après l’exécution de la commande `npm run live` pendant plus de 3 à 4 minutes, modifiez `localhost` dans l’URL du navigateur avec 127.0.0.1 et cliquez sur **Entrée**.
+   >Si un écran vierge s’affiche dans le navigateur après l’exécution de la commande `npm run live` pendant plus de 3 à 4 minutes, remplacez `localhost` dans l’URL du navigateur par 127.0.0.1 et appuyez sur **Entrée**.
 
 
    ![](/help/assets/screenshot2028115129.png){width="50%" align="left"}
@@ -283,7 +273,7 @@ Configurez le référentiel local du thème :
 
    ![](/help/assets/screenshot2028120729.png){width="50%" align="left"}
 
-1. Actualisez le navigateur et envoyez le formulaire. Vous remarquerez que la couleur d’erreur du champ Prénom a été modifiée en conséquence.
+1. Actualisez le navigateur et envoyez le formulaire. Notez que la couleur d’erreur du champ Prénom a été modifiée en conséquence.
 
    ![](/help/assets/screenshot2028121129.png)
 
@@ -294,15 +284,15 @@ Configurez le référentiel local du thème :
 
 ### Objectif
 
-Effectuez le rendu du formulaire sur des interfaces web/mobile et d’autres interfaces en tant que formulaire découplé.
+Restituer le formulaire sur des interfaces web/mobile et d’autres interfaces en tant que formulaire découplé
 
 ### Contexte de la leçon
 
-Dans cette leçon, en tant que développeur ou développeuse front-end, vous apprendrez à effectuer le rendu du formulaire adaptatif créé précédemment en tant que formulaire découplé à l’aide du framework de conception React Spectrum.
+Dans cette leçon, en tant que développeur ou développeuse front-end, vous apprenez à effectuer le rendu du formulaire adaptatif créé précédemment en tant que formulaire découplé à l’aide d’un framework de conception React Spectrum.
 
 ### Exercice
 
-Configurez le référentiel local à l’aide du projet de démarrage React :
+Configurez un référentiel local à l’aide du projet de démarrage React :
 
 1. Ouvrez l’invite de commande à l’aide des droits d’administration.
 
@@ -314,7 +304,7 @@ Configurez le référentiel local à l’aide du projet de démarrage React :
    cd c:\git
    ```
 
-1. Utilisez la commande suivante pour cloner le projet de démarrage react du formulaire adaptatif :
+1. Utilisez la commande suivante pour cloner le projet de démarrage React du formulaire adaptatif :
 
    ```Shell
    git clone https://github.com/adobe/react-starter-kit-aem-headless-forms
@@ -339,21 +329,20 @@ Configurez le référentiel local à l’aide du projet de démarrage React :
 
 Pour effectuer le rendu du formulaire hébergé dans votre environnement de publication de service cloud :
 
-1. Renommez le fichier env_template en fichier .env. Pour renommer, cliquez avec le bouton droit de la souris sur le fichier **env_template** et sélectionnez l’option **Renommer**.
+1. Renommez le fichier env_template en fichier .env . Pour renommer, cliquez avec le bouton droit de la souris sur le fichier **env_template** et sélectionnez l’option **Renommer**.
 
    ![](/help/assets/screenshot2028117629.png){width="50%" align="left"}
 
    ![](/help/assets/screenshot2028117729.png)
 
 1. Définissez les valeurs suivantes pour les variables du fichier .env. Après avoir mis à jour les variables, enregistrez le fichier.
-
    * **AEM_URL** : spécifiez l’URL de l’environnement de publication du service cloud. Par exemple, `https://publish-p105303-e986623.adobeaemcloud.com`
 
-   * **AEM_FORM_PATH** : spécifiez le chemin d’accès au formulaire adaptatif créé dans la leçon précédente. Par exemple, `/content/forms/af/registration/`
+   * **AEM_FORM_PATH** : spécifiez le chemin d’accès au formulaire adaptatif créé dans la leçon précédente. Par exemple, `/content/forms/af/registration/`.
 
      ![](/help/assets/screenshot202023-03-0820at202.49.1820pm.png)
 
-1. Ouvrez la fenêtre de commande, vérifiez que vous vous trouvez dans le répertoire react-starter-kit-aem-headless-forms, puis exécutez la commande suivante :
+1. Ouvrez la fenêtre de commande, assurez-vous que vous êtes au répertoire **react-starter-kit-aem-headless-forms**, puis exécutez la commande suivante :
 
    ```Shell
    npm install
@@ -370,18 +359,18 @@ Pour effectuer le rendu du formulaire hébergé dans votre environnement de publ
 
    ![](/help/assets/screenshot2028118129.png)
 
-   La commande ci-dessus lance un serveur de développement local qui effectue le rendu de la définition de formulaire récupérée à partir d’AEM de manière déouplée à l’aide de la bibliothèque front-end react-spectrum.
+   La commande ci-dessus démarre un serveur de développement local qui effectue le rendu de la définition de formulaire récupérée à partir d’AEM de manière découplée à l’aide de la bibliothèque front-end React Spectrum.
 
    >[!NOTE]
    >
    > 
-   > Si un écran vierge s’affiche dans le navigateur après l’exécution de la commande `npm start` pendant plus de 3 à 4 minutes, remplacez `localhost` dans l’URL du navigateur par 127.0.0.1 et appuyez sur **Entrée**.
+   > Si un écran vierge s’affiche dans le navigateur après l’exécution de la commande `npm start` pendant plus de 3 à 4 minutes, remplacez `localhost` dans l’URL du navigateur par 127.0.0.1 et appuyez sur **Entrée**.
 
    ![](/help/assets/screenshot2028118229.png)
 
-Vérifions l’exécution des règles dans ce formulaire découplé :
+Vérifions l’exécution des règles dans ce formulaire découplé :
 
-1. Sélectionnez l’option **Cocher la case pour recevoir 5 % de réduction**. L’option suivante d’utilisation de la carte de crédit est désactivée.
+1. Sélectionnez l’option **Cocher la case pour recevoir 5 % de réduction**. L’option suivante permettant de demander une carte de crédit est désactivée.
 
    ![](/help/assets/screenshot2028126229.png)
 
@@ -391,12 +380,12 @@ Vérifions l’exécution des règles dans ce formulaire découplé :
 
 Modifions le formulaire sur le serveur en tant qu’utilisateur professionnel et affichons les modifications répercutées automatiquement dans le formulaire découplé.
 
-1. Ouvrez l’interface de gestion d’AEM Forms dans le navigateur. Par exemple : [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/forms.html/content/dam/formsanddocuments](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/forms.html/content/dam/formsanddocuments).
+1. Ouvrez l’interface de gestion d’AEM Forms dans le navigateur. <!-- URL is 404. Consider saying the path is for illlustration purposes only. For example, [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/forms.html/content/dam/formsanddocuments](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/forms.html/content/dam/formsanddocuments). -->
 
-1. Sélectionnez le formulaire **contactus** et cliquez sur **Modifier.** Cette action ouvre le formulaire dans l’éditeur de formulaires adaptatifs.
+1. Sélectionnez le formulaire **`contactus`** et cliquez sur **Modifier.** Cette action ouvre le formulaire dans l’éditeur de formulaires adaptatifs.
 
 
-1. Sélectionnez le champ **Numéro de téléphone** et cliquez sur l’**icône Modifier (icône de crayon)** dans la barre d’outils. Si la barre d’outils contextuelle ne s’affiche pas, basculez en mode d’édition en cliquant sur le bouton **Modifier** en haut à droite, à gauche du bouton **Aperçu**.
+1. Sélectionnez le champ **Numéro de téléphone** et cliquez sur l’**icône Modifier (icône de crayon)** dans la barre d’outils. Si la barre d’outils pop-up ne s’affiche pas, basculez en mode d’édition . Cliquez sur le bouton **Modifier** en haut à droite, à gauche du bouton **Prévisualisation**.
 
    ![](/help/assets/screenshot2028119629.png)
 
@@ -404,7 +393,7 @@ Modifions le formulaire sur le serveur en tant qu’utilisateur professionnel et
 
    ![](/help/assets/screenshot2028119729.png)
 
-Publions maintenant le formulaire mis à jour pour propager les modifications dans l’environnement de publication.
+Publions maintenant le formulaire mis à jour pour propager les modifications dans l’environnement publié.
 
 1. Dans l’onglet de l’interface de gestion d’AEM Forms, sélectionnez le formulaire d’enregistrement, puis cliquez sur **Dépublier**. Si vous ne voyez pas le bouton **Dépublier**, passez à l’étape 3 pour publier directement les modifications.
 
@@ -436,7 +425,7 @@ Dans cette leçon, en tant que développeur ou développeuse front-end, vous app
 
 ### Exercice
 
-Configurez le référentiel local à l’aide du projet de démarrage de l’interface utilisateur Material :
+Configurez un référentiel local à l’aide du projet de démarrage de l’interface utilisateur Material :
 
 1. Ouvrez l’invite de commande à l’aide des droits d’administration.
 
@@ -449,7 +438,7 @@ Configurez le référentiel local à l’aide du projet de démarrage de l’int
    cd c:\git
    ```
 
-1. Exécutez les commandes suivantes dans l’ordre indiqué pour créer un dossier nommé mui et accédez au dossier mui à l’aide des commandes suivantes :
+1. Exécutez les commandes suivantes dans l’ordre indiqué pour créer un dossier nommé `mui` et accédez au dossier `mui` à l’aide des commandes suivantes :
 
    ```Shell
    mkdir mui
@@ -457,7 +446,7 @@ Configurez le référentiel local à l’aide du projet de démarrage de l’int
    cd mui
    ```
 
-1. Utilisez la commande suivante pour cloner le projet de démarrage react du formulaire adaptatif :
+1. Utilisez la commande suivante pour cloner le projet de démarrage React du formulaire adaptatif :
 
    ```Shell
    git clone -b mui-lab https://github.com/adobe/react-starter-kit-aem-headless-forms
@@ -510,13 +499,13 @@ la bibliothèque front-end de l’interface utilisateur Material Google.
 
    >[!NOTE]
    >
-   >Si un écran vierge s’affiche dans le navigateur après l’exécution de la commande `npm start` pendant plus de 3 à 4 minutes, modifiez `localhost` dans l’URL du navigateur par 127.0.0.1 et appuyez sur **Entrée**.
+   >Si un écran vierge s’affiche dans le navigateur après l’exécution de la commande `npm start` pendant plus de 3 à 4 minutes, remplacez `localhost` dans l’URL du navigateur par 127.0.0.1 et appuyez sur **Entrée**.
 
    ![](/help/assets/screenshot2028127229.png)
 
 1. Pour évaluer l’exécution de la même logique commercial dans ce rendu de formulaire :
 
-   Sélectionnez **Cocher la case pour recevoir 5 % de réduction**. L’option suivante **Souhaitez-vous demander le formulaire de carte de crédit d’entreprise We.Finance ?** se désactive.
+   Sélectionnez **Cocher la case pour recevoir 5 % de réduction**. L’option suivante **Souhaitez-vous demander `We.Finance` formulaire de carte de crédit d’entreprise ?** se désactive.
 
    ![](/help/assets/screenshot2028127329.png){width="50%" align="left"}
 
@@ -528,7 +517,7 @@ Créez un autre aspect du formulaire découplé à l’aide des variantes de com
 
 ### Contexte de la leçon
 
-Dans cette leçon, en tant que développeur ou développeuse front-end, vous apprenez à créer une représentation alternative de différents composants à l’aide de l’interface utilisateur Material pour le formulaire adaptatif créé précédemment par l’utilisatrice ou l’utilisateur professionnel.
+Dans cette leçon, en tant que développeur ou développeuse front-end, vous apprendrez à créer une représentation alternative de différents composants. Vous utilisez l’interface utilisateur Material pour le formulaire adaptatif créé précédemment par l’utilisateur professionnel.
 
 ### Exercice
 
@@ -542,7 +531,7 @@ Mettez à jour la variante des composants dans le projet découplé. Pour modifi
    //const Cmp = \'outlined\' === appliedCssClassNames ? OutlinedInput: Input;
    ```
 
-1. Ajoutez ce qui suit à la ligne 104 pour utiliser une autre variante du composant, puis enregistrez le fichier. Appuyez sur **CTRL + S** pour enregistrer le fichier.
+1. Ajoutez ce qui suit à la ligne 104 pour utiliser une autre variante du composant et enregistrez le fichier. Appuyez sur **Ctrl + S** pour enregistrer le fichier.
 
    ```Shell
    const Cmp = OutlinedInput;
@@ -550,7 +539,7 @@ Mettez à jour la variante des composants dans le projet découplé. Pour modifi
 
    ![](/help/assets/screenshot2028127629.png)
 
-   Il est essentiel d’utiliser les majuscules correctement pour la variante « OutlinedInput » pour éviter l’échec de la compilation. La compilation de l’environnement de développement local commence automatiquement dans l’invite de commande. Patientez jusqu’à ce que le message suivant s’affiche.
+   Il est essentiel d’utiliser les majuscules correctes pour la variante « OutlinedInput » pour éviter l’échec de la compilation. La compilation de l’environnement de développement local commence automatiquement dans l’invite de commande. Patientez jusqu’à ce que le message suivant s’affiche.
 
    `webpack 5.75.0 compiled with 3 warnings in 6659 ms`
    `inside proxy req`
@@ -562,7 +551,7 @@ Mettez à jour la variante des composants dans le projet découplé. Pour modifi
 
 
    Cette modification se produit pour les utilisatrices et utilisateurs finaux sans modification de la définition de formulaire sur le serveur AEM Forms et est spécifique
-au canal découplé en cours de traitement. Par exemple, le canal Web dans cet atelier.
+au canal découplé en cours de traitement. Par exemple, un canal web dans cet atelier.
 
    ![](/help/assets/screenshot2028127529.png){width="50%" align="left"}
 
@@ -571,9 +560,9 @@ au canal découplé en cours de traitement. Par exemple, le canal Web dans cet a
 
 ## Questions fréquentes
 
-+++ L’assistant de formulaire adaptatif est-il accessible au public ?
++++ L’assistant de formulaire adaptatif est-il disponible publiquement ?
 
-Oui, il est disponible avec AEM Forms as a Cloud Service.
+Oui, il est disponible avec AEM Forms as a Cloud Service.
 
 +++
 
@@ -596,7 +585,7 @@ Non, les formulaires découplés utilisent la même mesure de valeur de licence 
 
 +++
 
-+++ Les composants principaux et les formulaires découplés sont-ils disponibles avec AEM 6.5 Forms ?
++++ Les composants principaux et les formulaires découplés sont-ils disponibles avec AEM 6.5 Forms ?
 
 Oui, les composants principaux des formulaires adaptatifs et les formulaires découplés sont disponibles avec AEM Forms 6.5 Service Pack 16 et ses versions ultérieures.
 
@@ -605,16 +594,17 @@ Oui, les composants principaux des formulaires adaptatifs et les formulaires dé
 
 ## Étapes suivantes
 
-Maintenant que vous avez appris à créer des formulaires adaptatifs et à les diffuser sur plusieurs canaux à l’aide de formulaires découplés, vous devez essayer de mettre en œuvre vos nouvelles compétences. Amusez-vous et allez de l’avant en créant et en proposant des expériences de capture de données exceptionnelles à vos utilisatrices et utilisateurs finaux, où qu’ils et elles se trouvent, et à grande échelle !
+Vous savez désormais comment créer des formulaires adaptatifs et les diffuser sur plusieurs canaux avec des formulaires découplés. Utilisez ces compétences pour créer des expériences de capture de données évolutives et de haute qualité, où que se trouvent vos utilisateurs.
+
 
 ## Ressources
 
-* [Présentation des composants principaux des formulaires adaptatifs](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr)
+* [Présentation des composants principaux des formulaires adaptatifs](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/introduction)
 
-* [Création d’un formulaire adaptatif à l’aide des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=fr)
+* [Créer un formulaire adaptatif à l’aide des composants principaux](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
 
-* [Mise à jour de la mise en forme pour le formulaire adaptatif basé sur les composants principaux](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html?lang=fr)
+* [Mise à jour de la mise en forme pour le formulaire adaptatif basé sur les composants principaux](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)
 
-* [Formulaires adaptatifs découplés](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=fr)
+* [Formulaires adaptatifs découplés](https://experienceleague.adobe.com/fr/docs/experience-manager-headless-adaptive-forms/using/overview)
 
-* [Utilisation du kit de démarrage Headless React](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form.html?lang=fr)
+* [Utilisation d’un kit de démarrage Headless React](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)
