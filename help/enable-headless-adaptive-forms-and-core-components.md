@@ -22,7 +22,7 @@ En déployant le projet d’archétype AEM 41 ou version ultérieure sur vos in
 
 Avant d’activer le Forms adaptatif découplé dans l’environnement AEM 6.5 Forms,
 
-* [Effectuez un mise à niveau vers le pack de services 16 d’AEM 6.5 Forms (6.5.16.0) ou une version ultérieure](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
+* [Effectuez un mise à niveau vers le pack de services 16 d’AEM 6.5 Forms (6.5.16.0) ou une version ultérieure](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
 
 * Installez la dernière version d’[Apache Maven](https://maven.apache.org/download.cgi).
 

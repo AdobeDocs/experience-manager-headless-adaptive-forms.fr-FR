@@ -27,7 +27,7 @@ Les formulaires adaptatifs découplés vous permettent d’effectuer les opérat
 * Créez des formulaires multicanaux de haute qualité dans le langage de programmation de votre choix.
 * Intégrez de manière native des formulaires à vos applications de bureau et mobiles, à vos sites web et à vos applications de chat.
 * Réutilisez vos composants d’IU propriétaires avec des applications de formulaires.
-* Tirez parti de la [puissance d’Adobe Experience Manager Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/getting-started/introduction-aem-forms).
+* Tirez parti de la [puissance d’Adobe Experience Manager Forms](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/forms/getting-started/introduction-aem-forms).
 
 En outre, vous avez la possibilité de développer vos propres composants pour rendre un formulaire à l’aide du framework d’interface utilisateur et du langage de programmation de votre choix. Vous pouvez également utiliser les composants React prêts à l’emploi pour générer un formulaire adaptatif découplé.
 
