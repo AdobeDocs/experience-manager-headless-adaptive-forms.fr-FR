@@ -44,4 +44,4 @@ Adobe est heureux de toute contribution et examine votre contribution. Si vous s
 
 ## Problèmes de sécurité
 
-Les problèmes de sécurité ne doivent pas être signalés dans ce dispositif de suivi de problèmes. Soumettez plutôt [ problème aux experts en sécurité d’Adobe](https://helpx.adobe.com/fr/security/alertus.html)
+Les problèmes de sécurité ne doivent pas être signalés dans ce dispositif de suivi de problèmes. Soumettez plutôt [&#x200B; problème aux experts en sécurité d’Adobe](https://helpx.adobe.com/fr/security/alertus.html)

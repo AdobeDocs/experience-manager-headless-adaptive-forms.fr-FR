@@ -33,7 +33,7 @@ ht-degree: 74%
    + [Portail de développement](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=fr)
    + [Coder le terrain de jeu](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=fr)
    + [API de formulaires adaptatifs découplés](https://opensource.adobe.com/aem-forms-af-runtime/api/)
-+ [Questions fréquentes ](faq.md)
++ [Questions fréquentes &#x200B;](faq.md)
 + [Résolution des problèmes](troubleshooting.md)
 + [Extension Microsoft Visual Studio Code pour les formulaires adaptatifs découplés](visual-studio-code-extension-for-headless-adaptive-forms.md)
 
