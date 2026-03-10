@@ -9,10 +9,10 @@ level: Beginner, Intermediate
 keywords: découplé, formulaire adaptatif, questions fréquentes
 hide: false
 exl-id: 5bfc307d-96a3-4007-b65f-32176ecdb710
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 780f06a39c75dbf8795ac7a971150410ed7981e9
 workflow-type: tm+mt
-source-wordcount: '431'
-ht-degree: 69%
+source-wordcount: '837'
+ht-degree: 41%
 
 ---
 
@@ -84,6 +84,29 @@ You do not require a license.properties file to run AEM Cloud Service SDK.
 ## Existe-t-il un plug-in pour faciliter le développement des formulaires adaptatifs découplés ?
 
 Oui — une extension Visual Studio Code vous permet de créer manuellement des formulaires adaptatifs découplés dans JSON.
+
+## Quelle est l’approche recommandée pour les formulaires mobiles ou hors ligne ? {#mobile-offline-forms}
+
+Créez votre propre application native et récupérez les définitions de formulaire via l’API de Forms adaptatif découplé. Vous pouvez éventuellement implémenter une prise en charge hors ligne (par exemple, le stockage local et la synchronisation). Consultez la section [ Bonnes pratiques relatives aux formulaires mobiles ](mobile-forms-best-practices.md) pour connaître l’approche recommandée et les liens vers les API.
+
+## Comment utiliser les API GraphQL ou découplées avec AEM Forms ?
+
+AEM Headless Adaptive Forms utilise les API **HTTP/REST**, pas GraphQL. Votre application appelle ces API pour répertorier les formulaires, récupérer une définition de formulaire (JSON), valider, envoyer et suivre le statut d’envoi. Utilisez les [API HTTP de formulaires adaptatifs découplés](https://opensource.adobe.com/aem-forms-af-runtime/api/) pour consulter l’ensemble des informations. Pour savoir comment les formulaires sont récupérés et rendus, consultez [Architecture](architecture.md) et [Présentation des formulaires découplés](understanding-headless-forms.md).
+
+## Comment puis-je implémenter et mettre en forme des formulaires découplés à l’aide des composants React dans Adobe AEM Forms ?
+
+Vous implémentez et mettez en forme des formulaires découplés à l’aide de vos propres composants React et CSS (ou d’une bibliothèque d’IU telle que l’IU Material). La logique du formulaire (état, validation et règles) provient de Forms Web SDK et du fichier JSON du formulaire ; votre application fournit l’interface utilisateur qui la génère.
+
+* Pour appliquer un style à un formulaire découplé avec une bibliothèque d’interface utilisateur React, consultez [Utilisation d’une bibliothèque React personnalisée pour effectuer le rendu d’un formulaire découplé](use-google-material-ui-react-components-to-render-a-headless-form.md).
+* Pour créer et mapper des composants React personnalisés à des champs de formulaire, consultez [Utilisation de composants personnalisés pour générer un formulaire découplé](developing-for-headless-forms-using-your-own-components.md).
+
+Pour des concepts tels que quand utiliser les formulaires découplés, la gestion des états et la validation, voir [Comprendre les formulaires découplés](understanding-headless-forms.md).
+
+## Comment mettre en œuvre et personnaliser AEM Forms avec des CSS, des thèmes, des éditeurs de règles et des formulaires découplés personnalisés ?
+
+**Formulaires découplés :** le style et l’apparence sont entièrement sous votre contrôle. Vous utilisez vos propres composants React (ou d’autres) et votre propre CSS ; il n’y a pas de thèmes intégrés. Consultez les sections [Utiliser une bibliothèque React personnalisée pour effectuer le rendu d’un formulaire découplé](use-google-material-ui-react-components-to-render-a-headless-form.md) et [Utiliser des composants personnalisés pour effectuer le rendu d’un formulaire découplé](developing-for-headless-forms-using-your-own-components.md) pour implémenter et mettre en forme des formulaires découplés.
+
+**AEM Forms classique (thèmes, éditeur de règles, éditeur visuel) :** le code CSS personnalisé, l’éditeur de thèmes et l’éditeur de règles s’appliquent à l’expérience de création Forms adaptative classique (non découplée). Pour ces rubriques, consultez la [documentation d’AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-forms.html) sur Experience League.
 
 ## Un formulaire adaptatif découplé peut-il se connecter à n’importe quel CRM pour lire ou écrire des données ?
 

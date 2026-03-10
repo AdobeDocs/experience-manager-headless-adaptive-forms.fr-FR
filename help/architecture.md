@@ -9,9 +9,9 @@ level: Beginner, Intermediate
 keywords: découplé, formulaire adaptatif, architecture
 hide: false
 exl-id: ee7096d8-89e2-41e0-85e7-b26457df96fb
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 780f06a39c75dbf8795ac7a971150410ed7981e9
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '994'
 ht-degree: 54%
 
 ---
@@ -50,7 +50,7 @@ A typical Headless adaptive forms architecture constitutes an Adobe Experience M
 
 **Formulaires adaptatifs découplés** : un formulaire adaptatif découplé est représenté sous la forme d’un fichier .json. La structure JSON définit les composants, les contraintes et la structure d’un formulaire.
 
-**Applications front-end** : les applications front-end telles que les applications monopages, les applications mobiles et les applications JavaScript utilisent des formulaires adaptatifs découplés (la représentation de formulaire JSON) et effectuent le rendu du formulaire sur un client. Vous pouvez utiliser le composant de rendu React fourni avec les formulaires adaptatifs découplés pour effectuer le rendu d’un formulaire adaptatif ou créer votre propre composant personnalisé pour effectuer le rendu natif des formulaires adaptatifs découplés.
+**Applications front-end** : les applications front-end telles que les applications monopages, les applications mobiles et les applications JavaScript utilisent des formulaires adaptatifs découplés (la représentation de formulaire JSON) et effectuent le rendu du formulaire sur un client. Vous pouvez utiliser le composant de rendu React fourni avec les formulaires adaptatifs découplés pour effectuer le rendu d’un formulaire adaptatif ou créer votre propre composant personnalisé pour effectuer le rendu natif des formulaires adaptatifs découplés. Pour les cas d’utilisation natifs de formulaires mobiles et hors ligne, l’approche recommandée consiste à créer votre propre application et à récupérer les définitions de formulaire via l’API. Voir [ Bonnes pratiques relatives aux formulaires mobiles ](mobile-forms-best-practices.md).
 
 <!-- ### Understanding Headless adaptive forms definition -->
 
@@ -76,7 +76,7 @@ En plus de fournir les API pour valider les contraintes appliquées aux différe
 
 Tous ces composants sont inclus dans l’archétype AEM. Lorsque vous créez un projet AEM Archetype 37 ou version ultérieure pour les formulaires adaptatifs découplés, la dernière version des bibliothèques répertoriées ci-dessus est incluse dans le projet.
 
-* **Laboratoire de code** : [Laboratoire de code](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=fr) est un environnement interactif conçu pour que les développeurs puissent tester les fonctionnalités du Forms adaptatif découplé, en apprendre davantage à son sujet et les tester.
+* **Laboratoire de code** : [Laboratoire de code](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en) est un environnement interactif conçu pour que les développeurs puissent tester les fonctionnalités du Forms adaptatif découplé, en apprendre davantage à son sujet et les tester.
 
 **Application commencée** : Adobe a également publié une application commencée pour vous aider à démarrer rapidement avec les formulaires adaptatifs découplés.
 
