@@ -38,4 +38,4 @@ Cette approche permet à votre application d’être maintenue à mesure que And
 * [API de formulaires adaptatifs découplés](https://opensource.adobe.com/aem-forms-af-runtime/api/) - Répertoriez, récupérez, validez et envoyez des formulaires par programmation.
 * [Architecture](architecture.md) - Comment fonctionnent les formulaires adaptatifs découplés et comment les applications front-end les utilisent.
 
-Pour une intégration étape par étape, consultez [Création et publication d’un formulaire découplé](create-and-publish-a-headless-form.md) et le [Portail de développement](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=en).
+Pour une intégration étape par étape, consultez [Création et publication d’un formulaire découplé](create-and-publish-a-headless-form.md) et le [Portail de développement](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=fr).

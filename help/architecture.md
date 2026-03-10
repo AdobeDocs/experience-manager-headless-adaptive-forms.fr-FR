@@ -76,7 +76,7 @@ En plus de fournir les API pour valider les contraintes appliquées aux différe
 
 Tous ces composants sont inclus dans l’archétype AEM. Lorsque vous créez un projet AEM Archetype 37 ou version ultérieure pour les formulaires adaptatifs découplés, la dernière version des bibliothèques répertoriées ci-dessus est incluse dans le projet.
 
-* **Laboratoire de code** : [Laboratoire de code](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en) est un environnement interactif conçu pour que les développeurs puissent tester les fonctionnalités du Forms adaptatif découplé, en apprendre davantage à son sujet et les tester.
+* **Laboratoire de code** : [Laboratoire de code](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=fr) est un environnement interactif conçu pour que les développeurs puissent tester les fonctionnalités du Forms adaptatif découplé, en apprendre davantage à son sujet et les tester.
 
 **Application commencée** : Adobe a également publié une application commencée pour vous aider à démarrer rapidement avec les formulaires adaptatifs découplés.
 

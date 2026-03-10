@@ -222,5 +222,5 @@ Pour les scénarios mobiles et hors ligne, l’approche recommandée est de [cr�
 * [Questions fréquentes](faq.md)
 * [Créer et publier un formulaire découplé](create-and-publish-a-headless-form.md)
 * [API de formulaires adaptatifs découplés](https://opensource.adobe.com/aem-forms-af-runtime/api/)
-* [Terrain de jeu de code](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en)
+* [Terrain de jeu de code](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=fr)
 * [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/)
