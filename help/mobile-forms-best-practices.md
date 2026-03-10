@@ -34,7 +34,7 @@ Cette approche permet à votre application d’être maintenue à mesure que And
 
 ## Prise en main {#getting-started}
 
-* [Présentation des formulaires adaptatifs découplés AEM ](overview.md) - Fonctionnalités et concepts.
+* [Présentation des formulaires adaptatifs découplés AEM &#x200B;](overview.md) - Fonctionnalités et concepts.
 * [API de formulaires adaptatifs découplés](https://opensource.adobe.com/aem-forms-af-runtime/api/) - Répertoriez, récupérez, validez et envoyez des formulaires par programmation.
 * [Architecture](architecture.md) - Comment fonctionnent les formulaires adaptatifs découplés et comment les applications front-end les utilisent.
 

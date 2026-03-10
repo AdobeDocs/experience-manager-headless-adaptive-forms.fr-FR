@@ -87,7 +87,7 @@ Oui — une extension Visual Studio Code vous permet de créer manuellement des 
 
 ## Quelle est l’approche recommandée pour les formulaires mobiles ou hors ligne ? {#mobile-offline-forms}
 
-Créez votre propre application native et récupérez les définitions de formulaire via l’API de Forms adaptatif découplé. Vous pouvez éventuellement implémenter une prise en charge hors ligne (par exemple, le stockage local et la synchronisation). Consultez la section [ Bonnes pratiques relatives aux formulaires mobiles ](mobile-forms-best-practices.md) pour connaître l’approche recommandée et les liens vers les API.
+Créez votre propre application native et récupérez les définitions de formulaire via l’API de Forms adaptatif découplé. Vous pouvez éventuellement implémenter une prise en charge hors ligne (par exemple, le stockage local et la synchronisation). Consultez la section [&#x200B; Bonnes pratiques relatives aux formulaires mobiles &#x200B;](mobile-forms-best-practices.md) pour connaître l’approche recommandée et les liens vers les API.
 
 ## Comment utiliser les API GraphQL ou découplées avec AEM Forms ?
 
