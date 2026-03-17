@@ -29,7 +29,7 @@ Les formulaires adaptatifs découplés vous permettent d’effectuer les opérat
 * Réutilisez vos composants d’IU propriétaires avec des applications de formulaires.
 * Tirez parti de la [puissance d’Adobe Experience Manager Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/getting-started/introduction-aem-forms).
 
-Pour les cas d’utilisation de formulaire mobile et hors ligne, l’approche recommandée consiste à créer votre propre application native et à récupérer les définitions de formulaire via l’API de Forms adaptative découplée. Voir [ Bonnes pratiques relatives aux formulaires mobiles ](mobile-forms-best-practices.md) pour plus d’informations.
+Pour les cas d’utilisation de formulaire mobile et hors ligne, l’approche recommandée consiste à créer votre propre application native et à récupérer les définitions de formulaire via l’API de Forms adaptative découplée. Voir [&#x200B; Bonnes pratiques relatives aux formulaires mobiles &#x200B;](mobile-forms-best-practices.md) pour plus d’informations.
 
 En outre, vous avez la possibilité de développer vos propres composants pour rendre un formulaire à l’aide du framework d’interface utilisateur et du langage de programmation de votre choix. Vous pouvez également utiliser les composants React prêts à l’emploi pour générer un formulaire adaptatif découplé.
 

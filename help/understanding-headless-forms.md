@@ -122,7 +122,7 @@ Le modèle exact dépend de la manière dont votre application s’intègre au [
 
 L’envoi est découplé de l’interface utilisateur :
 
-* **Actions d’envoi AEM** - Configurez le formulaire dans AEM pour l’envoi aux points d’entrée REST, aux e-mails ou aux intégrations (par exemple, Microsoft Dynamics, Salesforce). Le formulaire est envoyé via AEM, qui gère l’appel HTTP/principal réel. Voir [ Utilisation d’événements pour gérer et envoyer des données de formulaire](use-events-to-handle-and-submit-form-data.md).
+* **Actions d’envoi AEM** - Configurez le formulaire dans AEM pour l’envoi aux points d’entrée REST, aux e-mails ou aux intégrations (par exemple, Microsoft Dynamics, Salesforce). Le formulaire est envoyé via AEM, qui gère l’appel HTTP/principal réel. Voir [&#x200B; Utilisation d’événements pour gérer et envoyer des données de formulaire](use-events-to-handle-and-submit-form-data.md).
 * **Envoi côté client** - Votre application peut écouter l’envoi ou collecter des données de formulaire à partir de l’état d’exécution et les envoyer à vos propres API. Les [API HTTP](https://opensource.adobe.com/aem-forms-af-runtime/api/) documentent la liste, la récupération, la validation, l’envoi et le suivi du statut d’envoi.
 * **Préremplissage** - Les données peuvent être préremplies via des points d’entrée REST ou côté serveur, de sorte que lorsque le formulaire se charge, l’état est déjà renseigné. Voir [Storybook - exemple de préremplissage](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--prefill-form-with-personalised-data).
 

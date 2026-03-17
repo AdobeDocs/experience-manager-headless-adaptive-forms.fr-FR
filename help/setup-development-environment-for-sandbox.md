@@ -61,7 +61,7 @@ Pour activer les formulaires adaptatifs découplés sur votre sandbox Forms as a
 </tr>
 <tr>
   <td>
-    3. Pour votre programme, appuyez sur l’icône ... et sélectionnez l’option <b> Modifier le </b> du programme . Une boîte de dialogue s’affiche. 
+    &#x200B;3. Pour votre programme, appuyez sur l’icône ... et sélectionnez l’option <b> Modifier le </b> du programme . Une boîte de dialogue s’affiche. 
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -72,7 +72,7 @@ Pour activer les formulaires adaptatifs découplés sur votre sandbox Forms as a
 </tr>
 <tr>
   <td>
-    4. Dans la boîte de dialogue Modifier le programme , accédez à l’onglet Solutions et modules complémentaires <b> </b>, sélectionnez l’option <b> Forms - </b> d’inscription numérique , puis appuyez sur <b> mettre à jour </b>. 
+    &#x200B;4. Dans la boîte de dialogue Modifier le programme , accédez à l’onglet Solutions et modules complémentaires <b> </b>, sélectionnez l’option <b> Forms - </b> d’inscription numérique , puis appuyez sur <b> mettre à jour </b>. 
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -117,7 +117,7 @@ Pour cloner le référentiel :
 </tr>
 <tr>
   <td>
-    3. Sur votre ordinateur local, ouvrez l’invite de commande, créez un dossier, exécutez la commande suivante, puis fournissez les Informations d’identification du référentiel, comme indiqué :
+    &#x200B;3. Sur votre ordinateur local, ouvrez l’invite de commande, créez un dossier, exécutez la commande suivante, puis fournissez les Informations d’identification du référentiel, comme indiqué :
     </br>
     <code> git clone [Repository URL] </code> </br></br>
     Par exemple, </br> 
@@ -243,7 +243,7 @@ Une fois la commande exécutée, un dossier de projet portant le nom spécifié 
 </tr>
 <tr>
   <td>
-    3. Pour votre pipeline, appuyez sur l’icône ... et sélectionnez l’option <b> le </b> Exécuter . Si vous êtes invité à exécuter le pipeline, appuyez sur <b> Exécuter </b> et attendez que le </b> du statut de l’<b> du pipeline passe à <b> Terminé </b>.  
+    &#x200B;3. Pour votre pipeline, appuyez sur l’icône ... et sélectionnez l’option <b> le </b> Exécuter . Si vous êtes invité à exécuter le pipeline, appuyez sur <b> Exécuter </b> et attendez que le </b> du statut de l’<b> du pipeline passe à <b> Terminé </b>.  
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
