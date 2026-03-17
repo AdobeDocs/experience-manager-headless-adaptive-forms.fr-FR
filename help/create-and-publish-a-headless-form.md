@@ -6,12 +6,12 @@ feature: Adaptive Forms
 topic: Headless
 role: Admin, Developer
 level: Beginner, Intermediate
-hide: false
+index: true
 exl-id: cd7c7972-376c-489f-a684-f479d92c37e7
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 46%
+source-wordcount: '1037'
+ht-degree: 48%
 
 ---
 
@@ -52,7 +52,7 @@ Une fois les conditions remplies, procédez comme suit pour commencer :
 
 
 
-## &#x200B;1. Configuration du kit de démarrage de formulaires adaptatifs découplés {#install}
+## &#x200B;1.  Configuration du kit de démarrage de formulaires adaptatifs découplés {#install}
 
 Le kit de démarrage est une application React avec un exemple de formulaire adaptatif découplé et les bibliothèques correspondantes. Utilisez le kit pour développer et tester vos formulaires adaptatifs découplés et les composants React correspondants. Exécutez les commandes suivantes pour configurer le kit de démarrage des formulaires adaptatifs découplés :
 
@@ -97,9 +97,11 @@ Après avoir configuré le kit de démarrage, vous pouvez prévisualiser l’exe
 
    ![](/help/assets/rename-env-file.png)
 
-   <!-- The options in the .env file help you configure source of the forms definantion (.JSON):
+   <!-- 
+    The options in the .env file help you configure source of the forms definantion (.JSON):
     *  To source forms definantion (.JSON) from an AEM Server, set USE_LOCAL_JSON option to false, use the AEM_URL option to specify URL  of your AEM Server, and set the AEM_FORM_PATH option to path of your adaptive form.
-    *  To source forms definantion (.JSON) form-model.json file included in the starter-kit, set USE_LOCAL_JSON option to false. -->
+    *  To source forms definantion (.JSON) form-model.json file included in the starter-kit, set USE_LOCAL_JSON option to false. 
+    -->
 
 1. Utilisez la commande suivante pour exécuter l’application :
 
@@ -116,7 +118,7 @@ Après avoir configuré le kit de démarrage, vous pouvez prévisualiser l’exe
 
    <!--  As you know, in a headless form the form data and logic are separate from the presentation layer and can be used by any client that can make HTTP requests, such as a mobile app, a static site, or a different web application. The form is often managed and stored on a server, which serves as the backend for the form. The client sends requests to the server to retrieve the form, submit data, and receive updated form data. This allows for greater flexibility and integration with different technologies. You can store and retrive a Headless Adaptive form on an AEM Server  -->
 
-## &#x200B;3. Créer et générer votre propre formulaire adaptatif découplé{#custom}
+## &#x200B;3. Création et rendu de votre propre formulaire adaptatif découplé{#custom}
 
 Un formulaire adaptatif découplé représente le formulaire et ses composants, tels que les champs et les boutons, au format JSON (JavaScript Object Notation). L’avantage du format JSON est qu’il peut être facilement analysé et utilisé par divers langages de programmation, ce qui en fait un moyen pratique d’échanger des données de formulaire entre les systèmes. Pour afficher l’exemple de formulaire adaptatif découplé inclus dans l’application, ouvrez le fichier `/react-starter-kit-aem-headless-forms/form-definations/form-model.json` .
 

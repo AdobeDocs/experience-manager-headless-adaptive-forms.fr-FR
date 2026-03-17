@@ -6,12 +6,12 @@ feature: Adaptive Forms
 topic: Headless
 role: Admin, Developer
 level: Beginner, Intermediate
-hide: false
+index: true
 exl-id: 476509d5-f4c1-4d1c-b124-4c278f67b1ef
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
-source-wordcount: '870'
-ht-degree: 51%
+source-wordcount: '1060'
+ht-degree: 57%
 
 ---
 
@@ -35,7 +35,7 @@ Les principales étapes nécessaires à l’utilisation des composants de l’in
 
 ![](assets/headless-forms-graphics-source-main.svg)
 
-## &#x200B;1. Installer l’interface utilisateur Material de Google
+## &#x200B;1. Installation de l’interface utilisateur Material Google
 
 Par défaut, le kit de démarrage utilise les composants d’[Adobe Spectrum](https://spectrum.adobe.com/). Commençons par la configuration pour utiliser l’[interface utilisateur Material de Google](https://mui.com/) :
 
@@ -111,7 +111,7 @@ La partie `state.visible` vérifie si le composant est défini comme étant visi
 
 Votre composant personnalisé `materialtextfield` est prêt. Définissons ce composant personnalisé afin qu’il remplace toutes les instances de [fieldType: &quot;text-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def) par le Champ de texte Interface utilisateur Material de Google.
 
-## &#x200B;3. Mapper un composant personnalisé avec des champs de formulaire découplés
+## &#x200B;3. Mapper un composant personnalisé à des champs de formulaire découplé
 
 Le processus d’utilisation de composants de bibliothèque tiers pour effectuer le rendu des champs de formulaire est connu sous le nom de mappage. Vous mappez chaque ([fieldType](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-json-properties-fieldtype--text-input)) à un composant correspondant d’une bibliothèque tierce.
 

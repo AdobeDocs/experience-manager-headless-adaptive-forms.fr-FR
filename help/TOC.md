@@ -4,8 +4,8 @@ breadcrumb-title: Formulaires adaptatifs découplés AEM
 user-guide-description: Documentation sur les formulaires adaptatifs découplés Adobe Experience Manager
 feature: Adaptive Forms
 role: Developer
-hide: false
-source-git-commit: 780f06a39c75dbf8795ac7a971150410ed7981e9
+index: true
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 56%
@@ -34,8 +34,8 @@ ht-degree: 56%
 + Créer des formulaires adaptatifs découplés {#authoring-headless-adaptive-forms}
    + [Créer un formulaire adaptatif découplé à l’aide de l’éditeur de Forms adaptatif](create-a-headless-adaptive-form.md)
 + Références pour les développeurs et développeuses {#developer-reference}
-   + [Portail des développeurs](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=fr)
-   + [Terrain de jeu de code](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=fr)
+   + [Portail des développeurs](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=en)
+   + [Terrain de jeu de code](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en)
    + [API de formulaires adaptatifs découplés](https://opensource.adobe.com/aem-forms-af-runtime/api/)
 + [Questions fréquentes](faq.md)
 + [Résolution des problèmes](troubleshooting.md)

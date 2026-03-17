@@ -3,10 +3,10 @@ title: Configurer l’environnement de développement pour les formulaires adapt
 description: Configurer l’environnement de développement pour les formulaires adaptatifs découplés AEM
 hide: true
 exl-id: fd92f057-1217-42f8-a454-1bc7e3827e01
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 893f0428c08e6216cb293ab2f4c427b7d1c26060
 workflow-type: tm+mt
-source-wordcount: '684'
-ht-degree: 69%
+source-wordcount: '810'
+ht-degree: 62%
 
 ---
 
@@ -14,10 +14,12 @@ ht-degree: 69%
 # Configurer un environnement de développement local {#headless-adaptive-forms-setup-development-environment}
 
 Vous pouvez configurer un environnement de développement local pour créer et tester des formulaires adaptatifs découplés sur votre ordinateur local. L’environnement de développement se compose d’AEM SDK et de l’archive de fonctionnalités AEM Forms installée sur AEM SDK.
-<!--
- After a Headless adaptive form or related assets are ready on the local development environment, you can deploy the Headless adaptive form application to your publishing environment. -- >
 
-You require knowledge to build application using react, Git, and Maven to use Headless adaptive forms.
+<!--
+ After a Headless adaptive form or related assets are ready on the local development environment, you can deploy the Headless adaptive form application to your publishing environment. 
+-->
+
+Vous avez besoin de connaissances pour créer une application à l’aide de react, Git et Maven pour utiliser les formulaires adaptatifs découplés.
 
 <!-- 
 
@@ -34,7 +36,8 @@ To download the supported version of Adobe Experience Manager as a Cloud Service
 1. Navigate to the **[!UICONTROL AEM as a Cloud Service]** tab.
 1. Sort by published date in descending order.
 1. Click on the latest Adobe Experience Manager as a Cloud Service SDK or Forms feature archive (AEM Forms add-on).
-1. Review and accept the EULA. Tap the **[!UICONTROL Download]** button. -->
+1. Review and accept the EULA. Tap the **[!UICONTROL Download]** button. 
+-->
 
 ## Configuration requise {#headless-adaptive-forms-system-requirements}
 
@@ -43,7 +46,7 @@ Pour installer le SDK AEM, votre machine locale doit disposer de la configuratio
 * [Java Development Kit 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&fulltext=Oracle%7E+JDK%7E+11%7E&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=14).
 * [Dernière version de Git](https://git-scm.com/downloads). Si vous découvrez Git, consultez [Installer Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 * [Node.js 16.13.0 ou version ultérieure](https://nodejs.org/en/download/). <!-- URL is 404! If you are new to Node.js, see [How to install Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs). -->
-* [Maven 3.6 ou version ultérieure](https://maven.apache.org/download.cgi). Si vous découvrez Maven, consultez [Installer Apache Maven](https://maven.apache.org/install.html).
+* [Maven 3.6 ou version ultérieure](https://maven.apache.org/download.cgi). Si vous découvrez Maven pour la première fois, consultez [Installer Apache Maven](https://maven.apache.org/install.html).
 
 ## Configurer l’environnement de développement {#headless-adaptive-forms-procedure-to-setup-development-environment}
 
@@ -59,7 +62,7 @@ Pour configurer un nouvel environnement de développement local et l’utiliser 
 
 -->
 
-### &#x200B;1. Configurer le SDK AEM as a Cloud Service {#setup-author-instance}
+### &#x200B;1. Configuration d’AEM as a Cloud Service SDK {#setup-author-instance}
 
 Le SDK AEM as a Cloud Service (SDK AEM) fournit à l’équipe de développement une expérience locale pour créer et tester des formulaires adaptatifs découplés. Vous pouvez utiliser le SDK AEM as a Cloud Service pour créer et prévisualiser des formulaires adaptatifs découplés, et ainsi effectuer localement la plupart des validations liées au développement. Pour configurer une instance d’auteur locale :
 
@@ -75,7 +78,7 @@ Le SDK est au format .zip. La version prise en charge est aem-sdk-2022.7.8085.20
 
    >[!NOTE]
    >
-   > Ne double-cliquez pas sur le fichier .jar pour le démarrer. Cette opération se solde par une [erreur](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#troubleshooting-double-click).
+   > Ne double-cliquez pas sur le fichier .jar pour le démarrer. Cette opération se solde par une [erreur](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#troubleshooting-double-click).
 
 1. Ouvrez l’invite de commandes :
    * Sous Windows, utilisez l’option **Exécuter en tant qu’administrateur** pour ouvrir l’invite de commande en mode élevé.
@@ -98,7 +101,7 @@ Le SDK est au format .zip. La version prise en charge est aem-sdk-2022.7.8085.20
 
 Si vous ne le voyez pas, arrêtez le serveur, supprimez le dossier `[AEM SDK installation]/crx-quickstart folder` et redémarrez le fichier .jar du SDK AEM avec la commande `-r prerelease`. Pour plus d’options, consultez [Dépannage](/help/troubleshooting.md).
 
-### &#x200B;2. Ajouter une archive AEM Forms (module complémentaire AEM Forms Cloud Service) au SDK AEM {#add-forms-archive}
+### &#x200B;2. Ajout de l’archive AEM Forms (module complémentaire AEM Forms Cloud Service) à AEM SDK {#add-forms-archive}
 
 L’archive des fonctionnalités AEM Forms as a Cloud Service (module complémentaire AEM Forms Cloud Service) fournit des outils pour créer des formulaires adaptatifs découplés dans un environnement de développement local. Pour installer l’archive de fonctionnalités, procédez comme suit :
 
@@ -128,8 +131,10 @@ Create seperate user accounts for Form Developer, Form Practitioner, and end use
     | Customer Experience Lead or UX Designer| [!DNL forms-users], [!DNL template-authors]|
     | AEM administrator | [!DNL aem-administrators], [!DNL fd-administrators] |
     | End user| When a user must log in to view and submit an Adaptive Form, add such users to [!DNL forms-users] group. </br> When no user authentication is required to access Adaptive Forms, do not assign any group to such users.|
+-->
 
-<!-- ### 4. (Optional) Install Visual Studio Code extension for Headless adaptive forms {#microsoft-visual-studio-code-extension-for-headless-adaptive-forms}
+<!-- 
+### 4. (Optional) Install Visual Studio Code extension for Headless adaptive forms {#microsoft-visual-studio-code-extension-for-headless-adaptive-forms}
 
 You can use any IDE for developing Headless adaptive forms. Adobe provides an extension for Microsoft&reg;reg; Visual Studio Code to make it easier for you to navigate structure and develop Headless adaptive forms. The extension adds adaptive forms related IntelliSense capabilities and helps auto-complete Headless adaptive forms JSON syntax. It also adds a panel, titled Forms Tree, to help navigate structure of Headless adaptive form. To use the extension: 
 
@@ -152,8 +157,10 @@ You can use any IDE for developing Headless adaptive forms. Adobe provides an ex
     </br> 
 
     ![Installing extension](/help/assets/install-extension.png)
+-->
 
-<!-- ## Create and setup a react app
+<!--
+## Create and setup a react app
 
 Adaptive forms renderer component is a react based component. It requires a react app to run and render a Headless adaptive form. To create and setup react app:
 
@@ -186,7 +193,10 @@ Adaptive forms renderer component is a react based component. It requires a reac
     npm i --save @aemforms/forms-super-component @aemforms/forms-react-core-components @aemforms/forms-super-component @adobe/react-spectrum @react/react-spectrum
     ```
 
-<!-- 1. Install dependencies for adaptive forms renderer component. Packages for these dependencies are available in Adobe Artifactory. To authenticate with Adobe Artifactory and install dependencies for adaptive forms renderer component:
+-->
+
+<!-- 
+    1. Install dependencies for adaptive forms renderer component. Packages for these dependencies are available in Adobe Artifactory. To authenticate with Adobe Artifactory and install dependencies for adaptive forms renderer component:
 
     1. Create environment variables ARTIFACTORY_USER and ARTIFACTORY_API_TOKEN. The ARTIFACTORY_USER stores Adobe LDAP username and ARTIFACTORY_API_TOKEN stores your [Adobe Artifactory token](https://wiki.corp.adobe.com/display/Artifactory/API+Keys)
 
@@ -225,6 +235,7 @@ Adaptive forms renderer component is a react based component. It requires a reac
     ```shell
     npm i --save @aemforms/crispr-react-bindings @aemforms/crispr-react-core-components @adobe/react-spectrum @react/react-spectrum
     ```
- 
+
 -->
+
 Votre environnement de développement local est prêt. Vous pouvez procéder à la création d’un formulaire adaptatif découplé.

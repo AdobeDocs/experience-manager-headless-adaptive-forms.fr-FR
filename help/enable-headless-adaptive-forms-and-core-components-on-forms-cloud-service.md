@@ -11,10 +11,10 @@ docset: CloudService
 hide: true
 hidefromtoc: true
 exl-id: 7afff771-1296-4162-84c5-c8266b94af2f
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 74%
+source-wordcount: '943'
+ht-degree: 72%
 
 ---
 
@@ -43,7 +43,7 @@ Effectuez les étapes suivantes, dans l’ordre indiqué, pour activer les formu
 ![](/help/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service.png)
 
 
-## &#x200B;1. Cloner votre référentiel Git AEM Forms as a Cloud Service {#clone-git-repository}
+## &#x200B;1. Clonez votre référentiel Git AEM Forms as a Cloud Service {#clone-git-repository}
 
 1. Connectez-vous à [Cloud Manager](https://my.cloudmanager.adobe.com/) et sélectionnez votre organisation et votre programme.
 
@@ -65,7 +65,7 @@ Effectuez les étapes suivantes, dans l’ordre indiqué, pour activer les formu
    Lorsque l’on vous y invite, saisissez les informations d’identification. Le référentiel est cloné sur votre ordinateur local.
 
 
-## &#x200B;2. Ajouter les dépendances des composants principaux des formulaires adaptatifs à votre référentiel Git {#add-adaptive-forms-core-components-dependencies}
+## &#x200B;2. Ajouter des dépendances de composants principaux de Forms adaptatif à votre référentiel Git {#add-adaptive-forms-core-components-dependencies}
 
 1. Ouvrez votre dossier du référentiel Git dans un éditeur de code de texte brut. Par exemple, VS Code.
 1. Ouvrez le fichier `[AEM Repository Folder]\pom.xml` en mode d’édition.
@@ -282,7 +282,7 @@ Effectuez les étapes suivantes, dans l’ordre indiqué, pour activer les formu
 
 1. Enregistrez et fermez le fichier.
 
-## &#x200B;3. Mettez à jour le projet pour inclure la dernière version des composants principaux de Forms :
+## &#x200B;3.  Mettez à jour le projet pour inclure la dernière version des composants principaux Forms :
 
 1. Ouvrez le [dossier de projet d’archétype AEM]/pom.xml pour modification.
 
@@ -303,7 +303,7 @@ Effectuez les étapes suivantes, dans l’ordre indiqué, pour activer les formu
       git push origin
       ```
 
-1. Une fois les fichiers validés dans le référentiel Git, [exécutez le pipeline](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-manager/content/using/code-deployment).
+1. Une fois les fichiers validés dans le référentiel Git, [exécutez le pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/using/code-deployment).
 
    Une fois l’exécution du pipeline réussie, les composants principaux de Forms adaptatifs sont activés pour l’environnement correspondant. En outre, un modèle de formulaire adaptatif (composants principaux) et un thème Canvas 3.0 sont ajoutés à votre environnement Forms as a Cloud Service, ce qui vous permet de personnaliser et de créer des composants principaux basés sur les formulaires adaptatifs.
 
@@ -319,8 +319,8 @@ Les [composants principaux](https://experienceleague.adobe.com/fr/docs/experienc
 Lorsque les composants principaux des formulaires adaptatifs sont activés pour votre environnement, un modèle de formulaire adaptatif basé sur les composants principaux vierge et le thème Canvas 3.0 sont ajoutés à votre environnement. Après avoir activé les composants principaux des formulaires adaptatifs pour votre environnement, vous pouvez :
 
 * Créer un formulaire adaptatif basé sur des composants principaux.
-* Créer des modèles de formulaires adaptatifs basés sur des composants principaux.
-* Créer des thèmes personnalisés pour les modèles de formulaires adaptatifs basés sur les composants principaux.
+* créer des modèles de formulaires adaptatifs basés sur des composants principaux ;
+* créer des thèmes personnalisés pour les modèles de formulaires adaptatifs basés sur des composants principaux ;
 * Diffuser les représentations JSON des formulaires adaptatifs basés sur les composants principaux à divers canaux tels que les applications mobiles, web et natives, ainsi que les services qui nécessitent une représentation découplée d’un formulaire.
 
 ### Les composants principaux des formulaires adaptatifs sont-ils activés pour mon environnement ? {#enable-components}

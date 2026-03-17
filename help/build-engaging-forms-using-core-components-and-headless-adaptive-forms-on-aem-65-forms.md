@@ -9,14 +9,14 @@ level: Beginner, Intermediate
 topic-tags: develop
 hide: true
 exl-id: 07a71aac-de38-4839-b8d6-b47c3f575eb3
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
-source-wordcount: '2134'
-ht-degree: 67%
+source-wordcount: '2311'
+ht-degree: 65%
 
 ---
 
-# Créez des formulaires attrayants à l’aide de composants de base et de formulaires adaptatifs découplés dans AEM Forms 6.5. {#build-engaging-forms-using-core-components-and-headless}
+# Créez des formulaires attrayants à l’aide de composants principaux et de formulaires adaptatifs découplés dans AEM Forms 6.5. {#build-engaging-forms-using-core-components-and-headless}
 
 <!-- This article and many others in this entire repo are completely missing the image ALT tags (descriptions) for each added image asset. That is impacting the CQI score for Experience Manager in a negative way. Be sure you take the time to add the required missing image ALT tags.  -->
 
@@ -86,11 +86,9 @@ En tant qu’utilisateur professionnel ou utilisatrice professionnelle, vous all
 1. Créez un point d’entrée d’envoi pour le formulaire :
 
    1. Ouvrez <https://pipedream.com/requestbin> dans un nouvel onglet du navigateur.
-
       ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
 
    1. Cliquez sur **Créer un répertoire bin public** et copiez l’URL du point d’entrée.
-
       ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%" align="left"}
 
    Ce point d’entrée particulier sert d’exemple pour l’envoi et l’affichage de données. En production réelle, vous utilisez votre propre point d’entrée ou vos propres sources de données pour stocker les données capturées.
@@ -99,16 +97,13 @@ En tant qu’utilisateur professionnel ou utilisatrice professionnelle, vous all
 
    1. Dans l’onglet du navigateur utilisé dans la leçon 1, accédez à l’interface web d’AEM Forms et à **Forms** > **Forms et Documents**.
 
-   1. Appuyez sur **Créer** et sélectionnez Formulaire adaptatif.
-
+   1. Cliquez sur **Créer** et sélectionnez Formulaire adaptatif.
       ![](/help/assets/creating-adaptive-form-6-5.png){width="50%" align="left"}
 
    1. Sélectionnez le modèle **vierge avec composants principaux** à partir de l’écran de sélection des modèles, comme illustré ci-dessous, puis cliquez sur **Suivant**.
-
       ![](/help/assets/creating-adaptive-form-6-5-select-blank-template.png){width="50%" align="left"}
 
    1. Spécifiez `Contact us` comme propriété **Titre** du formulaire. Assurez-vous que le champ **Nom** du formulaire est `contact-us`.
-
       ![](/help/assets/creating-adaptive-form-65-specify-title.png){width="50%" align="left"}
 
    1. Cliquez sur **Créer**. Une boîte de dialogue s’affiche.
@@ -345,7 +340,7 @@ Modifions le formulaire sur le serveur en tant qu’utilisateur professionnel et
 
 1. Ouvrez l’interface de gestion d’AEM Forms dans le navigateur. Par exemple, [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
 
-1. Sélectionnez le formulaire **Contactez-nous** et cliquez sur **Modifier.** Cette action ouvre le formulaire dans l’éditeur de formulaires adaptatifs.
+1. Sélectionnez le formulaire **Nous contacter** et cliquez sur **Modifier.** Le formulaire s’ouvre alors dans l’éditeur de Forms adaptatif.
 
 
 1. Sélectionnez le champ **Numéro de téléphone** et cliquez sur l’**icône Modifier (icône de crayon)** dans la barre d’outils. Si la barre d’outils pop-up ne s’affiche pas, basculez en mode d’édition . Cliquez sur le bouton **Modifier** en haut à droite, à gauche du bouton **Prévisualisation**.
@@ -514,13 +509,13 @@ au canal découplé en cours de traitement. Par exemple, un canal web dans cet a
 
 ## Questions fréquentes
 
-+++ Les composants principaux sont-ils accessibles au public ?
++++ Les composants principaux sont-ils accessibles au public ?  
 
 Oui, les composants principaux de formulaires adaptatifs sont disponibles avec AEM Forms 6.5 et Forms as a Cloud Service. Vous avez besoin du pack de services 16 d’AEM Form  6.5 ou version ultérieure pour utiliser les composants principaux des formulaires adaptatifs.
 
 +++
 
-+++ Les formulaires découplés requièrent-ils une licence distincte ?
++++ Les formulaires découplés requièrent-ils une licence distincte ?  
 
 Non, les formulaires découplés utilisent la même mesure de valeur de licence et le même nombre d’envois de formulaire.
 
@@ -537,10 +532,10 @@ Vous savez désormais comment créer des formulaires adaptatifs et les diffuser 
 
 * [Présentation des composants principaux des formulaires adaptatifs](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/introduction)
 
-* [Création d’un formulaire adaptatif à l’aide des composants principaux](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
+* [Créer un formulaire adaptatif à l’aide des composants principaux](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
 
 * [Mise à jour de la mise en forme pour le formulaire adaptatif basé sur les composants principaux](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)
 
-* [Formulaires adaptatifs découplés](https://experienceleague.adobe.com/fr/docs/experience-manager-headless-adaptive-forms/using/overview)
+* [Formulaires adaptatifs découplés.](https://experienceleague.adobe.com/fr/docs/experience-manager-headless-adaptive-forms/using/overview)
 
-* [Utilisation d’un kit de démarrage Headless React](https://experienceleague.adobe.com/fr/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)
+* [Utilisation d’un kit de démarrage Headless React](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)

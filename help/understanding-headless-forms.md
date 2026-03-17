@@ -7,15 +7,14 @@ topic: Headless
 role: Admin, Developer
 level: Beginner, Intermediate
 keywords: formulaires découplés, bibliothèque de formulaires découplés, formulaires adaptatifs, gestion des états, validation, système de conception, rendu côté serveur, CMS
-hide: false
-exl-id: a1b2c3d4-e5f6-7890-abcd-ef1234567890
-source-git-commit: 780f06a39c75dbf8795ac7a971150410ed7981e9
+index: true
+exl-id: 539da3e9-25c5-4e26-ba4e-f68cf849bca4
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
 source-wordcount: '2605'
 ht-degree: 5%
 
 ---
-
 
 # Présentation des formulaires découplés - Concepts et FAQ {#understanding-headless-forms}
 
@@ -123,7 +122,7 @@ Le modèle exact dépend de la manière dont votre application s’intègre au [
 
 L’envoi est découplé de l’interface utilisateur :
 
-* **Actions d’envoi AEM** - Configurez le formulaire dans AEM pour l’envoi aux points d’entrée REST, aux e-mails ou aux intégrations (par exemple, Microsoft Dynamics, Salesforce). Le formulaire est envoyé via AEM, qui gère l’appel HTTP/principal réel. Voir [&#x200B; Utilisation d’événements pour gérer et envoyer des données de formulaire](use-events-to-handle-and-submit-form-data.md).
+* **Actions d’envoi AEM** - Configurez le formulaire dans AEM pour l’envoi aux points d’entrée REST, aux e-mails ou aux intégrations (par exemple, Microsoft Dynamics, Salesforce). Le formulaire est envoyé via AEM, qui gère l’appel HTTP/principal réel. Voir [ Utilisation d’événements pour gérer et envoyer des données de formulaire](use-events-to-handle-and-submit-form-data.md).
 * **Envoi côté client** - Votre application peut écouter l’envoi ou collecter des données de formulaire à partir de l’état d’exécution et les envoyer à vos propres API. Les [API HTTP](https://opensource.adobe.com/aem-forms-af-runtime/api/) documentent la liste, la récupération, la validation, l’envoi et le suivi du statut d’envoi.
 * **Préremplissage** - Les données peuvent être préremplies via des points d’entrée REST ou côté serveur, de sorte que lorsque le formulaire se charge, l’état est déjà renseigné. Voir [Storybook - exemple de préremplissage](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--prefill-form-with-personalised-data).
 
@@ -222,5 +221,5 @@ Pour les scénarios mobiles et hors ligne, l’approche recommandée est de [cr�
 * [Questions fréquentes](faq.md)
 * [Créer et publier un formulaire découplé](create-and-publish-a-headless-form.md)
 * [API de formulaires adaptatifs découplés](https://opensource.adobe.com/aem-forms-af-runtime/api/)
-* [Terrain de jeu de code](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=fr)
+* [Terrain de jeu de code](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en)
 * [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/)

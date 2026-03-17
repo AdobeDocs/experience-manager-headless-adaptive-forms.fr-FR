@@ -4,10 +4,10 @@ description: Créez votre premier formulaire adaptatif découplé.
 keywords: découplé, formulaire adaptatif
 hide: true
 exl-id: 99985fed-4a34-47d6-bb6f-79f81e1cd71b
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
-source-wordcount: '1492'
-ht-degree: 75%
+source-wordcount: '1619'
+ht-degree: 70%
 
 ---
 
@@ -45,7 +45,7 @@ Pour créer et générer votre premier formulaire adaptatif découplé, procéde
 1. [Créer le formulaire adaptatif basé sur le modèle vierge avec composants principaux](#create-adaptive-form-with-blank-with-core-components-template)
 
 
-### &#x200B;1. Créer et déployer le projet AEM basé sur l’archétype {#create-an-archetype-based-project}
+### &#x200B;1. Créer et déployer un projet basé sur l’archétype AEM {#create-an-archetype-based-project}
 
 Selon le système d’exploitation, exécutez la commande ci-dessous pour créer un projet Experience Manager Forms as a Cloud Service. Utilisez l’archétype version 37 ou ultérieure. Consultez la [documentation de l’archétype](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/developing/archetype/overview) pour obtenir la dernière version.
 
@@ -105,7 +105,7 @@ Une fois la commande exécutée, un dossier de projet portant le nom spécifié 
 
 ### &#x200B;2. Déployer le projet dans le SDK AEM {#deploy-the-project-to-a-local-development-environment}
 
-Lorsque vous déployez le projet sur votre instance SDK AEM, votre environnement de développement reçoit la fonctionnalité de formulaires adaptatifs découplés, le modèle **Vierge avec composants principaux** et les autres ressources du projet. <!-- Deploy the project to your local development environment to locally create Headless Adaptive Forms. or deploy directly to your Forms as a Cloud Service environment. !--> Pour effectuer un déploiement sur votre instance SDK AEM :
+Lorsque vous déployez le projet sur votre instance AEM SDK, il ajoute la fonctionnalité de Forms adaptatif découplé, le modèle **vierge avec composants principaux** et d’autres ressources incluses dans le projet à votre environnement de développement. <!-- Deploy the project to your local development environment to locally create Headless Adaptive Forms. or deploy directly to your Forms as a Cloud Service environment. !--> Pour effectuer un déploiement sur votre instance AEM SDK :
 
 1. Ouvrez l’invite de commande. Sous Windows, ouvrez l’invite de commandes avec les droits d’administrateur (exécutez l’invite de commande ou un [shell Bash Git](https://khushwantsehgal.wordpress.com/2022/06/29/check-if-git-bash-is-running-in-administrator-mode/) en tant qu’administrateur).
 
@@ -125,12 +125,12 @@ Lorsque vous déployez le projet sur votre instance SDK AEM, votre environnement
    La résolution des dépendances et le déploiement du projet peuvent prendre du temps. En cas d’échec de déploiement du projet, consultez l’article [dépannage](troubleshooting.md) pour en savoir plus sur les problèmes courants et leur résolution.
 
 
-<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=fr#coding-against-the-right-aem-version) article : -->
+<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=en#coding-against-the-right-aem-version) article : -->
 
 
-### &#x200B;3. Créer le schéma JSON du formulaire adaptatif découplé et le télécharger dans votre instance SDK AEM {#create-add-json-representation-of-headless-adaptive-forms}
+### &#x200B;3. Créez un schéma JSON de formulaire adaptatif découplé et chargez-le dans votre instance AEM SDK {#create-add-json-representation-of-headless-adaptive-forms}
 
-Un formulaire adaptatif découplé est représenté sous la forme d’un fichier JSON. Vous pouvez obtenir un exemple de formulaire à partir de [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--contact) ou utiliser l’exemple de formulaire inclus dans le projet d’archétype à l’adresse `[Archetype Project]\ui.content\src\main\content\jcr_root\content\dam\myheadlessform\af_model_sample.json`. Ce document utilise le formulaire d’[introduction](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--introduction) du storybook. Il s’agit d’un formulaire à champ unique qui vous permet de commencer rapidement à utiliser le formulaire adaptatif découplé. <!-- The [specifications](/help/assets/Headless-Adaptive-Form-Specification.pdf) document provides detailed information about various components, rules, and constraints for Headless Adaptive Forms -->
+Un formulaire adaptatif découplé est représenté sous la forme d’un fichier JSON. Vous pouvez obtenir un exemple de formulaire à partir de [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--contact) ou utiliser l’exemple de formulaire inclus dans le projet d’archétype à l’adresse `[Archetype Project]\ui.content\src\main\content\jcr_root\content\dam\myheadlessform\af_model_sample.json`. Ce document utilise le formulaire d’[introduction](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--introduction) du storybook. Il s’agit d’un formulaire à champ unique qui vous permet de commencer rapidement à utiliser le formulaire adaptatif découplé. <!-- The [specifications](/help/assets/headless-adaptive-forms-specification.pdf) document provides detailed information about various components, rules, and constraints for Headless Adaptive Forms -->
 
 Pour créer et charger le schéma, procédez comme suit :
 
@@ -166,11 +166,12 @@ Pour créer et charger le schéma, procédez comme suit :
 
 En cas d’échec du chargement du fichier `.json`, assurez-vous que le [projet d’archétype AEM a été déployé correctement](#deploy-the-project-to-a-local-development-environment).
 
-<!-- 1. Open the [contact form](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--contact) and tap the [![Raw](assets/raw.png)](faq.md#storybook-example) icon on bottom-right side of the Storybook page to view the source code of the headless . 
+<!--
+1. Open the [contact form](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--contact) and tap the [![Raw](assets/raw.png)](faq.md#storybook-example) icon on bottom-right side of the Storybook page to view the source code of the headless . 
 
 You can use [Adaptive Forms builder extension for Visual Studio Code](/help/setup-development-environment.md#microsot-visual-studio-code-extension-for-headless-adaptive-forms) to build a JSON schema of your Headless Adaptive Forms. 
 
-You can see [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--introduction) for sample JSON schemas and list of components, attributes, and properties. You can also see the [specifications document](/help/assets/Headless-Adaptive-Form-Specification.pdf) for detailed information on all the components, constraints, and methods available to define Headless Adaptive Forms.
+You can see [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--introduction) for sample JSON schemas and list of components, attributes, and properties. You can also see the [specifications document](/help/assets/headless-adaptive-forms-specification.pdf) for detailed information on all the components, constraints, and methods available to define Headless Adaptive Forms.
 
 File extension of a JSON schema of Headless Adaptive Forms is .json. For example, formname.json. Create or add the file to your AEM Archetype based project. For example, `\myheadlessform\ui.content\src\main\content\jcr_root\content\dam\myheadlessform\home-loan.json` -> 
 
@@ -180,11 +181,12 @@ You can deploy the project to local development environment. It adds Headless Ad
 
     `mvn -PautoInstallPackage clean install`
 
-If you are on Windows, run the above with Administrative privileges (Run command prompt or [bash shell as an administrator](https://khushwantsehgal.wordpress.com/2022/06/29/check-if-git-bash-is-running-in-administrator-mode/)). For the complete list of commands, see [Building and Installing](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=fr#building-and-installing).
-    
-<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=fr#coding-against-the-right-aem-version) article : -->
+If you are on Windows, run the above with Administrative privileges (Run command prompt or [bash shell as an administrator](https://khushwantsehgal.wordpress.com/2022/06/29/check-if-git-bash-is-running-in-administrator-mode/)). For the complete list of commands, see [Building and Installing](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#building-and-installing).
+-->
 
-### &#x200B;4. Créer un formulaire adaptatif basé sur le modèle vierge avec composants principaux {#create-adaptive-form-with-blank-with-core-components-template}
+<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=en#coding-against-the-right-aem-version) article : -->
+
+### &#x200B;4. Créer le formulaire adaptatif basé sur le modèle vierge avec composants principaux {#create-adaptive-form-with-blank-with-core-components-template}
 
 1. Connectez-vous à votre [instance SDK AEM](http://localhost:4502/).
 
@@ -228,4 +230,4 @@ Le formulaire adaptatif créé à l’étape précédente est vide. Configurez l
    1. Une fois l’opération terminée:3000 ouvrez l’hôte local dans la fenêtre de votre navigateur pour afficher un formulaire adaptatif découplé rendu.
    1. Pour tester la fonctionnalité d’envoi, connectez-vous à votre serveur AEM Forms, puis utilisez l’option **Prévisualiser le formulaire au format HTML** pour ouvrir le formulaire en mode de prévisualisation.
 
-Le [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/) fournit une liste de composants et de règles pouvant être définis sur différents Forms adaptatifs découplés, ainsi qu’un exemple du schéma JSON du Forms adaptatif découplé. Vous pouvez également consulter le document [spécifications](/help/assets/Headless-Adaptive-Form-Specification.pdf) pour en savoir plus sur les différentes règles et propriétés liées au Forms adaptatif découplé.
+Le [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/) fournit une liste de composants et de règles pouvant être définis sur différents Forms adaptatifs découplés, ainsi qu’un exemple du schéma JSON du Forms adaptatif découplé. Vous pouvez également consulter le document [spécifications](/help/assets/headless-adaptive-forms-specification.pdf) pour en savoir plus sur les différentes règles et propriétés liées au Forms adaptatif découplé.

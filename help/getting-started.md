@@ -3,15 +3,15 @@ title: Prise en main des formulaires adaptatifs découplés
 description: Prise en main des formulaires adaptatifs découplés
 keywords: découplé, formulaire adaptatif, tutoriel
 hide: true
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 50%
+source-wordcount: '362'
+ht-degree: 51%
 
 ---
 
 
-# Prise en main du Forms adaptatif découplé
+# Prise en main des formulaires adaptatifs découplés
 
 Ce tutoriel vous fournit un cadre de bout en bout pour créer un formulaire adaptatif découplé. Le tutoriel consiste en un cas d’utilisation et plusieurs guides. Chaque guide décrit des fonctionnalités spécifiques et vous aide à les ajouter au formulaire adaptatif découplé créé dans ce tutoriel. Chaque guide se termine par un formulaire adaptatif découplé opérationnel. À la fin de ce tutoriel, vous devriez pouvoir effectuer les opérations suivantes :
 

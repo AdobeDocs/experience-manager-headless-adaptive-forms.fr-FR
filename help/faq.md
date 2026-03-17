@@ -7,9 +7,9 @@ topic: Headless
 role: Admin, Developer
 level: Beginner, Intermediate
 keywords: découplé, formulaire adaptatif, questions fréquentes
-hide: false
+index: true
 exl-id: 5bfc307d-96a3-4007-b65f-32176ecdb710
-source-git-commit: 780f06a39c75dbf8795ac7a971150410ed7981e9
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 41%
@@ -34,10 +34,12 @@ You can use Archetype 37 with flag `includeFormsheadless` or later flag to creat
 
 Vous pouvez utiliser l’application de démarrage pour commencer à développer et à styliser vos formulaires adaptatifs découplés. Vous avez besoin de Forms as a Cloud Service pour héberger et utiliser des formulaires adaptatifs découplés ainsi que des fonctionnalités de formulaires back-end.
 
-<!-- ## Do I need an archetype project to develop Headless adaptive forms?
+<!-- 
+## Do I need an archetype project to develop Headless adaptive forms?
 
 You can use the starter app to start developing and styling your Headless adaptive forms. Later on, you can use the 
-archetype project to deploy the finished Headless adaptive forms and corresponding custom code, created using starter app, to Forms as a Cloud Service environment. The Forms as a Cloud Service environment helps you test and productionize the forms. -->
+archetype project to deploy the finished Headless adaptive forms and corresponding custom code, created using starter app, to Forms as a Cloud Service environment. The Forms as a Cloud Service environment helps you test and productionize the forms. 
+-->
 
 ## Où puis-je obtenir un aperçu d’un formulaire adaptatif découplé ? {#storybook-example}
 
@@ -57,16 +59,18 @@ Dans les champs en cascade, le contenu du second champ dépend du contenu choisi
 
 Les formulaires adaptatifs découplés permettent de préremplir des formulaires avec des données personnalisées. Le [storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--prefill-form-with-personalised-data) fournit un exemple de la façon de préremplir un formulaire adaptatif découplé.
 
-<!-- >
+<!--
 ## Can I use existing Adaptive Forms editor to create a Headless adaptive form?
 
-At this moment, you use the Adaptive Form Editor to specify the JSON structure and set submit action for the forms. Support for drag-and-drop components, applying rules using editor, and more editor-related options would be available later in the beta phase. Keep a watch on release notes.  -->
+At this moment, you use the Adaptive Form Editor to specify the JSON structure and set submit action for the forms. Support for drag-and-drop components, applying rules using editor, and more editor-related options would be available later in the beta phase. Keep a watch on release notes.  
+-->
 
 ## Puis-je utiliser des formulaires adaptatifs découplés avec Angular SPA ?
 
 Vous pouvez utiliser le SDK web pour intégrer des formulaires adaptatifs découplés avec Angular SPA. Il est indépendant de tout framework. Vous pouvez utiliser le SDK React comme référence.
 
-<!-- ## Should the `-r prerelease` switch be used every time to start the AEM SDK instance or only for the first time?
+<!--
+## Should the `-r prerelease` switch be used every time to start the AEM SDK instance or only for the first time?
 
 During the limited release program, use the `-r prerelease` switch every time you start the AEM SDK instance. 
 
@@ -74,11 +78,9 @@ During the limited release program, use the `-r prerelease` switch every time yo
 
 Adobe Experience Manager Forms as a Cloud Service feature archive provides tools to create Headless adaptive forms on the local development environment. To install the feature archive, see [Setup development environment](setup-development-environment.md).
 
-<!-- 
 ## Where do one get the license.properties file from?
 
 You do not require a license.properties file to run AEM Cloud Service SDK. 
-
 -->
 
 ## Existe-t-il un plug-in pour faciliter le développement des formulaires adaptatifs découplés ?
@@ -87,7 +89,7 @@ Oui — une extension Visual Studio Code vous permet de créer manuellement des 
 
 ## Quelle est l’approche recommandée pour les formulaires mobiles ou hors ligne ? {#mobile-offline-forms}
 
-Créez votre propre application native et récupérez les définitions de formulaire via l’API de Forms adaptatif découplé. Vous pouvez éventuellement implémenter une prise en charge hors ligne (par exemple, le stockage local et la synchronisation). Consultez la section [&#x200B; Bonnes pratiques relatives aux formulaires mobiles &#x200B;](mobile-forms-best-practices.md) pour connaître l’approche recommandée et les liens vers les API.
+Créez votre propre application native et récupérez les définitions de formulaire via l’API de Forms adaptatif découplé. Vous pouvez éventuellement implémenter une prise en charge hors ligne (par exemple, le stockage local et la synchronisation). Consultez la section [ Bonnes pratiques relatives aux formulaires mobiles ](mobile-forms-best-practices.md) pour connaître l’approche recommandée et les liens vers les API.
 
 ## Comment utiliser les API GraphQL ou découplées avec AEM Forms ?
 

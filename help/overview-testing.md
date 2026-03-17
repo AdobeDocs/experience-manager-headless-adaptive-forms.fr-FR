@@ -10,10 +10,10 @@ keywords: Système de gestion de contenu (CMS) découplé, formulaires adaptatif
 hide: true
 hidefromtoc: true
 exl-id: f6a383ea-684b-479d-a15f-8ebced75635e
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 57%
+source-wordcount: '331'
+ht-degree: 54%
 
 ---
 
@@ -28,7 +28,7 @@ Les formulaires adaptatifs découplés vous permettent d’effectuer les opérat
 * Créez des formulaires multicanaux de haute qualité dans le langage de programmation de votre choix.
 * Intégrez de manière native des formulaires à vos applications de bureau et mobiles, à vos sites web et à vos applications de chat.
 * Réutilisez vos composants d’IU propriétaires avec des applications de formulaires.
-* Utilisation de la [puissance d’Adobe Experience Manager Forms](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/forms/getting-started/introduction-aem-forms).
+* Utilisation de la [puissance d’Adobe Experience Manager Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/getting-started/introduction-aem-forms).
 
 En outre, vous avez la possibilité de développer vos propres composants pour rendre un formulaire à l’aide du framework d’interface utilisateur et du langage de programmation de votre choix. Vous pouvez également utiliser les composants React prêts à l’emploi pour générer un formulaire adaptatif découplé.
 
@@ -154,8 +154,7 @@ En outre, vous avez la possibilité de développer vos propres composants pour r
         <h2 style="margin-top: 10px;">Heading 3</h2>
         <p>Description 3</p>
     </div>
-    <!-- Add more cards as needed -->
-</div>
+    </div>
 
 
 
@@ -163,23 +162,23 @@ En outre, vous avez la possibilité de développer vos propres composants pour r
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: 20px;">
     <div style="width: 30%; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px; padding: 20px; box-sizing: border-box;">
         <img src="/help/assets/01-overview-responsive-forms.jpeg" alt="Image 1" style="width: 100%; border-radius: 5px;">
-        <h2 style="margin-top: 10px;">En-tête 1</h2>
+        <h2 style="margin-top: 10px;">Heading 1</h2>
         <p>Description 1</p>
     </div>
     <div style="width: 30%; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px; padding: 20px; box-sizing: border-box;">
         <img src="/help/assets/02-overview-backend-systems.jpeg" alt="Image 2" style="width: 100%; border-radius: 5px;">
-        <h2 style="margin-top: 10px;">En-tête 2</h2>
+        <h2 style="margin-top: 10px;">Heading 2</h2>
         <p>Description 2</p>
     </div>
     <div style="width: 30%; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px; padding: 20px; box-sizing: border-box;">
         <img src="/help/assets/03-overview-save-and-resume.jpeg" alt="Image 3" style="width: 100%; border-radius: 5px;">
-        <h2 style="margin-top: 10px;">En-tête 3</h2>
+        <h2 style="margin-top: 10px;">Heading 3</h2>
         <p>Description 3</p>
     </div>
-    <!-- Add more cards as needed -->
 </div>
 
 -->
+<!-- Add more cards as needed -->
 
 ## Qui peut utiliser des formulaires adaptatifs découplés ? {#who-can-use-headless-adaptive-forms}
 

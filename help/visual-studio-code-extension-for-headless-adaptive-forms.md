@@ -7,12 +7,12 @@ topic: Headless
 role: Admin, Developer
 level: Beginner, Intermediate
 keywords: découplé, formulaires adaptatifs, extension Visual Studio Code
-hide: false
+index: true
 exl-id: 11960e91-6c09-48d4-9d57-37537f808cd4
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 40%
+source-wordcount: '231'
+ht-degree: 44%
 
 ---
 
