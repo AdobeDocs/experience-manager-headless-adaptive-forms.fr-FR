@@ -7,8 +7,8 @@ topic-tags: develop
 exl-id: ef99ffe9-4a37-4f0a-a4d3-78976c92220f
 source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '2452'
-ht-degree: 64%
+source-wordcount: '2629'
+ht-degree: 63%
 
 ---
 
@@ -38,7 +38,7 @@ Pour utiliser cet atelier pratique, procédez comme suit :
 
 * Installez [Node.js 16.13.0 ou version ultérieure](https://nodejs.org/en/download/). Si vous découvrez Node.js, consultez l’article [Comment installer Node.js](https://nodejs.org/en/learn/getting-started/how-to-install-nodejs).
 
-* [Activer les composants principaux des formulaires adaptatifs](enable-headless-adaptive-forms-and-core-components-on-forms-cloud-service.md) pour votre environnement AEM Forms AEM Cloud Service.
+* [Activer les composants principaux des formulaires adaptatifs](enable-headless-adaptive-forms-and-core-components-on-forms-cloud-service.md) pour votre environnement AEM Forms as a Cloud Service.
 
 * Installez [Microsoft Code Visual Studio](https://code.visualstudio.com/download) ou un autre éditeur de texte brut. Les exemples de ce document utilisent Microsoft Visual Studio Code.
 
@@ -48,11 +48,11 @@ Pour utiliser cet atelier pratique, procédez comme suit :
 
 ### Objectif {#lesson-1-objectives}
 
-Familiarisez-vous avec l’environnement d’AEM Forms as a Cloud Service.
+Familiarisez-vous avec l’environnement AEM Forms as a Cloud Service.
 
 ### Contexte de la leçon {#lesson-1-context}
 
-Dans cette leçon, vous vous familiarisez avec l’environnement d’AEM Forms as a Cloud Service en naviguant dans l’interface utilisateur.
+Dans cette leçon, vous vous familiarisez avec l’environnement AEM Forms as a Cloud Service en naviguant dans l’interface utilisateur.
 
 ### Exercice {#lesson-1-excercise}
 
@@ -78,7 +78,7 @@ Créez un formulaire adaptatif à l’aide des derniers composants principaux, p
 
 ### Contexte de la leçon
 
-Dans cette leçon, en tant qu’utilisatrice ou utilisateur professionnel, vous allez créer un formulaire adaptatif pour plusieurs canaux tels que le web, les appareils mobiles et les chats à l’aide de la création de formulaires adaptatifs avec des composants principaux standards prêts à l’emploi pour la capture de données.
+Dans cette leçon, en tant qu’utilisateur professionnel ou utilisatrice professionnelle, vous allez créer un formulaire adaptatif pour plusieurs canaux tels que le Web, les appareils mobiles et les chats à l’aide de la création de formulaires adaptatifs avec des composants principaux standard prêts à l’emploi pour la capture de données.
 
 ### Exercice
 
@@ -86,7 +86,6 @@ Dans cette leçon, en tant qu’utilisatrice ou utilisateur professionnel, vous 
 
    1. Ouvrez <https://pipedream.com/requestbin> dans un nouvel onglet du navigateur.
    1. Cliquez sur **Créer un répertoire bin public** et copiez l’URL du point d’entrée.
-
       ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
 
       ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%" align="left"}
@@ -94,29 +93,23 @@ Dans cette leçon, en tant qu’utilisatrice ou utilisateur professionnel, vous 
 1. Créez un formulaire adaptatif à l’aide de l’interface de l’assistant :
 
    1. Dans l’onglet du navigateur utilisé dans la leçon 1, accédez à l’interface web d’AEM Forms as Cloud Service, puis à Formulaires et Documents.
-
       ![](/help/assets/screenshot2028114029.png)
 
    1. Cliquez sur **Créer** > **Formulaire adaptatif**.
-
       ![](/help/assets/screenshot2028114629.png)
 
    1. Sélectionnez le modèle **vierge avec composants principaux** à partir de l’écran de sélection des modèles, comme illustré ci-dessous :
-
       ![](/help/assets/screenshot202023-03-0120at206.09.1520pm.png)
 
    1. Cliquez sur l’onglet **Style** et sélectionnez le thème **wknd-theme** comme illustré ci-dessous :
-
       ![](/help/assets/screenshot202023-03-0120at206.09.2320pm.png)
 
    1. Cliquez sur l’onglet **Envoi** et sélectionnez la vignette **Envoyer vers le point d’entrée REST** et indiquez le répertoire bin public dans le champ **URL de la requête POST** comme illustré ci-dessous :
-
       ![](/help/assets/screenshot202023-03-0120at206.09.5320pm.png)
 
    1. Cliquez sur **Créer**. Indiquez un nom et un titre sur votre formulaire. Par exemple : **enregistrement**. Cliquez sur **Créer**.
 
    1. L’éditeur de formulaire adaptatif s’ouvre. Ignorez les fenêtres contextuelles ou les boîtes de dialogue concernant les préférences ou les informations. Cliquez sur l’explorateur de composants sur le rail de gauche et ajoutez les composants **En-tête** et **Pied de page** respectivement en haut et en bas du formulaire vierge.
-
       ![](/help/assets/screenshot2028121929.png)
 
    1. Faites glisser puis déposez des composants à partir du navigateur de composants pour créer un formulaire, comme suit :
@@ -128,7 +121,6 @@ Dans cette leçon, en tant qu’utilisatrice ou utilisateur professionnel, vous 
    1. Cliquez sur le composant **Numéro de téléphone** pour afficher le menu contextuel. Cliquez sur l’**icône Clé à molette** dans le menu pour configurer le champ.
 
    1. Ouvrez l’**onglet Validations**, marquez le champ comme **Obligatoire**, puis cliquez sur **Terminé**. Le message de réussite s’affiche.
-
       ![](/help/assets/screenshot2028123529.png){width="50%" align="left"}
 
       ![](/help/assets/screenshot2028123629.png){width="50%" align="left"}
@@ -140,16 +132,14 @@ Dans cette leçon, en tant qu’utilisatrice ou utilisateur professionnel, vous 
    1. Remplissez le formulaire avec des données factices.
 
    1. Soumettez le formulaire.
-
       ![](/help/assets/screenshot2028125729.png)
 
    1. Dans l’onglet Zone de requêtes, vérifiez les données envoyées.
-
       ![](/help/assets/screenshot2028125829.png)
 
 1. Ajoutez de l’interactivité au formulaire avec des règles :
 
-   1. Sélectionnez le composant **Cocher la case pour recevoir 5 % de réduction**. Dans la barre d’outils des options, cliquez sur l’icône Règles. L’option Éditeur de règles s’ouvre.
+   1. Cliquez sur le composant **Cocher la case pour recevoir 5 % de réduction**. Dans la barre d’outils des options, cliquez sur l’icône Règles. L’option Éditeur de règles s’ouvre.
 
    1. Créez une règle, lorsque l’option **Cochez la case pour recevoir 5 % de réduction.** est sélectionnée, les options d’application de la carte de crédit sont désactivées.
 
@@ -392,7 +382,7 @@ Modifions le formulaire sur le serveur en tant qu’utilisateur professionnel et
 
 1. Ouvrez l’interface de gestion d’AEM Forms dans le navigateur. <!-- URL is 404. Consider saying the path is for illlustration purposes only. For example, [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/forms.html/content/dam/formsanddocuments](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/forms.html/content/dam/formsanddocuments). -->
 
-1. Sélectionnez le formulaire **`contactus`** et cliquez sur **Modifier.** Cette action ouvre le formulaire dans l’éditeur de formulaires adaptatifs.
+1. Sélectionnez le formulaire **`contactus`** et cliquez sur **Modifier.** Le formulaire s’ouvre alors dans l’éditeur de formulaires adaptatifs.
 
 
 1. Sélectionnez le champ **Numéro de téléphone** et cliquez sur l’**icône Modifier (icône de crayon)** dans la barre d’outils. Si la barre d’outils pop-up ne s’affiche pas, basculez en mode d’édition . Cliquez sur le bouton **Modifier** en haut à droite, à gauche du bouton **Prévisualisation**.
@@ -570,32 +560,32 @@ au canal découplé en cours de traitement. Par exemple, un canal web dans cet a
 
 ## Questions fréquentes
 
-+++ L’assistant de formulaire adaptatif est-il disponible publiquement ?
++++ L’assistant de formulaire adaptatif est-il disponible publiquement ?  
 
 Oui, il est disponible avec AEM Forms as a Cloud Service.
 
 +++
 
 
-+++ Les composants principaux sont-ils accessibles au public ?
++++ Les composants principaux sont-ils accessibles au public ?  
 
 Oui, les composants principaux de formulaires adaptatifs sont disponibles avec AEM Forms as a Cloud Service.
 
 +++
 
-+++ Les formulaires découplés sont-ils accessibles au public ?
++++ Les formulaires découplés sont-ils accessibles au public ?  
 
 Oui, les formulaires découplés sont disponibles avec AEM Forms as a Cloud Service.
 
 +++
 
-+++ Les formulaires découplés requièrent-ils une licence distincte ?
++++ Les formulaires découplés requièrent-ils une licence distincte ?  
 
 Non, les formulaires découplés utilisent la même mesure de valeur de licence et le même nombre d’envois de formulaire.
 
 +++
 
-+++ Les composants principaux et les formulaires découplés sont-ils disponibles avec AEM 6.5 Forms ?
++++ Les composants principaux et les formulaires découplés sont-ils disponibles avec AEM 6.5 Forms ?  
 
 Oui, les composants principaux des formulaires adaptatifs et les formulaires découplés sont disponibles avec AEM Forms 6.5 Service Pack 16 et ses versions ultérieures.
 
