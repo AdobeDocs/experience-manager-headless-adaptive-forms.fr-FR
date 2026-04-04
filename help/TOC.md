@@ -5,10 +5,10 @@ user-guide-description: Documentation sur les formulaires adaptatifs découplés
 feature: Adaptive Forms
 role: Developer
 index: true
-source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
+source-git-commit: 3af67fd41cdd1e63a460e56ef1d273c90b3954d7
 workflow-type: tm+mt
 source-wordcount: '195'
-ht-degree: 56%
+ht-degree: 51%
 
 ---
 
@@ -16,12 +16,12 @@ ht-degree: 56%
 # Formulaires adaptatifs découplés Adobe Experience Manager {#using}
 
 + [Vue d’ensemble](overview.md)
-+ [Test de l’aperçu](overview-testing.md)
++ {hide-from-toc}[Test d’aperçu](overview-testing.md)
 + [Architecture](architecture.md)
 + [Présentation des formulaires découplés - Concepts et FAQ](understanding-headless-forms.md)
 + Configuration rapide {#quick-setup}
    + [Activer les formulaires adaptatifs découplés sur AEM Forms 6.5](enable-headless-adaptive-forms-and-core-components.md)
-   + [Activer les formulaires adaptatifs découplés sur AEM Forms as a Cloud Service](enable-headless-adaptive-forms-and-core-components-on-forms-cloud-service.md)
+   + {hide-from-toc}[Activer le Forms adaptatif découplé sur AEM Forms as a Cloud Service](enable-headless-adaptive-forms-and-core-components-on-forms-cloud-service.md)
 + Tutoriel {#tutorial}
    + [Créez des formulaires attrayants à l’aide de composants de base et de formulaires adaptatifs découplés sur AEM Forms as a Cloud Service](build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service.md)
    + [Créez des formulaires attrayants à l’aide de composants principaux et de formulaires adaptatifs découplés dans AEM Forms 6.5.](build-engaging-forms-using-core-components-and-headless-adaptive-forms-on-aem-65-forms.md)
@@ -29,7 +29,7 @@ ht-degree: 56%
    + [Création et publication d’un formulaire découplé à l’aide d’un kit de démarrage](create-and-publish-a-headless-form.md)
    + [Utiliser une bibliothèque React personnalisée pour afficher un formulaire découplé](use-google-material-ui-react-components-to-render-a-headless-form.md)
    + [Utilisation de composants personnalisés pour effectuer le rendu d’un formulaire découplé](developing-for-headless-forms-using-your-own-components.md)
-   + [Utilisation d’événements pour gérer et envoyer des données de formulaire](use-events-to-handle-and-submit-form-data.md)
+   + {hide-from-toc}[Utiliser des événements pour gérer et envoyer des données de formulaire](use-events-to-handle-and-submit-form-data.md)
    + [Bonnes pratiques relatives aux formulaires mobiles](mobile-forms-best-practices.md)
 + Créer des formulaires adaptatifs découplés {#authoring-headless-adaptive-forms}
    + [Créer un formulaire adaptatif découplé à l’aide de l’éditeur de Forms adaptatif](create-a-headless-adaptive-form.md)
