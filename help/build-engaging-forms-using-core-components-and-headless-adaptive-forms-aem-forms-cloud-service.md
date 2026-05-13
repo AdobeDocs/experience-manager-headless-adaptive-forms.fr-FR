@@ -5,10 +5,17 @@ description: Créer des formulaire attrayants à l’aide des composants princip
 seo-description: Build Engaging Forms Using Core Components and Headless
 topic-tags: develop
 exl-id: ef99ffe9-4a37-4f0a-a4d3-78976c92220f
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+TQID: https://experienceleague.adobe.com/vxO7ZkfNQ001uvMujjDotL5le6Q0gYN-YGoYMThWbAs
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
 workflow-type: tm+mt
-source-wordcount: '2629'
-ht-degree: 63%
+source-wordcount: 2629
+ht-degree: 60%
 
 ---
 
@@ -494,8 +501,8 @@ Pour effectuer le rendu du formulaire hébergé dans votre environnement de publ
 
    ![](/help/assets/screenshot2028127129.png)
 
-   La commande démarre un serveur de développement local et effectue le rendu de la définition de formulaire récupérée à partir d’AEM de façon découplée à l’aide de
-la bibliothèque front-end de l’interface utilisateur Material Google.
+   La commande démarre un serveur de développement local et effectue le rendu de la définition de formulaire récupérée à partir d’AEM de manière découplée à l’aide de Google
+Bibliothèque frontale de l’interface utilisateur Material.
 
    >[!NOTE]
    >
@@ -550,8 +557,8 @@ Mettez à jour la variante des composants dans le projet découplé. Pour modifi
    ![](/help/assets/screenshot2028127729.png)
 
 
-   Cette modification se produit pour les utilisatrices et utilisateurs finaux sans modification de la définition de formulaire sur le serveur AEM Forms et est spécifique
-au canal découplé en cours de traitement. Par exemple, un canal web dans cet atelier.
+   Cette modification se produit pour les utilisateurs finaux sans modification de la définition de formulaire sur le serveur AEM Forms et est spécifique au découplage
+canal considéré. Par exemple, un canal web dans cet atelier.
 
    ![](/help/assets/screenshot2028127529.png){width="50%" align="left"}
 

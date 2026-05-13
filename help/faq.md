@@ -9,9 +9,22 @@ level: Beginner, Intermediate
 keywords: découplé, formulaire adaptatif, questions fréquentes
 index: true
 exl-id: 5bfc307d-96a3-4007-b65f-32176ecdb710
-source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
+TQID: https://experienceleague.adobe.com/GqYwqgwHe82HXLvljMyGW4PDOkmi7Xg2MKjYxibsFnY
+product_v2:
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+  - id: f013e6ab-27b8-4645-b5a7-31ffa474d04f
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: 837
 ht-degree: 41%
 
 ---
@@ -108,7 +121,7 @@ Pour des concepts tels que quand utiliser les formulaires découplés, la gestio
 
 **Formulaires découplés :** le style et l’apparence sont entièrement sous votre contrôle. Vous utilisez vos propres composants React (ou d’autres) et votre propre CSS ; il n’y a pas de thèmes intégrés. Consultez les sections [Utiliser une bibliothèque React personnalisée pour effectuer le rendu d’un formulaire découplé](use-google-material-ui-react-components-to-render-a-headless-form.md) et [Utiliser des composants personnalisés pour effectuer le rendu d’un formulaire découplé](developing-for-headless-forms-using-your-own-components.md) pour implémenter et mettre en forme des formulaires découplés.
 
-**AEM Forms classique (thèmes, éditeur de règles, éditeur visuel) :** le code CSS personnalisé, l’éditeur de thèmes et l’éditeur de règles s’appliquent à l’expérience de création Forms adaptative classique (non découplée). Pour ces rubriques, consultez la [documentation d’AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-forms.html) sur Experience League.
+AEM Forms classique (thèmes, éditeur de règles, éditeur visuel) : **le code CSS personnalisé, l’éditeur de thèmes et l’éditeur de règles s’appliquent à l’expérience de création Forms adaptative classique (non découplée).** Pour ces rubriques, consultez la [documentation d’](https://experienceleague.adobe.com/docs/experience-manager-forms.html) sur Experience League.
 
 ## Un formulaire adaptatif découplé peut-il se connecter à n’importe quel CRM pour lire ou écrire des données ?
 

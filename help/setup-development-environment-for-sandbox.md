@@ -3,10 +3,19 @@ title: Configuration d’un environnement de développement pour un sandbox Form
 description: Configurez un environnement de développement pour un sandbox Forms as a Cloud Service.
 hide: true
 exl-id: befac9ad-d2c4-4705-96fc-f0ea0ef823b8
-source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
+TQID: https://experienceleague.adobe.com/r2jtS8Z3QIN99-a-z2lLLtW6tVroO3FF--CmzklJVig
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
 workflow-type: tm+mt
-source-wordcount: '1369'
-ht-degree: 44%
+source-wordcount: 1369
+ht-degree: 42%
 
 ---
 
@@ -136,7 +145,7 @@ Pour cloner le référentiel :
 
 Le projet d’archétype est un modèle Maven. Il permet de créer un projet basique, fondé sur les bonnes pratiques, pour commencer à utiliser les formulaires adaptatifs découplés. Il comprend également la fonctionnalité de base des formulaires adaptatifs découplés pour Forms as a Cloud Service. Il est obligatoire de créer et de déployer le projet basé sur l’archétype 37 ou une version ultérieure.
 ®®®
-Selon le système d’exploitation, exécutez la commande Maven pour créer un projet Experience Manager Forms as a Cloud Service. Utilisez l’archétype version 37 ou ultérieure. Consultez la [documentation de l’archétype](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/developing/archetype/overview) pour obtenir la dernière version.
+En fonction du système d’exploitation, exécutez la commande maven pour créer un projet Experience Manager Forms as a Cloud Service. Utilisez l’archétype version 37 ou ultérieure. Consultez la [documentation de l’archétype](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/developing/archetype/overview) pour obtenir la dernière version.
 
 +++ Microsoft® Windows
 
