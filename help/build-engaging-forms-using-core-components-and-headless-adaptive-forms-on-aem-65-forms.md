@@ -9,10 +9,14 @@ level: Beginner, Intermediate
 topic-tags: develop
 hide: true
 exl-id: 07a71aac-de38-4839-b8d6-b47c3f575eb3
-source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
+TQID: https://experienceleague.adobe.com/akgLAvLprxdXwMCXmwobbeFDvQF0rPR2qiENi3dLLDM
+product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
 workflow-type: tm+mt
-source-wordcount: '2311'
-ht-degree: 65%
+source-wordcount: 2311
+ht-degree: 63%
 
 ---
 
@@ -57,7 +61,7 @@ Dans cette leçon, vous vous familiarisez avec AEM Forms as a Cloud Service 6
 ### Exercice {#lesson-1-excercise}
 
 1. Ouvrez votre navigateur et saisissez l’URL de l’environnement de création. Par exemple :
-   [https://localhost:4502](https://localhost:4502).
+   [:4502](https://localhost:4502).
 
 1. Une fois la connexion établie, accédez à l’interface utilisateur d’AEM Forms. Cliquez sur **Forms**.
 
@@ -429,7 +433,7 @@ Pour effectuer le rendu du formulaire hébergé dans votre environnement de publ
 
 1. Définissez les valeurs suivantes pour les variables du fichier .env. Après avoir mis à jour les variables, enregistrez le fichier. Appuyez sur **Ctrl + S** pour enregistrer le fichier.
 
-   * **AEM_URL** : spécifiez l’URL de l’environnement de publication. Par exemple, [https://localhost:4503](https://localhost:4503)
+   * **AEM_URL** : spécifiez l’URL de l’environnement de publication. Par exemple, [:4503](https://localhost:4503)
 
    * **AEM_FORM_PATH** : spécifiez le chemin d’accès au formulaire adaptatif créé dans la leçon précédente. Par exemple, /content/forms/af/contact-us/
 
@@ -499,8 +503,8 @@ Mettez à jour la variante des composants dans le projet découplé. Pour modifi
    ![](/help/assets/screenshot2028127729.png){width="50%" align="left"}
 
 
-   Cette modification se produit pour les utilisatrices et utilisateurs finaux sans modification de la définition de formulaire sur le serveur AEM Forms et est spécifique
-au canal découplé en cours de traitement. Par exemple, un canal web dans cet atelier.
+   Cette modification se produit pour les utilisateurs finaux sans modification de la définition de formulaire sur le serveur AEM Forms et est spécifique au découplage
+canal considéré. Par exemple, un canal web dans cet atelier.
 
    ![](/help/assets/aem65-lab-mui-style-update.png)
 
@@ -532,10 +536,10 @@ Vous savez désormais comment créer des formulaires adaptatifs et les diffuser 
 
 * [Présentation des composants principaux des formulaires adaptatifs](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/introduction)
 
-* [Créer un formulaire adaptatif à l’aide des composants principaux](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
+* [Créer un formulaire adaptatif à l’aide des composants principaux](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
 
 * [Mise à jour de la mise en forme pour le formulaire adaptatif basé sur les composants principaux](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)
 
 * [Formulaires adaptatifs découplés.](https://experienceleague.adobe.com/fr/docs/experience-manager-headless-adaptive-forms/using/overview)
 
-* [Utilisation d’un kit de démarrage Headless React](https://experienceleague.adobe.com/fr/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)
+* [Utilisation d’un kit de démarrage Headless React](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)

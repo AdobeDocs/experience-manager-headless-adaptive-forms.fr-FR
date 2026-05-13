@@ -9,9 +9,14 @@ level: Beginner, Intermediate
 keywords: Système de gestion de contenu (CMS) découplé, formulaires adaptatifs, interface utilisateur découplée, système de gestion de contenu (CMS) couplé, assistants vocaux, alexa, agents conversationnels, architecture WhatsApp
 index: true
 exl-id: 3b5b955b-d59c-43d9-9cc4-3244a08f80dc
-source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
+TQID: https://experienceleague.adobe.com/ohy-aaFe-yZDL8uQFFps1jKHFRW5ZxB77GVsOvRZDy4
+product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552eid: f013e6ab-27b8-4645-b5a7-31ffa474d04f
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: 361
 ht-degree: 50%
 
 ---
@@ -27,9 +32,9 @@ Les formulaires adaptatifs découplés vous permettent d’effectuer les opérat
 * Créez des formulaires multicanaux de haute qualité dans le langage de programmation de votre choix.
 * Intégrez de manière native des formulaires à vos applications de bureau et mobiles, à vos sites web et à vos applications de chat.
 * Réutilisez vos composants d’IU propriétaires avec des applications de formulaires.
-* Tirez parti de la [puissance d’Adobe Experience Manager Forms](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/forms/getting-started/introduction-aem-forms).
+* Tirez parti de la [puissance d’Adobe Experience Manager Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/getting-started/introduction-aem-forms).
 
-Pour les cas d’utilisation de formulaire mobile et hors ligne, l’approche recommandée consiste à créer votre propre application native et à récupérer les définitions de formulaire via l’API de Forms adaptative découplée. Voir [&#x200B; Bonnes pratiques relatives aux formulaires mobiles &#x200B;](mobile-forms-best-practices.md) pour plus d’informations.
+Pour les cas d’utilisation de formulaire mobile et hors ligne, l’approche recommandée consiste à créer votre propre application native et à récupérer les définitions de formulaire via l’API de Forms adaptative découplée. Voir [ Bonnes pratiques relatives aux formulaires mobiles ](mobile-forms-best-practices.md) pour plus d’informations.
 
 En outre, vous avez la possibilité de développer vos propres composants pour rendre un formulaire à l’aide du framework d’interface utilisateur et du langage de programmation de votre choix. Vous pouvez également utiliser les composants React prêts à l’emploi pour générer un formulaire adaptatif découplé.
 
