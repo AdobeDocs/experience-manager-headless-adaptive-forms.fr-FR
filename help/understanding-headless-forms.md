@@ -208,7 +208,7 @@ Pour les formulaires très volumineux, tenez compte de la structure (par exemple
 
 ### Comment les formulaires découplés s’intègrent-ils à CMS, au commerce découplé ou aux systèmes back-end ?
 
-* **CMS** - AEM est le CMS de la définition du formulaire : les auteurs créent et publient le fichier JSON du formulaire. D’autres CMS peuvent référencer ou lier l’URL/l’API du formulaire. Votre application récupère le formulaire à partir d’AEM (ou d’un réseau CDN) et extrait éventuellement une copie ou une mise en page d’un autre CMS.
+* **&#x200B;**&#x200B;- AEM est le CMS de la définition du formulaire : les auteurs créent et publient le fichier JSON du formulaire. D’autres CMS peuvent référencer ou lier l’URL/l’API du formulaire. Votre application récupère le formulaire à partir d’AEM (ou d’un réseau CDN) et extrait éventuellement une copie ou une mise en page d’un autre CMS.
 * **Préremplissage et envoi** - Le [préremplissage](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--prefill-form-with-personalised-data) et l’envoi peuvent atteindre les points d’entrée REST. Vous pouvez donc préremplir à partir d’un serveur principal CRM, DAM ou Commerce et envoyer l’envoi aux mêmes systèmes ou à des systèmes différents. AEM Forms prend également en charge [Microsoft Dynamics et Salesforce](faq.md), REST, les e-mails et les actions d’envoi personnalisées.
 * **Modèle de données Forms** - AEM Forms fournit un modèle de données Forms pour se connecter à des sources de données disparates ; les formulaires découplés peuvent utiliser ces fonctionnalités pour le préremplissage, la validation et l’envoi sans que vous ayez à créer vous-même chaque intégration.
 
