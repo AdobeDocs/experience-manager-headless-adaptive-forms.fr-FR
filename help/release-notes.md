@@ -18,7 +18,7 @@ Bienvenue dans la version à accès anticipé d’Experience Manager destinée a
 Utilisez des formulaires adaptatifs découplés Adobe Experience Manager pour créer des applications de formulaire avec des structures front-end, telles que React, Angular, etc. Utilisez le SDK Web de Forms adaptatif pour la gestion des états, la validation et l’intégration à des points de contact supplémentaires.
 
 
-La version à accès anticipé vous permet d’utiliser les formulaires adaptatifs découplés dans un [&#x200B; environnement de développement local](setup-development-environment.md). Vous pouvez utiliser l’environnement de développement local pour créer et tester des formulaires adaptatifs découplés.
+La version à accès anticipé vous permet d’utiliser les formulaires adaptatifs découplés dans un [ environnement de développement local](setup-development-environment.md). Vous pouvez utiliser l’environnement de développement local pour créer et tester des formulaires adaptatifs découplés.
 
 Les formulaires adaptatifs découplés font l’objet régulièrement d’améliorations. Pour vous tenir au courant des dernières nouveautés, consultez régulièrement cette page. Cette page fournit des informations sur les éléments suivants :
 
