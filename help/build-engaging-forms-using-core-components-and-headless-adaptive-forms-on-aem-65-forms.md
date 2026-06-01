@@ -19,10 +19,10 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
+source-git-commit: 33435b2ff6c7ff5c936f9256889d1f85f977adfe
 workflow-type: tm+mt
-source-wordcount: 2311
-ht-degree: 63%
+source-wordcount: 2301
+ht-degree: 62%
 
 ---
 
@@ -66,20 +66,20 @@ Dans cette leçon, vous vous familiarisez avec AEM Forms as a Cloud Service 6
 
 ### Exercice {#lesson-1-excercise}
 
-1. Ouvrez votre navigateur et saisissez l’URL de l’environnement de création. Par exemple :
+1. Ouvrez votre navigateur et saisissez l’URL de l’environnement de création. Par exemple :
    [:4502](https://localhost:4502).
 
 1. Une fois la connexion établie, accédez à l’interface utilisateur d’AEM Forms. Cliquez sur **Forms**.
 
-   ![](/help/assets/screenshot2028113829.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028113829.png){width="50%"}
 
 1. Cliquez sur **Formulaires &amp; Documents**. Ignorez les fenêtres contextuelles liées aux préférences ou aux informations.
 
-   ![](/help/assets/screenshot2028113929.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028113929.png){width="50%"}
 
    Tous les formulaires disponibles sont affichés.
 
-   ![](/help/assets/screenshot2028114029.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028114029.png){width="50%"}
 
 ## Leçon 2
 
@@ -96,10 +96,10 @@ En tant qu’utilisateur professionnel ou utilisatrice professionnelle, vous all
 1. Créez un point d’entrée d’envoi pour le formulaire :
 
    1. Ouvrez <https://pipedream.com/requestbin> dans un nouvel onglet du navigateur.
-      ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
+      ![](/help/assets/screenshot2028114329.png){width="50%"}
 
    1. Cliquez sur **Créer un répertoire bin public** et copiez l’URL du point d’entrée.
-      ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%" align="left"}
+      ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%"}
 
    Ce point d’entrée particulier sert d’exemple pour l’envoi et l’affichage de données. En production réelle, vous utilisez votre propre point d’entrée ou vos propres sources de données pour stocker les données capturées.
 
@@ -108,13 +108,13 @@ En tant qu’utilisateur professionnel ou utilisatrice professionnelle, vous all
    1. Dans l’onglet du navigateur utilisé dans la leçon 1, accédez à l’interface web d’AEM Forms et à **Forms** > **Forms et Documents**.
 
    1. Cliquez sur **Créer** et sélectionnez Formulaire adaptatif.
-      ![](/help/assets/creating-adaptive-form-6-5.png){width="50%" align="left"}
+      ![](/help/assets/creating-adaptive-form-6-5.png){width="50%"}
 
    1. Sélectionnez le modèle **vierge avec composants principaux** à partir de l’écran de sélection des modèles, comme illustré ci-dessous, puis cliquez sur **Suivant**.
-      ![](/help/assets/creating-adaptive-form-6-5-select-blank-template.png){width="50%" align="left"}
+      ![](/help/assets/creating-adaptive-form-6-5-select-blank-template.png){width="50%"}
 
-   1. Spécifiez `Contact us` comme propriété **Titre** du formulaire. Assurez-vous que le champ **Nom** du formulaire est `contact-us`.
-      ![](/help/assets/creating-adaptive-form-65-specify-title.png){width="50%" align="left"}
+   1. Spécifiez `Contact us` comme **Titre** du formulaire. Assurez-vous que le **Nom** du formulaire est `contact-us`.
+      ![](/help/assets/creating-adaptive-form-65-specify-title.png){width="50%"}
 
    1. Cliquez sur **Créer**. Une boîte de dialogue s’affiche.
 
@@ -122,11 +122,11 @@ En tant qu’utilisateur professionnel ou utilisatrice professionnelle, vous all
 
    1. Ouvrez le navigateur de composants et faites glisser puis déposez le composant Panneau au milieu de l’écran.
 
-      ![](/help/assets/lab65-add-panel.png){width="50%" align="left"}
+      ![](/help/assets/lab65-add-panel.png){width="50%"}
 
    1. Faites glisser puis déposez des composants à partir du navigateur de composants pour créer un formulaire, comme suit :
 
-      ![](/help/assets/contact-us-headless-adaptive-form.png){width="50%" align="left"}
+      ![](/help/assets/contact-us-headless-adaptive-form.png){width="50%"}
 
 
    1. Ouvrez l’explorateur de contenu, cliquez sur l’icône Propriétés du conteneur de guide , puis ouvrez l’onglet **Envoi**.
@@ -135,7 +135,7 @@ En tant qu’utilisateur professionnel ou utilisatrice professionnelle, vous all
 
    1. Sélectionnez l’option **Activer la requête POST** et spécifiez le point d’entrée REST créé dans la leçon 2 de la zone de texte **URL de la requête POST**, puis cliquez sur l’icône **Terminé**.
 
-      ![](/help/assets/configure-submit-action.png){width="50%" align="left"}
+      ![](/help/assets/configure-submit-action.png){width="50%"}
 
 1. Publier un formulaire adaptatif :
 
@@ -159,7 +159,7 @@ Configurez un référentiel local du thème :
 
 1. Ouvrez l’invite de commande ou un shell avec les droits d’administrateur :
 
-   ![](/help/assets/screenshot2028115829.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028115829.png){width="50%"}
 
 1. Dans l’invite de commande, utilisez la commande suivante pour accéder au dossier `c:\git`.
 
@@ -182,19 +182,19 @@ Configurez un référentiel local du thème :
    code .
    ```
 
-   ![](/help/assets/screenshot2028126029.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028126029.png){width="50%"}
 
 1. Sélectionnez **Approbation des auteurs de tous les fichiers du dossier parent** et cliquez sur **Oui, je fais confiance aux auteurs**.
 
-   ![](/help/assets/screenshot2028116229.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028116229.png){width="50%"}
 
 1. Renommez le fichier `env_template` en .env.  Pour renommer le fichier, cliquez avec le bouton droit de la souris sur le fichier **env_template** et sélectionnez l’option **Renommer**.
 
-   ![](/help/assets/screenshot2028116429.png){width="30%" align="left"}
+   ![](/help/assets/screenshot2028116429.png){width="30%"}
 
    </br>
 
-   ![](/help/assets/screenshot2028116529.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028116529.png){width="50%"}
 
 1. Définissez les valeurs suivantes pour les variables dans le fichier .env et enregistrez le fichier :
 
@@ -235,12 +235,12 @@ Configurez un référentiel local du thème :
    >Si un écran vierge s’affiche dans le navigateur après l’exécution de la commande `npm run live` pendant plus de 3 à 4 minutes, remplacez `localhost` dans l’URL du navigateur par 127.0.0.1 et appuyez sur **Entrée**.
 
 
-   ![](/help/assets/contact-us-headless-adaptive-form-with-canvas-theme.png){width="50%" align="left"}
+   ![](/help/assets/contact-us-headless-adaptive-form-with-canvas-theme.png){width="50%"}
 
 
 1. Dans Visual Studio Code, ouvrez le fichier `PROJECT\src\site\_variables.scss`. Vous remarquerez que la couleur `$error` est une nuance de rouge.
 
-   ![](/help/assets/screenshot2028120729.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028120729.png){width="50%"}
 
 1. Dans le navigateur, envoyez le formulaire pour afficher la couleur rouge dans le champ **Prénom**.
 
@@ -271,7 +271,7 @@ Configurez un référentiel local à l’aide du projet de démarrage React :
 
 1. Ouvrez l’invite de commande à l’aide des droits d’administration.
 
-   ![](/help/assets/screenshot2028115829.png){width="30%" align="left"}
+   ![](/help/assets/screenshot2028115829.png){width="30%"}
 
 1. Dans l’invite de commandes, utilisez la commande suivante pour naviguer dans le dossier `c:\git`.
 
@@ -300,13 +300,13 @@ Configurez un référentiel local à l’aide du projet de démarrage React :
 
    La fenêtre Visual Studio Code s’ouvre.
 
-   ![](/help/assets/screenshot2028117429.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028117429.png){width="50%"}
 
 Pour effectuer le rendu du formulaire hébergé dans votre environnement de publication :
 
 1. Renommez le fichier env_template en fichier .env . Pour renommer, cliquez avec le bouton droit de la souris sur le fichier **env_template** et sélectionnez l’option **Renommer**.
 
-   ![](/help/assets/screenshot2028117629.png){width="30%" align="left"}
+   ![](/help/assets/screenshot2028117629.png){width="30%"}
 
    ![](/help/assets/screenshot2028117729.png)
 
@@ -355,7 +355,7 @@ Modifions le formulaire sur le serveur en tant qu’utilisateur professionnel et
 
 1. Sélectionnez le champ **Numéro de téléphone** et cliquez sur l’**icône Modifier (icône de crayon)** dans la barre d’outils. Si la barre d’outils pop-up ne s’affiche pas, basculez en mode d’édition . Cliquez sur le bouton **Modifier** en haut à droite, à gauche du bouton **Prévisualisation**.
 
-   ![](/help/assets/change-field-title.png){width="50%" align="left"}
+   ![](/help/assets/change-field-title.png){width="50%"}
 
 1. Modifiez le libellé en **Numéro de mobile**. Cliquez sur n’importe quel espace vide du formulaire pour enregistrer les modifications apportées au formulaire.
 
@@ -397,7 +397,7 @@ Configurez un référentiel local à l’aide du projet de démarrage de l’int
 
 1. Ouvrez l’invite de commande à l’aide des droits d’administration.
 
-   ![](/help/assets/screenshot2028115829.png){width="30%" align="left"}
+   ![](/help/assets/screenshot2028115829.png){width="30%"}
 
 1. Dans l’invite de commandes, utilisez la commande suivante pour naviguer dans le dossier `c:\git`.
 
@@ -435,7 +435,7 @@ Pour effectuer le rendu du formulaire hébergé dans votre environnement de publ
 
 1. Renommez le fichier **env_template** en fichier **.env**. Pour renommer, cliquez avec le bouton droit de la souris sur le fichier **env_template**, puis sélectionnez **Renommer**.
 
-   ![](/help/assets/screenshot2028126629.png){width="30%" align="left"}
+   ![](/help/assets/screenshot2028126629.png){width="30%"}
 
 1. Définissez les valeurs suivantes pour les variables du fichier .env. Après avoir mis à jour les variables, enregistrez le fichier. Appuyez sur **Ctrl + S** pour enregistrer le fichier.
 
@@ -506,7 +506,7 @@ Mettez à jour la variante des composants dans le projet découplé. Pour modifi
 
 1. Actualisez le navigateur, s’il ne s’actualise pas automatiquement, pour voir le composant Entrée de texte utilisez une autre variante.
 
-   ![](/help/assets/screenshot2028127729.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028127729.png){width="50%"}
 
 
    Cette modification se produit pour les utilisateurs finaux sans modification de la définition de formulaire sur le serveur AEM Forms et est spécifique au découplage

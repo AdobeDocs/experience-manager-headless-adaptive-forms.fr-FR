@@ -12,9 +12,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
+source-git-commit: 33435b2ff6c7ff5c936f9256889d1f85f977adfe
 workflow-type: tm+mt
-source-wordcount: 2629
+source-wordcount: 2589
 ht-degree: 60%
 
 ---
@@ -66,13 +66,13 @@ Dans cette leçon, vous vous familiarisez avec l’environnement AEM Forms as a
 1. Ouvrez votre navigateur et saisissez l’URL de l’environnement de création Cloud Service. <!-- URL is 404! EXPLAIN THE URL IS FOR ILLUSTRATION PURPOSES ONLY? For example: [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/start.html](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/start.html) -->
 
 1. Connectez-vous à l’environnement de création de Cloud Service.
-   ![](/help/assets/screenshot2028113829.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028113829.png){width="50%"}
 
 1. Pour accéder à l’interface utilisateur AEM Forms, cliquez sur **Formulaires > Formulaires et documents**.
 
 
 
-   ![](/help/assets/screenshot2028113929.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028113929.png){width="50%"}
 
    Ignorez les fenêtres contextuelles liées aux préférences ou aux informations. Tous les formulaires disponibles sont affichés.
 
@@ -93,9 +93,9 @@ Dans cette leçon, en tant qu’utilisateur professionnel ou utilisatrice profes
 
    1. Ouvrez <https://pipedream.com/requestbin> dans un nouvel onglet du navigateur.
    1. Cliquez sur **Créer un répertoire bin public** et copiez l’URL du point d’entrée.
-      ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
+      ![](/help/assets/screenshot2028114329.png){width="50%"}
 
-      ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%" align="left"}
+      ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%"}
 
 1. Créez un formulaire adaptatif à l’aide de l’interface de l’assistant :
 
@@ -116,21 +116,21 @@ Dans cette leçon, en tant qu’utilisateur professionnel ou utilisatrice profes
 
    1. Cliquez sur **Créer**. Indiquez un nom et un titre sur votre formulaire. Par exemple : **enregistrement**. Cliquez sur **Créer**.
 
-   1. L’éditeur de formulaire adaptatif s’ouvre. Ignorez les fenêtres contextuelles ou les boîtes de dialogue concernant les préférences ou les informations. Cliquez sur l’explorateur de composants sur le rail de gauche et ajoutez les composants **En-tête** et **Pied de page** respectivement en haut et en bas du formulaire vierge.
+   1. L’éditeur de formulaire adaptatif s’ouvre. Ignorez les fenêtres contextuelles ou les boîtes de dialogue pour connaître les préférences ou les informations. Cliquez sur l’explorateur de composants sur le rail de gauche et ajoutez les composants **En-tête** et **Pied de page** respectivement en haut et en bas du formulaire vierge.
       ![](/help/assets/screenshot2028121929.png)
 
    1. Faites glisser puis déposez des composants à partir du navigateur de composants pour créer un formulaire, comme suit :
 
-      ![](/help/assets/screenshot2028115129.png){width="50%" align="left"}
+      ![](/help/assets/screenshot2028115129.png){width="50%"}
 
 1. Ajoutez des validations au formulaire :
 
    1. Cliquez sur le composant **Numéro de téléphone** pour afficher le menu contextuel. Cliquez sur l’**icône Clé à molette** dans le menu pour configurer le champ.
 
-   1. Ouvrez l’**onglet Validations**, marquez le champ comme **Obligatoire**, puis cliquez sur **Terminé**. Le message de réussite s’affiche.
-      ![](/help/assets/screenshot2028123529.png){width="50%" align="left"}
+   1. Ouvrez l’**onglet Validations**, marquez le champ **Obligatoire**, puis cliquez sur **Terminé**. Le message de réussite s’affiche.
+      ![](/help/assets/screenshot2028123529.png){width="50%"}
 
-      ![](/help/assets/screenshot2028123629.png){width="50%" align="left"}
+      ![](/help/assets/screenshot2028123629.png){width="50%"}
 
 1. Prévisualisez et soumettez le formulaire.
 
@@ -183,7 +183,7 @@ Configurez un référentiel local du thème :
 
 1. Ouvrez l’invite de commande ou un shell avec les droits d’administrateur :
 
-   ![](/help/assets/screenshot2028115829.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028115829.png){width="50%"}
 
 1. Dans l’invite de commande, utilisez la commande suivante pour accéder au dossier **c:\git**.
 
@@ -209,15 +209,15 @@ Configurez un référentiel local du thème :
 
 1. Sélectionnez **Approbation des auteurs de tous les fichiers du dossier parent** et cliquez sur **Oui, je fais confiance aux auteurs**.
 
-   ![](/help/assets/screenshot2028116229.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028116229.png){width="50%"}
 
 1. Pour effectuer le rendu du formulaire hébergé dans votre environnement de publication Cloud Service, renommez le fichier `env_template`.  Pour renommer le fichier, cliquez avec le bouton droit de la souris sur le fichier **env_template** et sélectionnez l’option **Renommer**.
 
-   ![](/help/assets/screenshot2028116429.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028116429.png){width="50%"}
 
    </br>
 
-   ![](/help/assets/screenshot2028116529.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028116529.png){width="50%"}
 
 1. Définissez les valeurs suivantes pour les variables dans le fichier .env et enregistrez le fichier :
 
@@ -225,7 +225,7 @@ Configurez un référentiel local du thème :
 
    * **AEM_ADAPTIVE_FORM** : spécifiez le chemin du formulaire. Par exemple, si le chemin du formulaire est `/content/forms/af/registration`, la valeur de cette variable sera `registration`.
 
-     ![](/help/assets/screenshot2028116429.png){width="50%" align="left"}
+     ![](/help/assets/screenshot2028116429.png){width="50%"}
 
 1. Création d’un utilisateur local dans l’environnement AEM.
 
@@ -265,12 +265,12 @@ Configurez un référentiel local du thème :
    >Si un écran vierge s’affiche dans le navigateur après l’exécution de la commande `npm run live` pendant plus de 3 à 4 minutes, remplacez `localhost` dans l’URL du navigateur par 127.0.0.1 et appuyez sur **Entrée**.
 
 
-   ![](/help/assets/screenshot2028115129.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028115129.png){width="50%"}
 
 
 1. Dans Visual Studio Code, ouvrez le fichier `PROJECT\src\site\_variables.scss`. Vous remarquerez que la couleur `$error` est une nuance de rouge.
 
-   ![](/help/assets/screenshot2028120729.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028120729.png){width="50%"}
 
 1. Dans le navigateur, envoyez le formulaire pour afficher la couleur rouge dans le champ **Prénom**.
 
@@ -278,7 +278,7 @@ Configurez un référentiel local du thème :
 
 1. Définissez la couleur **$error** sur **#5736eb** et enregistrez le fichier.
 
-   ![](/help/assets/screenshot2028120729.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028120729.png){width="50%"}
 
 1. Actualisez le navigateur et envoyez le formulaire. Notez que la couleur d’erreur du champ Prénom a été modifiée en conséquence.
 
@@ -303,7 +303,7 @@ Configurez un référentiel local à l’aide du projet de démarrage React :
 
 1. Ouvrez l’invite de commande à l’aide des droits d’administration.
 
-   ![](/help/assets/screenshot2028115829.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028115829.png){width="50%"}
 
 1. Dans l’invite de commande, utilisez la commande suivante pour accéder au dossier **c:\git**.
 
@@ -332,13 +332,13 @@ Configurez un référentiel local à l’aide du projet de démarrage React :
 
    La fenêtre Visual Studio Code s’ouvre.
 
-   ![](/help/assets/screenshot2028117429.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028117429.png){width="50%"}
 
 Pour effectuer le rendu du formulaire hébergé dans votre environnement de publication de service cloud :
 
 1. Renommez le fichier env_template en fichier .env . Pour renommer, cliquez avec le bouton droit de la souris sur le fichier **env_template** et sélectionnez l’option **Renommer**.
 
-   ![](/help/assets/screenshot2028117629.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028117629.png){width="50%"}
 
    ![](/help/assets/screenshot2028117729.png)
 
@@ -436,7 +436,7 @@ Configurez un référentiel local à l’aide du projet de démarrage de l’int
 
 1. Ouvrez l’invite de commande à l’aide des droits d’administration.
 
-   ![](/help/assets/screenshot2028115829.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028115829.png){width="50%"}
 
 
 1. Dans l’invite de commande, utilisez la commande suivante pour accéder au dossier **c:\git** :
@@ -475,7 +475,7 @@ Pour effectuer le rendu du formulaire hébergé dans votre environnement de publ
 
 1. Renommez le fichier **env_template** en fichier **.env**. Pour renommer, cliquez avec le bouton droit de la souris sur le fichier **env_template**, puis sélectionnez **Renommer**.
 
-   ![](/help/assets/screenshot2028126629.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028126629.png){width="50%"}
 
 1. Définissez les valeurs suivantes pour les variables du fichier .env. Après avoir mis à jour les variables, enregistrez le fichier. Appuyez sur **Ctrl + S** pour enregistrer le fichier.
 
@@ -514,7 +514,7 @@ Bibliothèque frontale de l’interface utilisateur Material.
 
    Sélectionnez **Cocher la case pour recevoir 5 % de réduction**. L’option suivante **Souhaitez-vous demander `We.Finance` formulaire de carte de crédit d’entreprise ?** se désactive.
 
-   ![](/help/assets/screenshot2028127329.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028127329.png){width="50%"}
 
 ## Leçon 6
 
@@ -560,7 +560,7 @@ Mettez à jour la variante des composants dans le projet découplé. Pour modifi
    Cette modification se produit pour les utilisateurs finaux sans modification de la définition de formulaire sur le serveur AEM Forms et est spécifique au découplage
 canal considéré. Par exemple, un canal web dans cet atelier.
 
-   ![](/help/assets/screenshot2028127529.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028127529.png){width="50%"}
 
 
 1. Fermez les fenêtres Visual Studio Code et Invite de commande.
