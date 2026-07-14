@@ -8,26 +8,19 @@ role: Admin, Developer
 level: Beginner, Intermediate
 keywords: Système de gestion de contenu (CMS) découplé, formulaires adaptatifs, interface utilisateur découplée, système de gestion de contenu (CMS) couplé, assistants vocaux, alexa, agents conversationnels, architecture WhatsApp
 hide: true
-exl-id: f6a383ea-684b-479d-a15f-8ebced75635e
 TQID: https://experienceleague.adobe.com/HMhHwfjQTZe2BaoMbMilfOJ0-GZrZsHTGjTBqeU-ORM
-product_v2:
-  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2:
-  - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
-  - id: f013e6ab-27b8-4645-b5a7-31ffa474d04f
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: cc2553bb4b16ea8c31664c227921c4e91d1c7a62
+product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552eid: f013e6ab-27b8-4645-b5a7-31ffa474d04f
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+exl-id: f6a383ea-684b-479d-a15f-8ebced75635e
+source-git-commit: 64fe5704fcd6ace7461a02007d99710233b74d22
 workflow-type: tm+mt
 source-wordcount: 331
 ht-degree: 54%
 
 ---
+
 
 # Présentation
 
@@ -40,12 +33,11 @@ Les formulaires adaptatifs découplés vous permettent d’effectuer les opérat
 * Créez des formulaires multicanaux de haute qualité dans le langage de programmation de votre choix.
 * Intégrez de manière native des formulaires à vos applications de bureau et mobiles, à vos sites web et à vos applications de chat.
 * Réutilisez vos composants d’IU propriétaires avec des applications de formulaires.
-* Utilisation de la [puissance d’Adobe Experience Manager Forms](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/forms/getting-started/introduction-aem-forms).
+* Utilisation de la [puissance d’Adobe Experience Manager Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/getting-started/introduction-aem-forms).
 
 En outre, vous avez la possibilité de développer vos propres composants pour rendre un formulaire à l’aide du framework d’interface utilisateur et du langage de programmation de votre choix. Vous pouvez également utiliser les composants React prêts à l’emploi pour générer un formulaire adaptatif découplé.
 
 <!-- 
-
 ## Key Features
 
 <table style="width:100%;">
@@ -188,8 +180,8 @@ En outre, vous avez la possibilité de développer vos propres composants pour r
         <p>Description 3</p>
     </div>
 </div>
-
 -->
+
 <!-- Add more cards as needed -->
 
 ## Qui peut utiliser des formulaires adaptatifs découplés ? {#who-can-use-headless-adaptive-forms}
@@ -202,5 +194,4 @@ Aucune connaissance préalable d’Adobe Experience Manager n’est nécessair
 ## How to join the early adopter program? {#how-to-join-early-adopter-forms}
 
 The service is available for AEM Forms as a Cloud Service and AEM 6.5.16.0 Forms or later On-Premise term customers and Adobe-Managed Service enterprise customers. Send an email to [headlessadaptiveforms@adobe.com](mailto:headlessadaptiveforms@adobe.com) from your official email ID to join the early adopter program. 
-
 -->
