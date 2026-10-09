@@ -55,7 +55,7 @@ Adobe provides an extension for Microsoft&reg; Visual Studio Code to make it eas
 
 ## Conditions préalables requises
 
-* Téléchargez et installez [Microsoft Visual Studio Code 1.62.0 ou version ultérieure](https://code.visualstudio.com/docs/supporting/FAQ#_how-do-i-find-the-version). Si vous disposez d&#39;une ancienne version ou d&#39;aucune version installée, téléchargez la dernière version à partir du site Web de [](https://code.visualstudio.com/docs/setup/setup-overview). Pour utiliser Visual Studio à partir de la ligne de commande dans Apple macOS, consultez [Lancement à partir de la ligne de commande](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line).
+* Téléchargez et installez [Microsoft Visual Studio Code 1.62.0 ou version ultérieure](https://code.visualstudio.com/docs/supporting/FAQ#_how-do-i-find-the-version). Si vous disposez d&#39;une ancienne version ou d&#39;aucune version installée, téléchargez la dernière version à partir du site Web de [&#128279;](https://code.visualstudio.com/docs/setup/setup-overview). Pour utiliser Visual Studio à partir de la ligne de commande dans Apple macOS, consultez [Lancement à partir de la ligne de commande](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line).
 * Téléchargez l’[extension Adaptive Forms Builder](/help/assets/adaptive-form-builder-0.12.0.vsix).
 
 ## Installer l’extension

@@ -94,7 +94,7 @@ Il est au format .zip. La version prise en charge est aem-sdk-2022.7.8085.202207
    * Le commutateur `-r prerelease` active les fonctionnalités disponibles uniquement dans les programmes de version préliminaire et de version limitée.
    * Utilisez `admin` comme nom d’utilisateur et mot de passe pour le développement local afin de simplifier le processus.
 
-   Une fois AEM démarré, la page de connexion s’ouvre dans le navigateur web. Vous pouvez également ouvrir la page de connexion de l’instance SDK AEM à l’adresse `http://localhost:<port>` dans votre navigateur web. Par exemple, [](http://localhost:4502).
+   Une fois AEM démarré, la page de connexion s’ouvre dans le navigateur web. Vous pouvez également ouvrir la page de connexion de l’instance SDK AEM à l’adresse `http://localhost:<port>` dans votre navigateur web. Par exemple, [&#128279;](http://localhost:4502).
 
 1. Connectez-vous à votre instance de création. Appuyez sur l’icône d’![aide](/help/assets/Help-icon.svg), puis sur À propos d’Adobe Experience Manager et assurez-vous que le numéro de version comprend le suffixe PRERELEASE.
 
