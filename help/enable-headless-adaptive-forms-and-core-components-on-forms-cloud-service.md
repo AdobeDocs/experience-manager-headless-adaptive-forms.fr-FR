@@ -9,27 +9,36 @@ level: Beginner, Intermediate
 contentOwner: Khushwant Singh
 docset: CloudService
 hide: true
-TQID: https://experienceleague.adobe.com/T5J7Am-NsZ-hzZkRRg3LEk0anMjhXaEznf1bijy2H-Q
+exl-id: 7afff771-1296-4162-84c5-c8266b94af2f
+TQID: 'https://experienceleague.adobe.com/T5J7Am-NsZ-hzZkRRg3LEk0anMjhXaEznf1bijy2H-Q'
 product_v2:
   - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-exl-id: 7afff771-1296-4162-84c5-c8266b94af2f
-source-git-commit: 64fe5704fcd6ace7461a02007d99710233b74d22
+    internal-label: Beginner
+source-git-commit: b34afbc4f692b81838ad6947895c9b347dff6d62
 workflow-type: tm+mt
-source-wordcount: 946
+source-wordcount: '946'
 ht-degree: 72%
-
 ---
-
 
 # Activer les formulaires adaptatifs découplés sur AEM Forms as a Cloud Service {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
 
-L’activation des formulaires adaptatifs découplés sur AEM Forms as a Cloud Service vous permet de commencer à créer, à publier et à diffuser des formulaires découplés à l’aide de vos instances Cloud Service d’AEM Forms sur plusieurs canaux. L’environnement des composants principaux des formulaires adaptatifs doit être activé pour utiliser les formulaires adaptatifs découplés.
+L’activation des formulaires adaptatifs découplés sur AEM Forms as a Cloud Service vous permet de commencer à créer, à publier et à diffuser des formulaires découplés à l’aide de vos instances Cloud Service d’AEM Forms sur plusieurs canaux. Un environnement avec les composants principaux des formulaires adaptatifs activés est nécessaire pour utiliser les formulaires adaptatifs découplés.
 
 ## Remarques
 
@@ -55,8 +64,8 @@ Effectuez les étapes suivantes, dans l’ordre indiqué, pour activer les formu
 
 1. Cliquez sur le bouton **Accéder aux informations sur le référentiel** pour accéder à votre référentiel Git et le gérer. La page contient les informations suivantes :
 
-   * URL vers le référentiel Git de Cloud Manager.
-   * Informations d’identification du nom d’utilisateur du référentiel Git (nom d’utilisateur et mot de passe).
+   * URL vers le référentiel Git de Cloud Manager.
+   * Informations d’identification du référentiel Git (nom d’utilisateur et mot de passe). Nom d’utilisateur Git.
 
    Cliquez sur **Générer un mot de passe** pour afficher ou générer le mot de passe.
 
@@ -307,7 +316,7 @@ Effectuez les étapes suivantes, dans l’ordre indiqué, pour activer les formu
       git push origin
       ```
 
-1. Une fois les fichiers validés dans le référentiel Git, [exécutez le pipeline](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-manager/content/using/code-deployment).
+1. Une fois les fichiers validés dans le référentiel Git, [exécutez le pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/using/code-deployment).
 
    Une fois l’exécution du pipeline réussie, les composants principaux de Forms adaptatifs sont activés pour l’environnement correspondant. En outre, un modèle de formulaire adaptatif (composants principaux) et un thème Canvas 3.0 sont ajoutés à votre environnement Forms as a Cloud Service, ce qui vous permet de personnaliser et de créer des composants principaux basés sur les formulaires adaptatifs.
 
@@ -322,9 +331,9 @@ Les [composants principaux](https://experienceleague.adobe.com/fr/docs/experienc
 
 Lorsque les composants principaux des formulaires adaptatifs sont activés pour votre environnement, un modèle de formulaire adaptatif basé sur les composants principaux vierge et le thème Canvas 3.0 sont ajoutés à votre environnement. Après avoir activé les composants principaux des formulaires adaptatifs pour votre environnement, vous pouvez :
 
-* Créer un formulaire adaptatif basé sur des composants principaux.
-* créer des modèles de formulaires adaptatifs basés sur des composants principaux ;
-* créer des thèmes personnalisés pour les modèles de formulaires adaptatifs basés sur des composants principaux ;
+* Créer des formulaires adaptatifs basés sur des composants principaux.
+* Créer des modèles de formulaires adaptatifs basés sur des composants principaux ;
+* créer des thèmes personnalisés pour les modèles de formulaires adaptatifs basés sur des composants principaux.
 * Diffuser les représentations JSON des formulaires adaptatifs basés sur les composants principaux à divers canaux tels que les applications mobiles, web et natives, ainsi que les services qui nécessitent une représentation découplée d’un formulaire.
 
 ### Les composants principaux des formulaires adaptatifs sont-ils activés pour mon environnement ? {#enable-components}

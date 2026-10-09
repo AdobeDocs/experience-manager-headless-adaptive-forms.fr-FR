@@ -9,13 +9,30 @@ level: Beginner, Intermediate
 keywords: formulaires découplés, bibliothèque de formulaires découplés, formulaires adaptatifs, gestion des états, validation, système de conception, rendu côté serveur, CMS
 index: true
 exl-id: 539da3e9-25c5-4e26-ba4e-f68cf849bca4
-source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
+product_v2:
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+source-git-commit: b34afbc4f692b81838ad6947895c9b347dff6d62
 workflow-type: tm+mt
 source-wordcount: '2605'
 ht-degree: 5%
-
 ---
-
 # Présentation des formulaires découplés - Concepts et FAQ {#understanding-headless-forms}
 
 Ce guide répond aux questions courantes sur les formulaires découplés en général et leur application au Forms adaptatif découplé AEM. Utilisez-le pour décider quand utiliser une approche découplée et comment implémenter, mettre en forme et intégrer des formulaires dans votre pile.
@@ -122,7 +139,7 @@ Le modèle exact dépend de la manière dont votre application s’intègre au [
 
 L’envoi est découplé de l’interface utilisateur :
 
-* **Actions d’envoi AEM** - Configurez le formulaire dans AEM pour l’envoi aux points d’entrée REST, aux e-mails ou aux intégrations (par exemple, Microsoft Dynamics, Salesforce). Le formulaire est envoyé via AEM, qui gère l’appel HTTP/principal réel. Voir [&#x200B; Utilisation d’événements pour gérer et envoyer des données de formulaire](use-events-to-handle-and-submit-form-data.md).
+* **Actions d’envoi AEM** - Configurez le formulaire dans AEM pour l’envoi aux points d’entrée REST, aux e-mails ou aux intégrations (par exemple, Microsoft Dynamics, Salesforce). Le formulaire est envoyé via AEM, qui gère l’appel HTTP/principal réel. Voir [ Utilisation d’événements pour gérer et envoyer des données de formulaire](use-events-to-handle-and-submit-form-data.md).
 * **Envoi côté client** - Votre application peut écouter l’envoi ou collecter des données de formulaire à partir de l’état d’exécution et les envoyer à vos propres API. Les [API HTTP](https://opensource.adobe.com/aem-forms-af-runtime/api/) documentent la liste, la récupération, la validation, l’envoi et le suivi du statut d’envoi.
 * **Préremplissage** - Les données peuvent être préremplies via des points d’entrée REST ou côté serveur, de sorte que lorsque le formulaire se charge, l’état est déjà renseigné. Voir [Storybook - exemple de préremplissage](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--prefill-form-with-personalised-data).
 
@@ -208,7 +225,7 @@ Pour les formulaires très volumineux, tenez compte de la structure (par exemple
 
 ### Comment les formulaires découplés s’intègrent-ils à CMS, au commerce découplé ou aux systèmes back-end ?
 
-* **&#x200B;**&#x200B;- AEM est le CMS de la définition du formulaire : les auteurs créent et publient le fichier JSON du formulaire. D’autres CMS peuvent référencer ou lier l’URL/l’API du formulaire. Votre application récupère le formulaire à partir d’AEM (ou d’un réseau CDN) et extrait éventuellement une copie ou une mise en page d’un autre CMS.
+* **** - AEM est le CMS de la définition du formulaire : les auteurs créent et publient le fichier JSON du formulaire. D’autres CMS peuvent référencer ou lier l’URL/l’API du formulaire. Votre application récupère le formulaire à partir d’AEM (ou d’un réseau CDN) et extrait éventuellement une copie ou une mise en page d’un autre CMS.
 * **Préremplissage et envoi** - Le [préremplissage](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--prefill-form-with-personalised-data) et l’envoi peuvent atteindre les points d’entrée REST. Vous pouvez donc préremplir à partir d’un serveur principal CRM, DAM ou Commerce et envoyer l’envoi aux mêmes systèmes ou à des systèmes différents. AEM Forms prend également en charge [Microsoft Dynamics et Salesforce](faq.md), REST, les e-mails et les actions d’envoi personnalisées.
 * **Modèle de données Forms** - AEM Forms fournit un modèle de données Forms pour se connecter à des sources de données disparates ; les formulaires découplés peuvent utiliser ces fonctionnalités pour le préremplissage, la validation et l’envoi sans que vous ayez à créer vous-même chaque intégration.
 
@@ -221,5 +238,5 @@ Pour les scénarios mobiles et hors ligne, l’approche recommandée est de [cr�
 * [Questions fréquentes](faq.md)
 * [Créer et publier un formulaire découplé](create-and-publish-a-headless-form.md)
 * [API de formulaires adaptatifs découplés](https://opensource.adobe.com/aem-forms-af-runtime/api/)
-* [Terrain de jeu de code](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=fr)
+* [Terrain de jeu de code](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en)
 * [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/)

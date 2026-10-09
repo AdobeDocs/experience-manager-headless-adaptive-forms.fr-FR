@@ -3,20 +3,21 @@ title: Problèmes connus du Forms adaptatif découplé
 description: Problèmes connus des formulaires adaptatifs découplés.
 keywords: découplé, formulaire adaptatif, problèmes connus
 hide: true
-source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+source-git-commit: b34afbc4f692b81838ad6947895c9b347dff6d62
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 52%
-
 ---
-
 
 # Problèmes connus {#known-issues}
 
 * Les modèles d’édition, d’affichage et de données ne sont pas pris en charge. (CQ-4327047)
 * La contrainte minItems ne peut pas être modifiée de façon dynamique. (CQ-4342499)
 * Les validations au niveau du panneau en cas de violation ne génèrent aucune erreur. (CQ-4342373)
-* Les validations de fichiers en cas de violation ne génèrent aucune erreur. (CQ-4342372)
+* En cas de non-respect des validations de fichier, aucune erreur n’est générée. (CQ-4342372)
 * Les propriétés personnalisées ne sont pas dynamiques. (CQ-4342376)
 * La modification dynamique des données de fichier sur un événement de modification à l’aide d’expressions entraîne une boucle infinie. (CQ-4342377)
 * La pièce jointe ne prend pas en charge le texte d’aide. (CQ-4342370)

@@ -7,32 +7,47 @@ topic: Headless
 role: Admin, Developer
 level: Beginner, Intermediate
 keywords: découplé, formulaire adaptatif, architecture
+Applies to: Adaptive Forms, Core Components
 index: true
 exl-id: ee7096d8-89e2-41e0-85e7-b26457df96fb
-TQID: https://experienceleague.adobe.com/Ox-1cxb5UK-oWcWzrRKcRAzCVaAGhUjQsjtnaURJXiw
+TQID: 'https://experienceleague.adobe.com/Ox-1cxb5UK-oWcWzrRKcRAzCVaAGhUjQsjtnaURJXiw'
 product_v2:
   - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 feature_v2:
   - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+    internal-label: APIs
   - id: f013e6ab-27b8-4645-b5a7-31ffa474d04f
+    internal-label: APIs
   - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
+    internal-label: Insights
+source-git-commit: b34afbc4f692b81838ad6947895c9b347dff6d62
 workflow-type: tm+mt
-source-wordcount: 994
+source-wordcount: '994'
 ht-degree: 54%
-
 ---
-
 # Fonctionnement des formulaires adaptatifs découplés
 
 Un formulaire adaptatif découplé est essentiellement une structure JSON (schéma) composée de champs de formulaire (zone de texte, choix et de nombreux autres champs) et de règles correspondantes (logique conditionnelle) pour ajouter un comportement interactif au formulaire. Vous pouvez utiliser des API REST dans votre application ou site web pour demander la structure JSON hébergée et effectuer le rendu natif de la structure JSON en tant que formulaire dans votre application ou site web. Un seul formulaire adaptatif découplé peut alimenter plusieurs pages web et applications sans qu’il soit nécessaire d’y apporter des modifications spécifiques à l’application ou au site web.
@@ -67,7 +82,7 @@ A typical Headless adaptive forms architecture constitutes an Adobe Experience M
 
 **Formulaires adaptatifs découplés** : un formulaire adaptatif découplé est représenté sous la forme d’un fichier .json. La structure JSON définit les composants, les contraintes et la structure d’un formulaire.
 
-**Applications front-end** : les applications front-end telles que les applications monopages, les applications mobiles et les applications JavaScript utilisent des formulaires adaptatifs découplés (la représentation de formulaire JSON) et effectuent le rendu du formulaire sur un client. Vous pouvez utiliser le composant de rendu React fourni avec les formulaires adaptatifs découplés pour effectuer le rendu d’un formulaire adaptatif ou créer votre propre composant personnalisé pour effectuer le rendu natif des formulaires adaptatifs découplés. Pour les cas d’utilisation natifs de formulaires mobiles et hors ligne, l’approche recommandée consiste à créer votre propre application et à récupérer les définitions de formulaire via l’API. Voir [&#x200B; Bonnes pratiques relatives aux formulaires mobiles &#x200B;](mobile-forms-best-practices.md).
+**Applications front-end** : les applications front-end telles que les applications monopages, les applications mobiles et les applications JavaScript utilisent des formulaires adaptatifs découplés (la représentation de formulaire JSON) et effectuent le rendu du formulaire sur un client. Vous pouvez utiliser le composant de rendu React fourni avec les formulaires adaptatifs découplés pour effectuer le rendu d’un formulaire adaptatif ou créer votre propre composant personnalisé pour effectuer le rendu natif des formulaires adaptatifs découplés. Pour les cas d’utilisation natifs de formulaires mobiles et hors ligne, l’approche recommandée consiste à créer votre propre application et à récupérer les définitions de formulaire via l’API. Voir [ Bonnes pratiques relatives aux formulaires mobiles ](mobile-forms-best-practices.md).
 
 <!-- ### Understanding Headless adaptive forms definition -->
 
@@ -93,7 +108,7 @@ En plus de fournir les API pour valider les contraintes appliquées aux différe
 
 Tous ces composants sont inclus dans l’archétype AEM. Lorsque vous créez un projet AEM Archetype 37 ou version ultérieure pour les formulaires adaptatifs découplés, la dernière version des bibliothèques répertoriées ci-dessus est incluse dans le projet.
 
-* **Laboratoire de code** : [Laboratoire de code](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=fr) est un environnement interactif conçu pour que les développeurs puissent tester les fonctionnalités du Forms adaptatif découplé, en apprendre davantage à son sujet et les tester.
+* **Laboratoire de code** : [Laboratoire de code](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en) est un environnement interactif conçu pour que les développeurs puissent tester les fonctionnalités du Forms adaptatif découplé, en apprendre davantage à son sujet et les tester.
 
 **Application commencée** : Adobe a également publié une application commencée pour vous aider à démarrer rapidement avec les formulaires adaptatifs découplés.
 

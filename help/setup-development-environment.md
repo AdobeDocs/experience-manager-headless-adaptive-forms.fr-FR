@@ -3,13 +3,14 @@ title: Configurer l’environnement de développement pour les formulaires adapt
 description: Configurer l’environnement de développement pour les formulaires adaptatifs découplés AEM
 hide: true
 exl-id: fd92f057-1217-42f8-a454-1bc7e3827e01
-source-git-commit: 893f0428c08e6216cb293ab2f4c427b7d1c26060
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+source-git-commit: b34afbc4f692b81838ad6947895c9b347dff6d62
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '805'
 ht-degree: 62%
-
 ---
-
 
 # Configurer un environnement de développement local {#headless-adaptive-forms-setup-development-environment}
 
@@ -46,7 +47,7 @@ Pour installer le SDK AEM, votre machine locale doit disposer de la configuratio
 * [Java Development Kit 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&fulltext=Oracle%7E+JDK%7E+11%7E&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=14).
 * [Dernière version de Git](https://git-scm.com/downloads). Si vous découvrez Git, consultez [Installer Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 * [Node.js 16.13.0 ou version ultérieure](https://nodejs.org/en/download/). <!-- URL is 404! If you are new to Node.js, see [How to install Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs). -->
-* [Maven 3.6 ou version ultérieure](https://maven.apache.org/download.cgi). Si vous découvrez Maven pour la première fois, consultez [Installer Apache Maven](https://maven.apache.org/install.html).
+* [Maven 3.6 ou version ultérieure](https://maven.apache.org/download.cgi). Si vous découvrez Maven, consultez [Installer Apache Maven](https://maven.apache.org/install.html).
 
 ## Configurer l’environnement de développement {#headless-adaptive-forms-procedure-to-setup-development-environment}
 
@@ -67,18 +68,18 @@ Pour configurer un nouvel environnement de développement local et l’utiliser 
 Le SDK AEM as a Cloud Service (SDK AEM) fournit à l’équipe de développement une expérience locale pour créer et tester des formulaires adaptatifs découplés. Vous pouvez utiliser le SDK AEM as a Cloud Service pour créer et prévisualiser des formulaires adaptatifs découplés, et ainsi effectuer localement la plupart des validations liées au développement. Pour configurer une instance d’auteur locale :
 
 1. [Téléchargez](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?lang=fr) la dernière version du [!DNL Adobe Experience Manager] SDK as a Cloud Service. Utilisez la colonne Date de publication pour trier et localiser facilement le SDK le plus récent.
-Le SDK est au format .zip. La version prise en charge est aem-sdk-2022.7.8085.20220725T140323Z-220700.zip et version ultérieure.
+Il est au format .zip. La version prise en charge est aem-sdk-2022.7.8085.20220725T140323Z-220700.zip et les versions ultérieures.
 
    ![Télécharger le SDK AEM Cloud Service à partir du portail de distribution de logiciels](assets/software-distribution.png)
 
 
 1. Procédez à l’extraction du fichier .zip téléchargé dans un répertoire de votre machine locale.
 1. Créez un répertoire sur votre ordinateur local pour servir d’emplacement d’installation pour l’instance de création. Par exemple, `~/aem-sdk/author`.
-1. Copiez le fichier .jar des fichiers extraits du SDK vers l’emplacement d’installation et renommez le fichier `aem-author-p4502.jar`. La chaîne `p4502` dans le nom de fichier indique le numéro de port à utiliser. Libre à vous de spécifier un autre numéro de port.
+1. Copiez le fichier .jar des fichiers extraits du SDK vers l’emplacement d’installation et renommez le fichier `aem-author-p4502.jar`. La chaîne `p4502` dans le nom de fichier indique le numéro de port à utiliser. Vous pouvez également spécifier un autre numéro de port.
 
    >[!NOTE]
    >
-   > Ne double-cliquez pas sur le fichier .jar pour le démarrer. Cette opération se solde par une [erreur](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#troubleshooting-double-click).
+   > Ne double-cliquez pas sur le fichier .jar pour le démarrer. Cette opération se solde par une [erreur](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#troubleshooting-double-click).
 
 1. Ouvrez l’invite de commandes :
    * Sous Windows, utilisez l’option **Exécuter en tant qu’administrateur** pour ouvrir l’invite de commande en mode élevé.
@@ -93,7 +94,7 @@ Le SDK est au format .zip. La version prise en charge est aem-sdk-2022.7.8085.20
    * Le commutateur `-r prerelease` active les fonctionnalités disponibles uniquement dans les programmes de version préliminaire et de version limitée.
    * Utilisez `admin` comme nom d’utilisateur et mot de passe pour le développement local afin de simplifier le processus.
 
-   Une fois AEM démarré, la page de connexion s’ouvre dans le navigateur web. Vous pouvez également ouvrir la page de connexion de l’instance SDK AEM à l’adresse `http://localhost:<port>` dans votre navigateur web. Par exemple, [http://localhost:4502](http://localhost:4502).
+   Une fois AEM démarré, la page de connexion s’ouvre dans le navigateur web. Vous pouvez également ouvrir la page de connexion de l’instance SDK AEM à l’adresse `http://localhost:<port>` dans votre navigateur web. Par exemple, [](http://localhost:4502).
 
 1. Connectez-vous à votre instance de création. Appuyez sur l’icône d’![aide](/help/assets/Help-icon.svg), puis sur À propos d’Adobe Experience Manager et assurez-vous que le numéro de version comprend le suffixe PRERELEASE.
 
@@ -105,7 +106,7 @@ Si vous ne le voyez pas, arrêtez le serveur, supprimez le dossier `[AEM SDK ins
 
 L’archive des fonctionnalités AEM Forms as a Cloud Service (module complémentaire AEM Forms Cloud Service) fournit des outils pour créer des formulaires adaptatifs découplés dans un environnement de développement local. Pour installer l’archive de fonctionnalités, procédez comme suit :
 
-1. Téléchargez et procédez à l’extraction de la dernière version de l’archive de fonctionnalités [!DNL AEM Forms] (module complémentaire AEM Forms) depuis la page [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=AEM*+Forms*+add*+on*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=20). Utilisez la colonne Date de publication pour trier et localiser facilement la dernière version du SDK. La version prise en charge est aem-forms-addon-2022.07.06.02-220600 et version ultérieure.
+1. Téléchargez et procédez à l’extraction de la dernière version de l’archive de fonctionnalités [!DNL AEM Forms] (module complémentaire AEM Forms) depuis la page [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=AEM*+Forms*+add*+on*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=20). Utilisez la colonne Date de publication pour trier et localiser facilement la dernière version du SDK. La version prise en charge est aem-forms-addon-2022.07.06.02-220600 et les versions ultérieures.
 
 1. Accédez au répertoire crx-quickstart/install. Si le dossier n’existe pas, créez-le.
 1. Arrêtez votre instance SDK AEM. Vous pouvez mettre fin à la fenêtre d’invite de commande qui exécute une instance AEM SDK pour arrêter AEM.

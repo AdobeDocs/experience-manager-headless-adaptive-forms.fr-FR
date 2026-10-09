@@ -8,25 +8,36 @@ role: Admin, Developer
 level: Beginner, Intermediate
 index: true
 exl-id: 0214dc2e-52ce-40e9-bef3-f4f4a7ff266f
-TQID: https://experienceleague.adobe.com/-oczwo5CsVwXdzfKgQ9WwM16vBoPY4BVW-02Oeht1A4
+TQID: 'https://experienceleague.adobe.com/-oczwo5CsVwXdzfKgQ9WwM16vBoPY4BVW-02Oeht1A4'
 product_v2:
   - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: ce44533e-8ec8-4e11-a9e9-78b0fe561832
-source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
+    internal-label: Content structure
+source-git-commit: b34afbc4f692b81838ad6947895c9b347dff6d62
 workflow-type: tm+mt
-source-wordcount: 1328
+source-wordcount: '1328'
 ht-degree: 64%
-
 ---
-
 # Créer un formulaire adaptatif découplé à l’aide de l’éditeur de formulaires adaptatifs {#create-a-headless-adaptive-form-using-adaptive-forms-editor}
 
 AEM Forms as a Cloud Service propose un éditeur convivial pour créer des formulaires adaptatifs découplés. Avec plus de 24 composants principaux disponibles, vous pouvez facilement créer un formulaire en faisant glisser des composants dans l’éditeur. De plus, l’éditeur de règles vous permet d’ajouter des validations à vos champs de formulaire.
@@ -57,16 +68,16 @@ Pour créer un formulaire adaptatif à l’aide de l’éditeur de Forms adaptat
 
 **Pour AEM Forms as a Cloud Service**
 
-* Accès à un environnement d’[instance de création AEM Forms as a Cloud Service](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service) ou de [SDK AEM Forms as a Cloud Service local](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-local-development-environment)
+* Accès à un environnement d’[instance de création AEM Forms as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service) ou de [SDK AEM Forms as a Cloud Service local](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-local-development-environment)
 
 * **Modèle de formulaire adaptatif** : un modèle fournit une structure de base et définit l’aspect (dispositions et styles) d’un formulaire adaptatif. Il comporte des composants pré-formatés contenant certaines propriétés et une certaine structure de contenu. Il fournit également les options permettant de définir un thème et d’envoyer une action. Le thème définit l’aspect et l’action d’envoi définit l’action à entreprendre lors de l’envoi d’un formulaire adaptatif. Par exemple, l’envoi des données collectées à une source de données. Le service cloud fournit un modèle prêt à l’emploi, sans nom :
 
-   * Le modèle `blank Adaptive Forms (Core Components)` est inclus dans chaque nouveau programme AEM Forms as a Cloud Service.
-   * Vous pouvez également [créer un modèle de formulaire adaptatif (composants principaux)](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/template-editor) à partir de zéro.
+  * Le modèle `blank Adaptive Forms (Core Components)` est inclus dans chaque nouveau programme AEM Forms as a Cloud Service.
+  * Vous pouvez également [créer un modèle de formulaire adaptatif (composants principaux)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/template-editor) à partir de zéro.
 
 * **Un thème de formulaire adaptatif** : un thème contient des détails de style pour les composants et les panneaux. Ces styles incluent les propriétés telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence, l’alignement et la taille. Lorsque vous appliquez un thème, le style spécifié se reflète sur les composants correspondants.  Le modèle `Canvas` est inclus dans chaque nouveau programme AEM Forms as a Cloud Service.
 
-* **Autorisations** : ajoutez vos utilisateurs et utilisatrices au groupe [!DNL forms-users]. Les membres du groupe [!DNL forms-users] ont les autorisations de créer un formulaire adaptatif. Pour obtenir la liste détaillée des formulaires pour des groupes d’utilisateurs spécifiques, voir [Groupes et autorisations](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/forms-groups-privileges-tasks).
+* **Autorisations** : ajoutez vos utilisateurs et utilisatrices au groupe [!DNL forms-users]. Les membres du groupe [!DNL forms-users] ont les autorisations de créer un formulaire adaptatif. Pour obtenir la liste détaillée des formulaires pour des groupes d’utilisateurs spécifiques, voir [Groupes et autorisations](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/forms-groups-privileges-tasks).
 
 
 ## Créer un formulaire adaptatif {#create-an-adaptive-form-components}
@@ -91,7 +102,7 @@ Pour créer un formulaire adaptatif à l’aide de l’éditeur de Forms adaptat
 
    * **Modèle de données de formulaire** : un [modèle de données de formulaire](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration) vous permet d’intégrer des entités et des services provenant de sources de données disparates à un formulaire adaptatif. Choisissez le modèle de données de formulaire si le formulaire adaptatif que vous créez implique l’extraction et l’écriture de données depuis et vers plusieurs sources de données.
 
-   * **Schéma JSON** : [schéma JSON](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model) le Forms adaptatif permet une intégration transparente au système back-end de votre entreprise en vous permettant d’associer un schéma JSON, qui représente la structure des données générées ou consommées. Cette association permet aux auteurs d’ajouter du contenu de manière dynamique au formulaire adaptatif à l’aide des éléments du schéma. Lors de la création, vous pouvez accéder rapidement aux éléments de schéma dans l’onglet Objets de modèle de données de l’explorateur de contenu. Lorsque vous créez un formulaire adaptatif, l’éditeur ajoute automatiquement tous les champs.
+   * **Schéma JSON** : [schéma JSON](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model) le Forms adaptatif permet une intégration transparente au système back-end de votre entreprise en vous permettant d’associer un schéma JSON, qui représente la structure des données générées ou consommées. Cette association permet aux auteurs d’ajouter du contenu de manière dynamique au formulaire adaptatif à l’aide des éléments du schéma. Lors de la création, vous pouvez accéder rapidement aux éléments de schéma dans l’onglet Objets de modèle de données de l’explorateur de contenu. Lorsque vous créez un formulaire adaptatif, l’éditeur ajoute automatiquement tous les champs.
 
    Par défaut, tous les champs du schéma JSON associé sont automatiquement sélectionnés et convertis en composants de formulaire adaptatif correspondants, ce qui simplifie le processus de création. L’assistant vous permet en outre de choisir, au moyen de cases à cocher, les champs à inclure dans le formulaire adaptatif.
 

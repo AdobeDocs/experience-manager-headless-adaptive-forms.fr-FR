@@ -1,15 +1,16 @@
 ---
 title: Présentation du Forms adaptatif découplé AEM
-description: Vue d’ensemble des formulaires adaptatifs découplés AEM.
+description: Vue d’ensemble des formulaires adaptatifs découplés AEM Forms.
 hide: true
 exl-id: cd7c7972-376c-489f-a684-f479d92c37e7
-source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+source-git-commit: b34afbc4f692b81838ad6947895c9b347dff6d62
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 58%
-
 ---
-
 
 # Notes de mise à jour
 
@@ -18,7 +19,7 @@ Bienvenue dans la version à accès anticipé d’Experience Manager destinée a
 Utilisez des formulaires adaptatifs découplés Adobe Experience Manager pour créer des applications de formulaire avec des structures front-end, telles que React, Angular, etc. Utilisez le SDK Web de Forms adaptatif pour la gestion des états, la validation et l’intégration à des points de contact supplémentaires.
 
 
-La version à accès anticipé vous permet d’utiliser les formulaires adaptatifs découplés dans un [&#x200B; environnement de développement local](setup-development-environment.md). Vous pouvez utiliser l’environnement de développement local pour créer et tester des formulaires adaptatifs découplés.
+La version à accès anticipé vous permet d’utiliser les formulaires adaptatifs découplés dans un [ environnement de développement local](setup-development-environment.md). Vous pouvez utiliser l’environnement de développement local pour créer et tester des formulaires adaptatifs découplés.
 
 Les formulaires adaptatifs découplés font l’objet régulièrement d’améliorations. Pour vous tenir au courant des dernières nouveautés, consultez régulièrement cette page. Cette page fournit des informations sur les éléments suivants :
 
@@ -55,13 +56,13 @@ Les formulaires adaptatifs découplés font l’objet régulièrement d’améli
 
 Dans le cadre du parcours visant à vous proposer les formulaires adaptatifs découplés Adobe Experience Manager, les artefacts suivants sont disponibles dans la version à accès anticipé :
 
-### SDK AEM Forms as a Cloud Service
+### SDK AEM Forms as a Cloud Service
 
-SDK AEM Forms as a Cloud Service pour vous aider à créer, à stocker et à récupérer des formulaires adaptatifs découplés. Il permet également de fournir des services de préremplissage, de validation des règles côté serveur et d’envoi pour les formulaires adaptatifs découplés.
+SDK AEM Forms as a Cloud Service pour vous aider à créer, à stocker et à récupérer des formulaires adaptatifs découplés. Il permet également de fournir des services de préremplissage, de validation des règles côté serveur et d’envoi pour les formulaires adaptatifs découplés.
 
 ### SDK web pour les formulaires
 
-Forms Web SDK fournit des API pour valider les contraintes appliquées aux différents champs d’un formulaire, ainsi que des points d’extension pour connecter la structure JSON du formulaire au framework de l’interface utilisateur. Il fournit également React Renderer pour les formulaires adaptatifs découplés pour vous permettre d’intégrer un formulaire adaptatif découplé à votre application. Les composants de la SDK Web disponibles sont les suivants :
+Forms Web SDK fournit des API pour valider les contraintes appliquées aux différents champs d’un formulaire, ainsi que des points d’extension pour connecter la structure JSON du formulaire au framework de l’interface utilisateur. Il fournit également React Renderer pour les formulaires adaptatifs découplés afin de vous permettre d’intégrer un formulaire adaptatif découplé à votre application. Les composants de la SDK Web disponibles sont les suivants :
 
 * **[@aemforms/af-react-components](https://www.npmjs.com/package/@aemforms/af-react-components)**
 * **[@aemforms/af-react-renderer](https://www.npmjs.com/package/@aemforms/af-react-renderer)**
@@ -77,7 +78,7 @@ Le [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/) pr�
 
 <!-- Forms components are the structural elements that constitute the content of the form being authored. These components provide various form fields and ability to customize those fields. -->
 
-Les composants principaux sont un ensemble de composants de gestion de contenu web (Web Content Management, WCM) normalisés visant à accélérer le développement et à réduire les coûts de maintenance des formulaires. Le composant Conteneur de formulaires est un composant principal. Il vous permet d’incorporer et de générer une structure JSON d’un formulaire adaptatif découplé dans l’éditeur de Forms adaptatif de Forms as a Cloud Service SDK.
+Les composants principaux sont un ensemble de composants de gestion de contenu web (Web Content Management, WCM) normalisés visant à accélérer le développement et à réduire les coûts de maintenance des formulaires. Le composant Forms Container est un composant principal. Il vous permet d’incorporer et de générer une structure JSON d’un formulaire adaptatif découplé dans l’éditeur de Forms adaptatif de Forms as a Cloud Service SDK.
 
 ### Spécifications des formulaires adaptatifs V2
 
@@ -89,7 +90,7 @@ Les [API HTTP](https://opensource.adobe.com/aem-forms-af-runtime/api/) vous perm
 
 ### Extension de Visual Studio Code
 
-L’[extension de Visual Studio Code](visual-studio-code-extension-for-headless-adaptive-forms.md) permet de créer une structure JSON valide. Elle assure la prise en charge et la validation IntelliSense pour la structure JSON des formulaires et fournit des fonctions courantes telles que l’ajout, la suppression ou l’attribution d’un nouveau nom aux composants d’une structure JSON.
+L’[extension de Visual Studio Code](visual-studio-code-extension-for-headless-adaptive-forms.md) permet de créer une structure JSON valide. Il assure la prise en charge et la validation IntelliSense pour la structure JSON des formulaires et fournit des fonctions courantes telles que l’ajout, la suppression ou l’attribution d’un nouveau nom aux composants d’une structure JSON.
 
 <!-- 
 ## What's next
