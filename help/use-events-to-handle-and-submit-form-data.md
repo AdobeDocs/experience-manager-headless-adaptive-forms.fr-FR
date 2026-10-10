@@ -3,13 +3,17 @@ title: Utiliser des événements pour gérer et envoyer des données de formulai
 description: Utilisez des événements pour gérer et envoyer des données de formulaires adaptatifs découplés.
 hide: true
 exl-id: f80a0d44-fa76-4df7-883e-3f5d0384a2a5
-source-git-commit: 3af67fd41cdd1e63a460e56ef1d273c90b3954d7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: b34afbc4f692b81838ad6947895c9b347dff6d62
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 71%
-
 ---
-
 # Utiliser des événements pour gérer et envoyer des données de formulaires adaptatifs découplés {#using-events}
 
 Jusqu’à présent, vous avez appris à [créer un formulaire adaptatif découplé personnalisé](create-and-publish-a-headless-form.md) et à [appliquer un style au formulaire à l’aide des composants React personnalisés](use-google-material-ui-react-components-to-render-a-headless-form.md). Cet article est axé sur l’utilisation d’événements pour conserver et envoyer les données saisies par un utilisateur ou une utilisatrice à un magasin de données.

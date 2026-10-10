@@ -1,23 +1,24 @@
 ---
-title: Prise en main des formulaires adaptatifs découplés
-description: Prise en main des formulaires adaptatifs découplés
+title: Prise en main des formulaires adaptatifs découplés AEM Forms
+description: Prise en main des formulaires adaptatifs découplés AEM Forms
 keywords: découplé, formulaire adaptatif, tutoriel
 hide: true
-source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+source-git-commit: b34afbc4f692b81838ad6947895c9b347dff6d62
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 51%
-
 ---
-
 
 # Prise en main des formulaires adaptatifs découplés
 
-Ce tutoriel vous fournit un cadre de bout en bout pour créer un formulaire adaptatif découplé. Le tutoriel consiste en un cas d’utilisation et plusieurs guides. Chaque guide décrit des fonctionnalités spécifiques et vous aide à les ajouter au formulaire adaptatif découplé créé dans ce tutoriel. Chaque guide se termine par un formulaire adaptatif découplé opérationnel. À la fin de ce tutoriel, vous devriez pouvoir effectuer les opérations suivantes :
+Ce tutoriel vous fournit un cadre de bout en bout pour créer un formulaire adaptatif découplé. Le tutoriel consiste en un cas d’utilisation et plusieurs guides. Chaque guide vous aide à apprendre et à ajouter de nouvelles fonctionnalités au formulaire adaptatif découplé créé dans ce tutoriel. Chaque guide se termine par un formulaire adaptatif découplé opérationnel. À la fin de ce tutoriel, vous devriez pouvoir effectuer les opérations suivantes :
 
-* créer un formulaire adaptatif découplé ;
-* ajouter des règles commerciales à votre formulaire ;
-* utiliser Material UI de Google pour appliquer un style au formulaire ;
+* Créer un formulaire adaptatif découplé ;
+* Ajouter des règles métier à votre formulaire
+* Utiliser l’interface d’utilisation métériell de Google pour appliquer un style au formulaire
 * Préremplir le formulaire
 * incorporer le formulaire dans une page web.
 
@@ -25,7 +26,7 @@ Vous allez également acquérir une compréhension de l’architecture, des arte
 
 **Commençons par aborder un cas d’utilisation** :
 
-Raya Tan, membre du Département des affaires étrangères d&#39;un pays connu pour sa beauté naturelle et son économie touristique florissante, supervise la distribution des formulaires de visa aux touristes. Ces formulaires sont disponibles sur le site web du ministère, les applications mobiles natives et au format PDF, et ce dans plusieurs langues. Cependant, la gestion et la distribution de ces formulaires sur différentes plateformes et technologies peut s’avérer difficile.
+Raya Tan, membre du Département des affaires étrangères d&#39;un pays connu pour sa beauté naturelle et son économie touristique florissante, supervise la distribution des formulaires de visa aux touristes. Ces formulaires sont disponibles sur le site web du ministère, dans les applications mobiles natives et au format PDF, et ce dans plusieurs langues. Cependant, la gestion et la distribution de ces formulaires sur différentes plateformes et technologies peut s’avérer difficile.
 
 Afin d’améliorer l’efficacité et la flexibilité de son processus de demande de visa, le Département des affaires étrangères a décidé d’adopter une approche basée sur les formulaires adaptatifs découplés. Cette architecture découplée sépare le front-end du back-end, pour davantage de personnalisation et d’évolutivité. Le service prévoit d’utiliser les composants React de l’interface utilisateur Material Google pour améliorer l’expérience de l’utilisateur des formulaires. Il utilisera également les fonctionnalités du serveur principal, telles que :
 

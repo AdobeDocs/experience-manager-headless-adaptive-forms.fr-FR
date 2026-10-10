@@ -9,13 +9,30 @@ level: Beginner, Intermediate
 keywords: formulaires découplés, bibliothèque de formulaires découplés, formulaires adaptatifs, gestion des états, validation, système de conception, rendu côté serveur, CMS
 index: true
 exl-id: 539da3e9-25c5-4e26-ba4e-f68cf849bca4
-source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
+product_v2:
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+source-git-commit: b34afbc4f692b81838ad6947895c9b347dff6d62
 workflow-type: tm+mt
 source-wordcount: '2605'
 ht-degree: 5%
-
 ---
-
 # Présentation des formulaires découplés - Concepts et FAQ {#understanding-headless-forms}
 
 Ce guide répond aux questions courantes sur les formulaires découplés en général et leur application au Forms adaptatif découplé AEM. Utilisez-le pour décider quand utiliser une approche découplée et comment implémenter, mettre en forme et intégrer des formulaires dans votre pile.
@@ -221,5 +238,5 @@ Pour les scénarios mobiles et hors ligne, l’approche recommandée est de [cr�
 * [Questions fréquentes](faq.md)
 * [Créer et publier un formulaire découplé](create-and-publish-a-headless-form.md)
 * [API de formulaires adaptatifs découplés](https://opensource.adobe.com/aem-forms-af-runtime/api/)
-* [Terrain de jeu de code](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=fr)
+* [Terrain de jeu de code](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en)
 * [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/)
